@@ -1,0 +1,384 @@
+.table > thead > tr > th:first-child,
+.table > tbody > tr > th {
+  text-align: center;
+}
+
+/* Profile/ */
+
+.landpage span {
+  margin-left: 2px;
+}
+
+.landpage {
+  margin-left: -2px;
+}
+
+.nav-item {
+  margin-top: -20px;
+}
+
+.new-admin .add-admin {
+  width: 20%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #0074b7;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.border-profile {
+  width: 250px;
+  height: 250px;
+  background-color: #eeede7;
+  border-radius: 50%;
+  margin: 50px auto 20px auto;
+  padding: 1px 0px;
+}
+
+.img-profile {
+  width: 210px;
+  height: 210px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 19px auto;
+  box-shadow: 0 0 8px rgb(97, 97, 97);
+  z-index: 4;
+  position: relative;
+  overflow: hidden;
+}
+
+#ft-profile {
+  box-sizing: border-box;
+  outline: none;
+  margin: 12% 23%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#ft-profile::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+#ft-profile::before {
+  content: "\f030";
+  font-family: fontAwesome;
+  font-size: 23px;
+  color: white;
+}
+
+.input-group-prepend span,
+.input-group-prepend label {
+  width: 107px;
+}
+
+.data-captcha .input-group-prepend span,
+.data-captcha .input-group-prepend label {
+  width: 147px;
+}
+
+.inputState {
+  font-weight: bold;
+}
+
+.login {
+  margin-top: 8%;
+}
+
+.checkbox {
+  margin-left: -5%;
+}
+
+.input-checkbox {
+  margin-top: 7px;
+}
+
+.cabang .input-group-prepend span,
+.cabang .input-group-prepend label {
+  width: 127px;
+}
+
+.blog-form .input-group-prepend span,
+.blog-form .input-group-prepend label {
+  width: 137px;
+}
+
+.ck-editor_editable_inline {
+  min-height: 200px;
+}
+
+.add {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #0074b7;
+  margin: -50px auto 0 auto;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.add-icon {
+  margin-top: 9px;
+  width: 60%;
+  color: white;
+  position: relative;
+  z-index: 6;
+}
+
+.profile p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(122, 122, 122);
+}
+
+.update-admin .col-sm-5 {
+  padding: 80px 0px 0px 0px;
+}
+
+.data-admin .update-admin .col-sm-6 {
+  padding: 50px 0px 0px 0px;
+}
+
+.update-admin .col-sm-12 {
+  padding: 0px;
+}
+
+.update-admin .col-sm-12 input {
+  width: 30%;
+  height: 35px;
+  background-color: #0074b7;
+  color: white;
+  font-weight: 500;
+  float: right;
+  margin-right: -10px;
+}
+
+.update-admin .col-sm-10 input {
+  width: 30%;
+  height: 35px;
+  background-color: #0074b7;
+  color: white;
+  font-weight: 500;
+  margin-left: -10%;
+  float: right;
+  margin-right: 3%;
+}
+
+.update-admin input {
+  width: 90%;
+  height: 35px;
+  margin: 0px auto 23px auto;
+  border-radius: 3px;
+  border: grey thick;
+  box-shadow: 0 0 3px rgb(100, 100, 100);
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.data-admin .update-admin input,
+.update-admin select {
+  width: 94%;
+  height: 35px;
+  margin: 0px auto 23px auto;
+  border-radius: 3px;
+  border: grey thick;
+  box-shadow: 0 0 3px rgb(100, 100, 100);
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#inputGroupSelect02 {
+  margin-top: 1px;
+}
+
+.invalid-foto {
+  margin-top: 65px;
+  margin-left: -690px;
+}
+
+.blog-invalid-foto {
+  margin-top: 88px;
+  margin-left: -690px;
+}
+
+.data-admin .update-admin .custom-file-label {
+  width: 94%;
+  height: 35px;
+  border-radius: 3px;
+  border: grey thick;
+  box-shadow: 0 0 3px rgb(100, 100, 100);
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.add-blog .submit {
+  width: 15%;
+  padding: 10px 20px;
+  background-color: #0074b7;
+  border-radius: 10px;
+  border: thick;
+  box-shadow: 0 0 2px grey;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 0;
+}
+/* .btn-submit {
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-weight: 300;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 3px solid #333;
+  padding: 6px 12px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.btn-submit:hover,
+button:hover {
+  outline: 0;
+  color: #fff;
+}
+.btn-submit:active,
+button:active {
+  outline: 0;
+  color: #fff;
+} */
+
+.form-control {
+  border-radius: 20px;
+}
+.btn-save {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #105a8b 50%, #257fbb 50%);
+  background-size: 100% 200%;
+  background-position: left bottom;
+}
+.btn-save:hover {
+  background-position: right top;
+}
+
+/* .tabel-bergabung tbody .btn-tabel a{
+  font-size: .85rem;
+  display: inline-block;
+  background-color: #33BEF0;
+  padding: 13px 20px;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+} */
+
+/* .tabel-bergabung tbody .btn-tabel a{
+  text-decoration: none;
+} */
+
+/* .add-blog .submit::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #2926a9;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.add-blog .submit:hover::before {
+  height: 100%;
+} */
+
+.data-admin .update-admin .col-sm-12 input {
+  width: 30%;
+  height: 35px;
+  background-color: #0074b7;
+  color: white;
+  font-weight: 500;
+  margin-right: 3%;
+}
+
+.update-admin input:active {
+  border: 1px solid #0000ff;
+}
+
+.update-admin input::-webkit-input-placeholder {
+  color: #a5aba0;
+}
+.data-admin {
+  padding: 0 7%;
+}
+
+.sidebar i {
+  width: 20px;
+}
+
+.sidebar-heading {
+  margin: 15px 0 10px 0;
+}
+
+.sidebar-brand-icon img {
+  width: 85%;
+  height: auto;
+  color: white;
+}
+
+/* Blog */
+
+.blog-header {
+  height: 60px;
+  padding: 20px 20px;
+}
+
+.blog-header a {
+  width: 20%;
+  height: auto;
+  padding: 7px 15px;
+  background-color: #0074b7;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* .data-blog a {
+  padding: 7px 10px;
+  margin-right: 0px;
+  border-radius: 5px;
+}
+
+.data-blog a {
+  padding: 7px 10px;
+  margin-right: 0px;
+  border-radius: 5px;
+} */
+
+.data-blog a:first-child::before {
+  content: "\f044";
+  font-family: fontAwesome;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0074b7;
+}
+
+.data-blog button::before {
+  content: "\f2ed";
+  font-family: fontAwesome;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
