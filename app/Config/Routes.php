@@ -32,10 +32,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // Admin Routes
+$routes->get('/', 'Admin::index', ['filter' => 'auth']);
 $routes->get('/admin', 'Admin::index');
 $routes->get('/add_admin', 'Admin::post');
 $routes->get('/data_admin', 'Admin::show');
-// $routes->get('/update_admin/(:num)', 'Admin::updatePage');
+$routes->get('/update_admin/(:num)', 'Admin::updatePage');
 $routes->delete('/admin/(:num)', 'Admin::delete/$1');
 
 //Banner
@@ -105,7 +106,7 @@ $routes->get('/update_kategori/(:num)', 'Kategori::updateKategori/$1');
 $routes->delete('/kategori/(:num)', 'Kategori::delete/$1');
 
 //Logo
-$routes->get('/data_logo', 'Logo::post');
+$routes->get('/data_logo', 'Logo::index');
 $routes->get('/update_logo/(:num)', 'Logo::Updatelogo/$1');
 $routes->delete('/logo/(:num)', 'Logo::delete/$1');
 

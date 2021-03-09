@@ -58,7 +58,7 @@ class Logo extends BaseController
             ]
         ])) {
 
-            return redirect()->to('/logo/')->withInput();
+            return redirect()->to('/data_logo/')->withInput();
         }
 
         $fotoFile = $this->request->getFile('foto');

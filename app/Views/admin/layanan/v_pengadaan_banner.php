@@ -32,7 +32,7 @@
                         <span class="input-group-text" id="inputGroupFileAddon01">Gambar Banner</span>
                     </div>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input<?= ($validation->getError('foto')) ? 'is-invalid' : ''; ?>" id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()" value="<?= old('foto'); ?>">
+                        <input type="file" class="custom-file-input<?= ($validation->getError('foto')) ? ' is-invalid' : ''; ?>" id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()" value="<?= old('foto'); ?>">
                         <div class="invalid-feedback invalid-foto">
                             <?= $validation->getError('foto'); ?>
                         </div>

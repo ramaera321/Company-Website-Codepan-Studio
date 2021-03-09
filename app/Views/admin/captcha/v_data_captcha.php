@@ -11,7 +11,7 @@
             <h6 class="m-0 font-weight-bold text-primary">Add New Captcha</h6>
         </div>
         <div class="card-body add-blog px-4 tambah-admin">
-            <form action="/logo/save" method="post" enctype="multipart/form-data">
+            <form action="/captcha/save" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <div class="input-group mb-3 data-captcha">
                     <div class="input-group-prepend">
@@ -28,7 +28,7 @@
                         <span class="input-group-text" id="inputGroupFileAddon01">Gambar Captcha</span>
                     </div>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input<?= ($validation->getError('foto')) ? 'is-invalid' : ''; ?>" id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()" value="<?= old('foto'); ?>">
+                        <input type="file" class="custom-file-input<?= ($validation->getError('foto')) ? ' is-invalid' : ''; ?>" id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()" value="<?= old('foto'); ?>">
                         <div class="invalid-feedback invalid-foto">
                             <?= $validation->getError('foto'); ?>
                         </div>

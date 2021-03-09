@@ -33,7 +33,7 @@
                         <div class="invalid-feedback invalid-foto">
                             <?= $validation->getError('foto'); ?>
                         </div>
-                        <label class="custom-file-label<?= ($validation->getError('foto')) ? 'is-invalid' : ''; ?>" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : $banner['foto']; ?></label>
+                        <label class="custom-file-label<?= ($validation->getError('foto')) ? ' is-invalid' : ''; ?>" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : $banner['foto']; ?></label>
                     </div>
                 </div>
                 <small id="passwordHelpBlock" class="form-text text-muted ml-3">
