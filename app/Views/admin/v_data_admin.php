@@ -23,8 +23,6 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col" width="200px">Nama</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Password</th>
                         <th scope="col">Tipe Admin</th>
                         <th scope="col">Photo Profile</th>
                         <th scope="col" width="200px">Action</th>
@@ -36,10 +34,14 @@
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
                             <td><?= $admin['nama']; ?></td>
-                            <td><?= $admin['email']; ?></td>
-                            <td><?= $admin['password']; ?></td>
                             <td><?= $admin['tipe_admin']; ?></td>
-                            <td><?= $admin['foto']; ?></td>
+                            <td><img src="/assets/img/<?= $admin['foto']; ?>" alt="<?= $admin['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
                             <td>
                                 <a href="/update_admin/<?= $admin['id']; ?>" class=" btn bg-warning"></a>
                                 <form action="/admin/<?= $admin['id']; ?>" method="post" class="d-inline">

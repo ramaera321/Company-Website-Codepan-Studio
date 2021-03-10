@@ -43,7 +43,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Gambar Logo</th>
-                        <th scope="col" width="200px">Action</th>
+                        <th scope="col" width="400px">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -53,7 +53,7 @@
                     ?>
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
-                            <td><?= $logo['foto']; ?></td>
+                            <td><img src="/assets/img/logo/<?= $logo['foto']; ?>" alt="<?= $logo['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
                             <td>
                                 <a href="/logo/UpdateCaptcha/<?= $logo['id']; ?>" class=" btn bg-warning"></a>
                                 <form action="/logo/<?= $logo['id']; ?>" method="post" class="d-inline">
@@ -66,6 +66,13 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
         </div>
     </div>
 

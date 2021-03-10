@@ -70,7 +70,13 @@
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
                             <td><?= $banner['deskripsi']; ?></td>
-                            <td><?= $banner['foto']; ?></td>
+                            <td><img src="/assets/img/<?= $banner['foto']; ?>" alt="<?= $banner['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
                             <td>
                                 <a href="/update_banner/<?= $banner['id']; ?>" class=" btn bg-warning"></a>
                                 <form action="/banner/<?= $banner['id']; ?>" method="post" class="d-inline">

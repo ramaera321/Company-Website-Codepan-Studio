@@ -26,6 +26,7 @@
                         <th scope="col">Judul</th>
                         <th scope="col">Kategori</th>
                         <th scope="col">Penulis</th>
+                        <th scope="col">Gambar</th>
                         <th scope="col" width="200px">Action</th>
                     </tr>
                 </thead>
@@ -37,6 +38,13 @@
                             <td><?= $blog['judul']; ?></td>
                             <td><?= $blog['kategori']; ?></td>
                             <td><?= $blog['penulis']; ?></td>
+                            <td><img src="/assets/img/blog/<?= $blog['foto']; ?>" alt="<?= $blog['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
                             <td>
                                 <a href="/update_blog/<?= $blog['slug']; ?>" class="bg-warning btn"></a>
                                 <form action="/blog/<?= $blog['id']; ?>" method="post" class="d-inline">

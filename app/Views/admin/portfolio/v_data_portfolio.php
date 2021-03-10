@@ -21,6 +21,7 @@
                         <th scope="col">Judul</th>
                         <th scope="col">Kategori</th>
                         <th scope="col">Penulis</th>
+                        <th scope="col">foto</th>
                         <th scope="col" width="200px">Action</th>
                     </tr>
                 </thead>
@@ -34,6 +35,13 @@
                             <td><?= $portfolio['judul']; ?></td>
                             <td><?= $portfolio['kategori']; ?></td>
                             <td><?= $portfolio['penulis']; ?></td>
+                            <td><img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" alt="<?= $portfolio['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
                             <td>
                                 <a href="/portfolio/updatePage/<?= $portfolio['slug']; ?>" class="bg-warning btn"></a>
                                 <form action="/portfolio/<?= $portfolio['id']; ?>" method="post" class="d-inline">
