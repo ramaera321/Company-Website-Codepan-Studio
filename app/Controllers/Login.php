@@ -20,6 +20,7 @@ class Login extends BaseController
     public function admin()
     {
         $data = [
+            'id' => session()->get('id'),
             'tipe_admin' => session()->get('tipe_admin'),
             'nama'     => session()->get('nama'),
             'email'     => session()->get('email'),
@@ -45,13 +46,13 @@ class Login extends BaseController
                     'email'     => $data['email'],
                     'password'  => $data['password'],
                     'tipe_admin' => $data['tipe_admin'],
-                    'image'     => $data['foto'],
+                    'foto'     => $data['foto'],
                     'logged_in' => TRUE
                 ];
                 $session->set($ses_data);
                 return redirect()->to('/login/admin');
             } else {
-                $session->setFlashdata('pesan', 'Password Salah ' . $email . $pass . ' = ' . $password);
+                $session->setFlashdata('pesan', 'Password Salah ');
                 return redirect()->to('/login/');
             }
         } else {

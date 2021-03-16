@@ -15,14 +15,25 @@ class Cabang extends BaseController
     public function post()
     {
         if (session()->get('logged_in')) {
-            $cabang = $this->cabangModel->findAll();
-            $data = [
-                'judul' => 'Add New Kantor Cabang',
-                'title' => 'Add Kantor Cabang',
-                'cabang' => $cabang,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/cabang/v_add_cabang', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $cabang = $this->cabangModel->findAll();
+                $data = [
+                    'judul' => 'Add New Kantor Cabang',
+                    'title' => 'Add Kantor Cabang',
+                    'cabang' => $cabang,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/cabang/v_add_cabang', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -31,14 +42,25 @@ class Cabang extends BaseController
     public function updatePage($id)
     {
         if (session()->get('logged_in')) {
-            $cabang = $this->cabangModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Update Kantor Cabang',
-                'title' => 'Kantor Cabang',
-                'cabang' => $cabang,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/cabang/v_update_cabang', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $cabang = $this->cabangModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Update Kantor Cabang',
+                    'title' => 'Kantor Cabang',
+                    'cabang' => $cabang,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/cabang/v_update_cabang', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

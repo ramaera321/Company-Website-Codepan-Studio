@@ -1,3 +1,19 @@
+const chek = document.querySelector("#passwordchek");
+const password = document.querySelectorAll(".password");
+
+chek.addEventListener("click", showPassword);
+
+function showPassword(){
+    if(this.checked){
+        password[0].type = "text";
+        password[1].type = "text";
+    }
+    else{
+        password[0].type = "password";
+        password[1].type = "password";
+    }
+}
+
 let icon = document.querySelector('.landpage');
 let iconLP = document.querySelector('.landing-page');
 
@@ -42,9 +58,50 @@ function previewImage(){
 
     fileFoto.onload = function (e) {
         imgPreview.src = e.target.result;
-}
+    }
 }
 
+function previewProfile(){
+    const foto = document.querySelector('#ft-profile');
+    const imgPreview = document.querySelector('#im-profile');
+    
+    // fotoLabel.textContent = foto.files[0].name;
+    
+    const fileFoto = new FileReader();
+    fileFoto.readAsDataURL(foto.files[0]);
+    
+    fileFoto.onload = function (e) {
+        imgPreview.src = e.target.result;
+    }
+}
+function profile() {
+    const imgProfile = document.querySelector('#im-profile');
+    const width = imgProfile.naturalWidth;
+    const height = imgProfile.naturalHeight;
+
+
+    if (width < height) {
+        imgProfile.style.width = "100%";
+        imgProfile.style.height = "auto";
+        n = 1;
+    } else if (width > height) {
+        imgProfile.style.width = "auto";
+        imgProfile.style.height = "100%";
+        n = 2;
+    } else {
+        imgProfile.style.width = "100%";
+        imgProfile.style.height = "auto";
+        n = 0;
+    }
+
+    if (n == 1) {
+        imgProfile.style.marginLeft = "-20%";
+    } else if (n == 2) {
+        imgProfile.style.marginTop = "-20%";
+    } else {
+        imgProfile.style.margin = "0";
+    }
+}
 // Get the modal
 const modal = document.getElementById("myModal");
 
@@ -67,3 +124,5 @@ const span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+

@@ -17,16 +17,27 @@ class Ayat extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $pasal = $this->pasalModel;
-            $ayat = $this->ayatModel->findAll();
-            $data = [
-                'judul' => 'Ayat Page Data | Admin',
-                'title' => 'Ayat Page',
-                'ayat' => $ayat,
-                'pasal' => $pasal,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/aturan/v_add_ayat', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $pasal = $this->pasalModel;
+                $ayat = $this->ayatModel->findAll();
+                $data = [
+                    'judul' => 'Ayat Page Data | Admin',
+                    'title' => 'Ayat Page',
+                    'ayat' => $ayat,
+                    'pasal' => $pasal,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/aturan/v_add_ayat', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return view('admin/v_superadmin_home', $data);
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -35,14 +46,25 @@ class Ayat extends BaseController
     public function UpdateAyat($id)
     {
         if (session()->get('logged_in')) {
-            $ayat = $this->ayatModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Ayat Page Data | Admin',
-                'title' => 'Update Ayat',
-                'ayat' => $ayat,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/aturan/v_update_ayat', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $ayat = $this->ayatModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Ayat Page Data | Admin',
+                    'title' => 'Update Ayat',
+                    'ayat' => $ayat,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/aturan/v_update_ayat', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return view('admin/v_superadmin_home', $data);
+            }
         } else {
             return redirect()->to('/login');
         }

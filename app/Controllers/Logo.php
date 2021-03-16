@@ -15,14 +15,29 @@ class Logo extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $logo = $this->logoModel->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Home logo',
-                'logo' => $logo,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/logo/v_data_logo', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $logo = $this->logoModel->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Home logo',
+                    'logo' => $logo,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/logo/v_data_logo', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
+        } else {
+            return redirect()->to('/login');
+        }
+        if (session()->get('logged_in')) {
         } else {
             return redirect()->to('/login');
         }
@@ -31,14 +46,25 @@ class Logo extends BaseController
     public function Updatelogo($id)
     {
         if (session()->get('logged_in')) {
-            $logo = $this->logoModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Update Logo',
-                'logo' => $logo,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/logo/v_update_logo', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $logo = $this->logoModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Update Logo',
+                    'logo' => $logo,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/logo/v_update_logo', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

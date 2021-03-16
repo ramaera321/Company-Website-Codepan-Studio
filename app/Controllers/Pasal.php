@@ -14,14 +14,25 @@ class Pasal extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $pasal = $this->pasalModel->findAll();
-            $data = [
-                'judul' => 'Pasal Page Data | Admin',
-                'title' => 'Pasal Page',
-                'pasal' => $pasal,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/aturan/v_add_aturan', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $pasal = $this->pasalModel->findAll();
+                $data = [
+                    'judul' => 'Pasal Page Data | Admin',
+                    'title' => 'Pasal Page',
+                    'pasal' => $pasal,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/aturan/v_add_aturan', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -30,14 +41,25 @@ class Pasal extends BaseController
     public function UpdatePasal($id)
     {
         if (session()->get('logged_in')) {
-            $pasal = $this->pasalModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Pasal Page Data | Admin',
-                'title' => 'Update pasal',
-                'pasal' => $pasal,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/aturan/v_update_aturan', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $pasal = $this->pasalModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Pasal Page Data | Admin',
+                    'title' => 'Update pasal',
+                    'pasal' => $pasal,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/aturan/v_update_aturan', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

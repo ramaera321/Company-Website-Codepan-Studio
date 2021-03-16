@@ -29,12 +29,23 @@ class Portfolio extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $portfolio = $this->portfolioModel->findAll();
-            $data = [
-                'judul' => 'Portfolio',
-                'portfolio' => $portfolio
-            ];
-            return view('admin/portfolio/v_data_portfolio', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $portfolio = $this->portfolioModel->findAll();
+                $data = [
+                    'judul' => 'Portfolio',
+                    'portfolio' => $portfolio
+                ];
+                return view('admin/portfolio/v_data_portfolio', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -43,19 +54,30 @@ class Portfolio extends BaseController
     public function post()
     {
         if (session()->get('logged_in')) {
-            $kategori = $this->kategoriModel->findAll();
-            $sub_kategori = $this->subKategoriModel->findAll();
-            $penulis = $this->adminModel->findAll();
-            $tag = $this->tagModel->findAll();
-            $data = [
-                'judul' => 'Add New Portfolio',
-                'penulis' => $penulis,
-                'tag' => $tag,
-                'kategori' => $kategori,
-                'sub_kategori' => $sub_kategori,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/portfolio/v_add_portfolio', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $kategori = $this->kategoriModel->findAll();
+                $sub_kategori = $this->subKategoriModel->findAll();
+                $penulis = $this->adminModel->findAll();
+                $tag = $this->tagModel->findAll();
+                $data = [
+                    'judul' => 'Add New Portfolio',
+                    'penulis' => $penulis,
+                    'tag' => $tag,
+                    'kategori' => $kategori,
+                    'sub_kategori' => $sub_kategori,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/portfolio/v_add_portfolio', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -64,28 +86,39 @@ class Portfolio extends BaseController
     public function updatePage($slug)
     {
         if (session()->get('logged_in')) {
-            // $this->db->select('nama_tag');
-            // $this->db->from('portfolio_tag');
-            // $this->db->join('portfolio', 'portfolio.slug = portfolio_tag.slug');
-            // $data_tag = $this->db->get();
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                // $this->db->select('nama_tag');
+                // $this->db->from('portfolio_tag');
+                // $this->db->join('portfolio', 'portfolio.slug = portfolio_tag.slug');
+                // $data_tag = $this->db->get();
 
-            $portfolio_tag = $this->portfolioTagModel->where(['portfolio_slug' => $slug])->first();
-            $portfolio = $this->portfolioModel->where(['slug' => $slug])->first();
-            $kategori = $this->kategoriModel->findAll();
-            $sub_kategori = $this->subKategoriModel->findAll();
-            $penulis = $this->adminModel->findAll();
-            $tag = $this->tagModel->findAll();
-            $data = [
-                'judul' => 'Add New Portfolio',
-                'penulis' => $penulis,
-                'tag' => $tag,
-                'portfolio' => $portfolio,
-                'portfolio_tag' => $portfolio_tag,
-                'kategori' => $kategori,
-                'sub_kategori' => $sub_kategori,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/portfolio/v_update_portfolio', $data);
+                $portfolio_tag = $this->portfolioTagModel->where(['portfolio_slug' => $slug])->first();
+                $portfolio = $this->portfolioModel->where(['slug' => $slug])->first();
+                $kategori = $this->kategoriModel->findAll();
+                $sub_kategori = $this->subKategoriModel->findAll();
+                $penulis = $this->adminModel->findAll();
+                $tag = $this->tagModel->findAll();
+                $data = [
+                    'judul' => 'Add New Portfolio',
+                    'penulis' => $penulis,
+                    'tag' => $tag,
+                    'portfolio' => $portfolio,
+                    'portfolio_tag' => $portfolio_tag,
+                    'kategori' => $kategori,
+                    'sub_kategori' => $sub_kategori,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/portfolio/v_update_portfolio', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

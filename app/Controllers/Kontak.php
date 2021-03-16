@@ -14,13 +14,24 @@ class Kontak extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $kontak = $this->kontakModel->findAll();
-            $data = [
-                'judul' => 'Kontak Page Data | Admin',
-                'title' => 'Kontak Page',
-                'kontak' => $kontak
-            ];
-            return view('admin/kontak/v_data_kontak', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $kontak = $this->kontakModel->findAll();
+                $data = [
+                    'judul' => 'Kontak Page Data | Admin',
+                    'title' => 'Kontak Page',
+                    'kontak' => $kontak
+                ];
+                return view('admin/kontak/v_data_kontak', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -28,12 +39,23 @@ class Kontak extends BaseController
     public function AddKontak()
     {
         if (session()->get('logged_in')) {
-            $data = [
-                'judul' => 'Kontak Page Data | Admin',
-                'title' => 'Add Kontak',
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/kontak/v_add_kontak', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $data = [
+                    'judul' => 'Kontak Page Data | Admin',
+                    'title' => 'Add Kontak',
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/kontak/v_add_kontak', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -41,14 +63,25 @@ class Kontak extends BaseController
     public function UpdateKontak($id)
     {
         if (session()->get('logged_in')) {
-            $kontak = $this->kontakModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Kontak Page Data | Admin',
-                'title' => 'Update Kontak',
-                'kontak' => $kontak,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/kontak/v_update_kontak', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $kontak = $this->kontakModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Kontak Page Data | Admin',
+                    'title' => 'Update Kontak',
+                    'kontak' => $kontak,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/kontak/v_update_kontak', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

@@ -41,6 +41,24 @@
   padding: 1px 0px;
 }
 
+.profile .email {
+  font-size: 16px;
+  margin-top: -10px;
+}
+.profile .nama {
+  font-size: 22px;
+  margin-top: 10px;
+}
+/* .profile .jumlah-blog {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.profile .result-blog {
+  font-size: 36px;
+  margin-top: -10px;
+} */
+
 .img-profile {
   width: 210px;
   height: 210px;
@@ -51,6 +69,10 @@
   z-index: 4;
   position: relative;
   overflow: hidden;
+}
+
+#im-profile {
+  position: relative;
 }
 
 #ft-profile {
@@ -172,6 +194,14 @@
 }
 
 .update-admin input {
+  width: 90%;
+}
+
+.update-admin #passwordchek {
+  margin-left: -235px;
+  margin-top: 6px;
+}
+.update-admin .button {
   width: 90%;
   height: 35px;
   margin: 0px auto 23px auto;
@@ -486,6 +516,18 @@ button:active {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+.img-crop {
+  display: block;
+  max-width: 100%;
+}
+.preview {
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid red;
 }
 
 /* 100% Image Width on Smaller Screens */

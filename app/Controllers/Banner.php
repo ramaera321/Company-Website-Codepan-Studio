@@ -15,14 +15,25 @@ class Banner extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'home'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Home Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/homepage/v_data_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'home'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Home Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/homepage/v_data_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -31,14 +42,25 @@ class Banner extends BaseController
     public function karirbanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'karir'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Karir Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/karir/v_karir_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'karir'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Karir Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/karir/v_karir_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -46,14 +68,25 @@ class Banner extends BaseController
     public function mobilebanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'mobile'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Mobile Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_mobile_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'mobile'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Mobile Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_mobile_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -61,14 +94,25 @@ class Banner extends BaseController
     public function integrasibanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Integrasi Sisten Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_integrasi_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Integrasi Sisten Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_integrasi_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -76,14 +120,25 @@ class Banner extends BaseController
     public function pengadaanbanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Pengadaan IT Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_pengadaan_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Pengadaan IT Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_pengadaan_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -91,14 +146,25 @@ class Banner extends BaseController
     public function aboutmebanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'about'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Tentang Kami Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_aboutme_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'about'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Tentang Kami Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_aboutme_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -106,14 +172,25 @@ class Banner extends BaseController
     public function egovbanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'egov'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'E-Goverment Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_egov_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'egov'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'E-Goverment Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_egov_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -121,14 +198,25 @@ class Banner extends BaseController
     public function informasibanner()
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['layanan' => 'informasi'])->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Sistem Infromasi Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/layanan/v_informasi_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['layanan' => 'informasi'])->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Sistem Infromasi Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/layanan/v_informasi_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -137,14 +225,25 @@ class Banner extends BaseController
     public function UpdateBanner($id)
     {
         if (session()->get('logged_in')) {
-            $banner = $this->bannerModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Update Banner',
-                'banner' => $banner,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/homepage/v_update_banner', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $banner = $this->bannerModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Update Banner',
+                    'banner' => $banner,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/homepage/v_update_banner', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

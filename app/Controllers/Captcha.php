@@ -15,14 +15,25 @@ class Captcha extends BaseController
     public function index()
     {
         if (session()->get('logged_in')) {
-            $captcha = $this->captchaModel->findAll();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Home Captcha',
-                'captcha' => $captcha,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/captcha/v_data_captcha', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $captcha = $this->captchaModel->findAll();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Home Captcha',
+                    'captcha' => $captcha,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/captcha/v_data_captcha', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -31,14 +42,25 @@ class Captcha extends BaseController
     public function UpdateCaptcha($id)
     {
         if (session()->get('logged_in')) {
-            $captcha = $this->captchaModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Home Page Data | Admin',
-                'title' => 'Update Captcha',
-                'captcha' => $captcha,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/captcha/v_update_captcha', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $captcha = $this->captchaModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Home Page Data | Admin',
+                    'title' => 'Update Captcha',
+                    'captcha' => $captcha,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/captcha/v_update_captcha', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }

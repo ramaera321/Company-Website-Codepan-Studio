@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Login</title>
+    <title>Login Admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
@@ -50,13 +50,12 @@
                                             <input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." value="<?= old('email'); ?>">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" value="<?= old('email'); ?>">
+                                            <input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" value="<?= old('password'); ?>">
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
                                                 <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember
-                                                    Me</label>
+                                                <label class="custom-control-label" for="customCheck">Show Password</label>
                                             </div>
                                         </div>
                                         <input type="submit" value="Login" class="btn btn-primary btn-user btn-block">
@@ -85,6 +84,20 @@
     <script src="https://kit.fontawesome.com/46f670f20d.js" crossorigin="anonymous"></script>
     <script src="<?= base_url('assets/js/ckeditor/ckeditor.js'); ?>"></script>
     <script src="<?= base_url('assets/js/script.js'); ?>"></script>
+    <script>
+        const show_password = document.querySelector("#customCheck");
+        const pass = document.querySelector("#exampleInputPassword");
+
+        show_password.addEventListener("click", show);
+
+        function show() {
+            if (this.checked) {
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+    </script>
 
 </body>
 

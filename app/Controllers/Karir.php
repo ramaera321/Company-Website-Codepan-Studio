@@ -14,17 +14,28 @@ class Karir extends BaseController
     public function KarirPost()
     {
         if (session()->get('logged_in')) {
-            $karir = $this->karirModel->findAll();
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $karir = $this->karirModel->findAll();
 
-            $data = [
-                'judul' => 'Karir Page Data | Admin',
-                'title' => 'Karir Page',
-                'karir' => $karir
-                // 'karir' => $this->karirModel->getKarir()
-            ];
+                $data = [
+                    'judul' => 'Karir Page Data | Admin',
+                    'title' => 'Karir Page',
+                    'karir' => $karir
+                    // 'karir' => $this->karirModel->getKarir()
+                ];
 
 
-            return view('admin/karir/v_data_karir', $data);
+                return view('admin/karir/v_data_karir', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -32,16 +43,27 @@ class Karir extends BaseController
     public function AddKarir()
     {
         if (session()->get('logged_in')) {
-            $db = \Config\Database::connect();
-            $tb_cabang = $db->table('cabang');
-            $query = $tb_cabang->get();
-            $data = [
-                'judul' => 'Karir Page Data | Admin',
-                'title' => 'Add Karir',
-                'cabang' => $query,
-                'validation' => \Config\Services::validation()
-            ];
-            return view('admin/karir/v_add_karir', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $db = \Config\Database::connect();
+                $tb_cabang = $db->table('cabang');
+                $query = $tb_cabang->get();
+                $data = [
+                    'judul' => 'Karir Page Data | Admin',
+                    'title' => 'Add Karir',
+                    'cabang' => $query,
+                    'validation' => \Config\Services::validation()
+                ];
+                return view('admin/karir/v_add_karir', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
@@ -49,19 +71,30 @@ class Karir extends BaseController
     public function UpdateKarir($id)
     {
         if (session()->get('logged_in')) {
-            $db = \Config\Database::connect();
-            $tb_cabang = $db->table('cabang');
-            $query = $tb_cabang->get();
-            $karir = $this->karirModel->where(['id' => $id])->first();
-            $data = [
-                'judul' => 'Karir Page Data | Admin',
-                'title' => 'Update Karir',
-                'karir' => $karir,
-                'cabang' => $query,
-                'validation' => \Config\Services::validation()
-                // 'karir' => $this->karirModel->getKarir($id)
-            ];
-            return view('admin/karir/v_update_karir', $data);
+            if (session()->get('tipe_admin') == 'Super Admin') {
+                $db = \Config\Database::connect();
+                $tb_cabang = $db->table('cabang');
+                $query = $tb_cabang->get();
+                $karir = $this->karirModel->where(['id' => $id])->first();
+                $data = [
+                    'judul' => 'Karir Page Data | Admin',
+                    'title' => 'Update Karir',
+                    'karir' => $karir,
+                    'cabang' => $query,
+                    'validation' => \Config\Services::validation()
+                    // 'karir' => $this->karirModel->getKarir($id)
+                ];
+                return view('admin/karir/v_update_karir', $data);
+            } else {
+                $data = [
+                    'tipe_admin' => session()->get('tipe_admin'),
+                    'nama'     => session()->get('nama'),
+                    'email'     => session()->get('email'),
+                    'password'     => session()->get('password'),
+                    'foto'     => session()->get('foto'),
+                ];
+                return redirect()->to('/admin');
+            }
         } else {
             return redirect()->to('/login');
         }
