@@ -1,0 +1,1640 @@
+/* ---  Global CSS --- */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  line-height: 1.625;
+  font-size: 1rem;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "GothamPro", sans-serif;
+  letter-spacing: 0px !important;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-family: "GothamPro", sans-serif;
+  letter-spacing: 1.1px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.tombol {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: #33bef0;
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 41.5px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.tag-kecil {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #03d0b9;
+}
+
+.tag-besar {
+  text-align: center;
+  font-weight: 700;
+  color: #2926a9;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 0px;
+}
+
+.capt {
+  text-align: center;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+
+/* -- Global Setting for Card Title Font -- */
+.card .card-title {
+  font-size: 1.25rem;
+}
+
+/* -- Global Setting for all Sub Title Font -- */
+.sub-judul {
+  font-size: 16px;
+  font-weight: 500;
+  color: #03d0b9;
+}
+
+/* -- GLobal Setting for all Font Color Content -- */
+.page-masalah p,
+.jenis-layanan p,
+.portofolio p,
+.alasan-bermitra p,
+label {
+  color: #7f7f7f;
+}
+/* --- End of Global CSS --- */
+
+/* ---  Header Costum CSS --- */
+/* -- Header Background -- */
+header {
+  background-color: #2926a9;
+  color: #fff;
+  padding: 15px 0 0 0;
+}
+
+/* -- Contact Container Properties -- */
+header .contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* -- Telepon and Email Container Properties for display -- */
+header .telepon,
+header .email {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* -- Telepon Container Margin to add space between Telepon Container and Email Container -- */
+header .telepon {
+  margin-right: 15px;
+}
+
+/* -- To adjust width for all image on header container -- */
+header img {
+  float: left;
+  width: 35px;
+}
+
+/* -- Margin to add space between icon and container text -- */
+header .contact img {
+  margin-right: 10px;
+}
+
+/* -- Font Properties for "Hubungi Kami" and "Email Kami" -- */
+header .contact .text .judul {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* -- Font Properties for telepon number and email -- */
+header .contact .text .isi {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .contact .text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .contact .text a:hover {
+  color: rgb(230, 230, 230);
+}
+/* -- End Font Properties for telepon number and email -- */
+
+/* -- To Hide Header(Hubungi Kami, Email, and Buttons(Karir, Blog, Kontak) -- */
+header #hide-scroll {
+  top: 0; /* Stay on top */
+  width: 100%;
+  transition: top 0.3s;
+}
+
+/* -- Buttons (Karir, Kontak, Blog) properties -- */
+/* - Remove list style, add space between buttons, and align center 3 buttons - */
+header ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* - Font properties for content in the Button and center -*/
+header li a {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* - Hover for text in button not for the icon - */
+header li a:hover {
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+}
+
+/* - Center icon/img button - */
+header ul li img {
+  align-self: center;
+}
+
+/* - Font Properties for text in buttons - */
+header li p {
+  margin-top: 3px;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+/* -- End of Buttons (Karir, Kontak, Blog) properties -- */
+
+/* ---  Navigation Bar Costum CSS --- */
+/* -- Navigation Button and Font Weigth -- */
+nav {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+/* -- Sticky Navbar on scroll -- */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0 !important;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+/* -- Add margin and padding for Navbar -- */
+.margin-top {
+  margin-top: 100px;
+}
+
+.navbar {
+  padding: 15px 40px;
+}
+/* -- End of add margin and padding for Navbar -- */
+
+/* -- Properties for each items in navbar -- */
+#navbarSupportedContent .nav-link {
+  color: #000;
+  padding: 8px 0;
+  white-space: nowrap;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: relative;
+  transform: translateY(-5%);
+  z-index: 0;
+}
+
+/* -- Hover underline navbar item -- */
+/* - Add color when navbar items on hover or active - */
+#navbarSupportedContent .nav-link.active,
+#navbarSupportedContent .nav-link:hover {
+  color: #03d0b9;
+}
+
+/* - Add Underline Properties but doesn't show - */
+nav .mega-area a::before,
+#navbarSupportedContent .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  background-color: #03d0b9;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 650ms;
+}
+
+/* - Change Icon Layanan IT items color when hover - */
+nav .mega-area a:hover i {
+  color: #03d0b9;
+}
+
+/* - Adjust position mega-area dropdown "layanan it" items underline - */
+nav .mega-area a::before {
+  bottom: -10px;
+  height: 4px;
+}
+
+/* - Show underline (scale full of width) - */
+nav .mega-area a:hover::before,
+#navbarSupportedContent .nav-link.active::before,
+#navbarSupportedContent .nav-link:hover::before {
+  transform: scaleX(1);
+}
+/* -- Hover underline navbar item -- */
+/* 
+.navbar-light .navbar-nav .active > .nav-link {
+  color: #2926a9;
+} */
+
+/* nav .navbar-nav li {
+  display: flex;
+  align-items: center;
+} */
+/* 
+nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+/* -- Remove list style of navbar items -- */
+nav ul li {
+  list-style: none;
+}
+
+/* -- Remove margin for each navbar item -- */
+nav ul li a {
+  margin-left: 0;
+}
+
+/* -- Code Pan Studio Logo -- */
+/* - Disapear Left Code Pan Studio Logo - */
+nav .display-logo-left {
+  display: none;
+}
+
+/* - Disapear Center Code Pan Studio Logo - */
+nav .display-logo-center {
+  display: block;
+}
+
+/* - Size of Code Pan Studio Logo  */
+nav .logo {
+  width: inherit;
+  height: 50px;
+}
+/* -- End of Code Pan Studio Logo -- */
+
+/* -- Drop Down Menu Area -- */
+/* - Position Drop Down Layanan IT Button and front - */
+nav .menu-area {
+  position: initial;
+  z-index: 1001;
+}
+
+/* - Position Mega Area Container and its properties - */
+nav .mega-area {
+  z-index: 1001;
+  position: absolute;
+  width: 75%;
+  left: 0px;
+  right: 0;
+  top: 60px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+/* - Remove mega area item decoration and margin - */
+nav .mega-area a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+nav .mega-area a:hover {
+  text-decoration: none;
+}
+/* - End of Remove mega area item decoration and margin - */
+
+/* - Display item flex to center text and img in each item -- */
+nav .dropdown-item {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* - Full width for each item - */
+nav .dropdown-item a {
+  width: 100%;
+}
+
+/* - Font properties for each dropdown item - */
+nav .dropdown-item h5 {
+  width: initial;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #627693;
+}
+
+/* - Icon properties for each dropdown item - */
+nav li .dropdown-item i {
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: #627693;
+}
+
+/* - Remove item background - */
+.dropdown-item:hover {
+  background: none;
+}
+/* -- End of Drop Down Menu Area -- */
+
+/* -- Hidden Menu when > 992px -- */
+nav .menu-hidden {
+  display: none;
+}
+
+/* -- Social Media Icon -- */
+/* - Social Media Icon properties - */
+nav li .fab {
+  font-size: 30px;
+  color: #29669c;
+  z-index: 1002;
+}
+
+/* - Change icon color when social media button in hover - */
+nav li .fab:hover {
+  color: #2926a9;
+}
+/* -- End of Social Media Icon -- */
+/* ---  Navigation Bar Costum CSS --- */
+
+/* --- Fixed Wa Button --- */
+a.wa-button {
+  position: fixed; /* Position Fixed to screen */
+  display: flex;
+  flex-direction: row; /* Flex direction to flex icon and text */
+  align-items: center; /* Center vertical icon and text */
+  right: 30px; /* Position wa button anchor right of screen */
+  bottom: 15px; /* Position wa button anchor bottom of screen */
+  background-color: #1ea14e; /* Bakcground Color */
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #fff !important; /* Text and icon color */
+  z-index: 1000;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.6; /* Opacity when not hover/ not click */
+}
+
+/* -- Wa Button Hover -- */
+a.wa-button:hover {
+  opacity: 1; /* Opacity when on hover / click */
+}
+
+/* -- Text decoration none -- */
+a.wa-button:hover {
+  text-decoration: none;
+}
+
+/* -- Icon size -- */
+.wa-button .fa-whatsapp {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* -- Text size -- */
+.wa-button p {
+  font-weight: 600;
+  font-size: 13px;
+}
+/* --- End of Fixed Wa Button --- */
+
+/* ---  Jumbotron Costum CSS --- */
+.jumbotron {
+  background-repeat: no-repeat; /* no repeat background image */
+  background-size: cover; /* background image covering container */
+  color: #fff; /* text color */
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-top: 5.5rem;
+}
+
+/* -- Align Content to right -- */
+.jumbotron .content {
+  text-align: right;
+  margin-right: 0;
+}
+
+/* -- Sub Heading Font Size -- */
+.jumbotron .content h2 {
+  font-size: 30px;
+  margin-bottom: 0.8rem;
+}
+
+/* -- Main Heading Font Size --*/
+.jumbotron .cd-headline {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+/* -- Full width heading in container -- */
+.jumbotron .content h1 span {
+  margin-right: 0;
+  width: 100%;
+}
+
+/* -- Align Main Heading to right -- */
+.jumbotron .content h1 span b {
+  text-align: right;
+  margin: 0;
+  width: 100%;
+}
+
+/* -- Line under Main Heading -- */
+.jumbotron hr {
+  border: 2px solid #fff; /* Line Color */
+  width: 10%; /* Line width */
+  margin-right: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* -- Text Describe properties -- */
+.jumbotron p {
+  font-size: 1.5rem; /* Font Size */
+  text-align: right;
+  display: inline-block;
+  line-height: 1.2;
+  margin-bottom: 30px; /* Add margin bottom of it */
+  padding-bottom: 5px;
+}
+
+/* -- Costum Underline Hover Effect -- */
+.jumbotron p.hvr-underline-from-left:before {
+  height: 1.5px;
+  background: #fff; /* underline color */
+  margin-bottom: 0;
+}
+
+/* -- Link Font Size -- */
+.jumbotron a {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* -- Center JumboTron -- */
+.centered.jumbotron {
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.centered.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+/* Teks pada Jumbotron */
+.centered.jumbotron .display-4 {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 1.1px;
+}
+
+/* Teks Caption Pada Jumbotron */
+.centered.jumbotron center {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+
+.centered.jumbotron a {
+  width: 300px;
+  padding: 15px 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Warna Ketika Tombol Pada Jumbotron di Hover */
+.centered.jumbotron .hvr-bounce-to-top::before {
+  background-color: #2926a9;
+}
+
+/* -- End Center JumboTron -- */
+/* --- End of Jumbotron Costum CSS --- */
+
+/* --- Masalah dan kinerja --- */
+/* -- Adjust Font Color -- */
+.page-masalah h1,
+.page-masalah h2,
+.page-masalah h3 {
+  color: #2926a9;
+}
+
+/* -- Background Color and Padding -- */
+.page-masalah {
+  background: #e9e9ff;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  overflow-x: hidden;
+}
+
+/* -- Adjust Padding in Describe Text -- */
+.page-masalah .p-keterangan {
+  padding-right: 4rem;
+}
+
+/* -- Heading Font Size -- */
+.page-masalah h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* -- Describe Text Font Size -- */
+.page-masalah p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* -- Margin under describe text -- */
+.page-masalah .caption {
+  margin-bottom: 30px;
+}
+
+/* -- Link Button Properties -- */
+.page-masalah .btn-primary {
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-weight: 500;
+  background: #03d0b9; /* Color Button */
+  border: none;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.page-masalah .btn-primary:hover {
+  text-decoration: none;
+}
+
+/* -- CSS Hover Button Pada Page Masala, Submit Solusi, dan Bermitra -- */
+.page-masalah .btn-primary::before,
+.solusi .container-form .btn-submit::before,
+.mari-bermitra a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #2926a9; /* Color hover button */
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.page-masalah .btn-primary:hover::before,
+.solusi .container-form .btn-submit:hover::before,
+.mari-bermitra a:hover:before {
+  height: 100%;
+}
+
+/* -- End of CSS Hover Button Pada Page Masala, Submit Solusi, dan Bermitra -- */
+
+/* -- Adjust list padding and margin -- */
+.page-masalah ul {
+  padding: 0;
+}
+
+.page-masalah ul li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 40px;
+}
+/* -- End of Adjust list padding and margin -- */
+
+/* -- Add margin after number -- */
+.page-masalah ul li .number {
+  margin-right: 20px;
+}
+
+/* -- Font Size number in three point -- */
+.page-masalah ul li h1 {
+  width: 30px;
+  font-weight: 900;
+  font-size: 2.8rem;
+}
+
+/* -- Font Size heading in three point -- */
+.page-masalah ul li h3 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-bottom: 3px;
+  letter-spacing: -2;
+}
+
+/* -- Font size describe text in three point -- */
+.page-masalah ul li p {
+  font-size: 0.83rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+/* --- End of Page Masalah --- */
+
+/* --- Layanan --- */
+/* -- Adjust Jenis Layanan to overlay Page Masalah -- */
+.jenis-layanan {
+  margin-top: -150px;
+  margin-bottom: 7rem;
+}
+
+/* -- Heading Color -- */
+.jenis-layanan h3 {
+  color: #2926a9;
+}
+
+/* -- Center Vertical Judul and The Line -- */
+.jenis-layanan .container .judul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* -- Heading Font Size -- */
+.jenis-layanan .container .judul h3 {
+  font-size: 1rem;
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+/* -- Line beside heading Color and Width -- */
+.jenis-layanan .container .judul hr {
+  border: 0.5px solid #2926a9;
+  width: 39%;
+}
+
+.jenis-layanan .owl-stage {
+  display: flex;
+}
+
+/* -- Disapear owl-navigation default(arrow) -- */
+.jenis-layanan .owl-nav {
+  display: none;
+}
+
+.jenis-layanan .owl-carousel {
+  overflow: hidden;
+}
+
+/* -- Display owl-naavigation dots --  */
+.jenis-layanan .owl-carousel .owl-dots {
+  text-align: center;
+}
+
+/* -- Costumize owl dots -- */
+.jenis-layanan .owl-carousel .owl-dot {
+  margin: 0 5px;
+  width: 7%;
+  cursor: pointer;
+  min-height: 7px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  background-color: #d8d8d8;
+}
+
+/* - Disapear boorder owl-dots - */
+.jenis-layanan .owl-carousel .owl-dot:focus {
+  border: none;
+}
+
+.jenis-layanan .owl-carousel .owl-dot.active {
+  background-color: #2926a9 !important;
+  border: none;
+}
+/* -- End of Costumize owl dots -- */
+
+/* -- Card Properties -- */
+.jenis-layanan .card {
+  height: 100%;
+  color: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  background: #2926a9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.jenis-layanan .card-body {
+  height: 100%;
+}
+
+/* -- Adjust width button full of card and posistion fix bottom of card -- */
+.jenis-layanan .selengkapnya {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/* -- Button Selengkapnya Properties */
+.jenis-layanan .selengkapnya a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  border-radius: 30px;
+  padding: 10px 10px;
+  color: #33bef0; /* Change text button color here */
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* -- Text color on hover -- */
+.jenis-layanan .selengkapnya a:hover {
+  color: #2926a9;
+}
+
+/* -- Change Background on hover -- */
+.jenis-layanan .selengkapnya a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #fff; /* Change background color here */
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.jenis-layanan .selengkapnya a:hover::before {
+  height: 100%;
+}
+
+/* -- Margin arrow in button selengkapnya -- */
+.jenis-layanan .fa-arrow-right {
+  margin-top: 3px;
+  margin-left: 10px;
+}
+
+/* -- Font Color -- */
+.jenis-layanan .card .card-title,
+.jenis-layanan .card .card-text {
+  color: #fff;
+}
+
+/* -- Space bottom card title -- */
+.jenis-layanan .card .card-title {
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+/* -- Common text font size -- */
+.jenis-layanan .card .card-text {
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+/* -- Icon card properties -- */
+.jenis-layanan .card .img-area {
+  padding: 2px;
+  margin-bottom: 30px;
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
+}
+
+.jenis-layanan .img-area lottie-player {
+  transition: 0.2s ease-in-out;
+}
+
+/* -- Move up 10 pixels and rotate 10 degree for icon effect -- */
+.jenis-layanan .card:hover lottie-player {
+  transform: translateY(-10px) rotate(10deg);
+}
+
+.jenis-layanan .carousel {
+  position: relative;
+}
+/* --- End of Jenis Layanan --- */
+
+/*--- Portofolio ---*/
+.portofolio {
+  margin-bottom: 6rem;
+}
+
+.portofolio .card {
+  padding: 35px 25px 20px 25px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 8px 0 rgba(100, 100, 100, 0.2),
+    0 10px 10px 0 rgba(100, 99, 99, 0.19);
+}
+
+.portofolio .card .card-body {
+  padding: 0;
+  position: relative;
+}
+
+.portofolio .container-judul {
+  padding: 0 8rem;
+  margin-bottom: 80px;
+}
+
+.portofolio .sub-judul,
+.alasan-bermitra .container .sub-judul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #03d0b9;
+}
+
+.portofolio .keterangan-judul {
+  font-weight: 500;
+}
+
+.portofolio h2 {
+  margin-bottom: 20px;
+}
+
+.portofolio h2,
+.alasan-bermitra h2 {
+  color: #2926a9;
+  letter-spacing: -1px;
+}
+
+.portofolio .card .img-card-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.portofolio .card .logo {
+  position: absolute;
+  z-index: 300;
+  width: 30%;
+  top: 20%;
+  left: 35%;
+}
+
+.portofolio .card .logo.position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  top: 30%;
+  left: 27%;
+}
+
+.portofolio .card .logo.position img {
+  width: inherit;
+}
+
+.portofolio .card .card-img-top {
+  height: 100%;
+  width: 100%;
+  position: initial;
+  transition: all 0.25s ease-in-out;
+}
+
+.portofolio .card:hover .card-img-top {
+  transform: scale(1.2);
+}
+
+.portofolio .card-body {
+  margin-top: 40px;
+}
+
+.portofolio .card-body .mini-judul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #03d0b9;
+  margin-bottom: 5px;
+}
+
+.portofolio .card-body .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2926a9;
+  margin-bottom: 15px;
+  line-height: 1.385em;
+  margin-right: 5px;
+}
+
+.portofolio .card-body .card-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding-right: 5px;
+  margin-bottom: 70px;
+  margin-right: 10px;
+}
+
+.portofolio .card .btn-primary {
+  border: none;
+  background-color: #03d0b9;
+  width: 100%;
+  padding: 12px;
+}
+
+.portofolio .card a {
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  padding: 40px;
+  border-radius: 25px;
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.portofolio .card a:hover {
+  color: #fff;
+}
+
+.portofolio .card a.hvr-bounce-to-top::before {
+  background-color: #2926a9;
+}
+
+/*--- Alasan Bermitra ---*/
+.alasan-bermitra {
+  margin-bottom: 220px;
+}
+
+.alasan-bermitra .container-judul {
+  margin-bottom: 50px;
+}
+
+.alasan-bermitra .container-judul .sub-judul {
+  font-weight: 500;
+}
+
+.alasan-bermitra .container-judul p {
+  font-weight: 500;
+  font-size: 0.97rem;
+}
+
+.alasan-bermitra ul {
+  padding: 0;
+}
+
+/* --- CSS item pada 6 alasan dan form ---*/
+.alasan-bermitra .items .item {
+  display: flex;
+  align-content: flex-start;
+}
+
+.alasan-bermitra .items .text-img {
+  overflow: hidden;
+}
+
+.alasan-bermitra .items .text-img lottie-player {
+  width: 100%;
+  align-self: flex-start;
+  height: auto;
+  margin: 0;
+}
+
+.alasan-bermitra .items .text-img lottie-player.atas {
+  margin-top: -20px;
+}
+
+.alasan-bermitra .items .text h3 {
+  font-size: 1.25rem;
+  line-height: 1.35em;
+  font-weight: 600;
+}
+
+.alasan-bermitra .items .text p {
+  font-size: 0.87rem;
+  font-weight: 500;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+/* --- Kembali ke CSS 6 alasan ---*/
+.alasan-bermitra .items .item {
+  margin-bottom: 45px;
+  padding: 0 12px;
+}
+
+.alasan-bermitra .items .text h3 {
+  color: #2926a9;
+}
+
+.alasan-bermitra .end-text {
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ---- Solusi ----*/
+.solusi {
+  background: url("../img/background/page-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.solusi .container-mitra {
+  position: relative;
+  top: -180px;
+}
+
+.solusi .keterangan {
+  padding: 50px 40px;
+  background-color: #302cc9;
+}
+
+.solusi .keterangan ul {
+  padding: 0;
+}
+
+.solusi .keterangan p {
+  color: #03d0b9;
+}
+
+.solusi .keterangan .sub-judul {
+  font-weight: 500;
+  font-size: 12px !important;
+  margin-bottom: 6px;
+}
+
+.solusi .text-under-judul {
+  font-size: 1rem;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.solusi .keterangan h2 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.84rem;
+  margin-bottom: 10px;
+}
+
+.solusi .form {
+  background-color: #fff;
+}
+
+.solusi .keterangan .items {
+  padding: 0 30px;
+}
+
+.solusi .items .item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* .solusi .keterangan .items .text-img {
+  width: 205px;
+  height: 205px;
+  margin-right: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.solusi .keterangan .items .text-img lottie-player {
+  width: 65px;
+  position: absolute;
+} */
+
+.solusi .keterangan lottie-player.target {
+  transform: scale(2.8);
+}
+
+.solusi .keterangan .items h3 {
+  margin-bottom: 2px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+.solusi .keterangan .items p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* ---- CSS Container Form --- */
+.solusi .container-form {
+  padding: 50px 30px 10px 30px;
+}
+
+.solusi .container-form input,
+.solusi .container-form select {
+  font-size: 0.9rem;
+  color: #7f7f7f;
+}
+
+/* --- Costum Radio Button --- */
+.solusi .container-form h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f7f7f;
+  margin: 30px 0;
+}
+
+.solusi .container-form .margin-text {
+  margin-bottom: 30px;
+}
+
+.solusi .container-form .margin-select {
+  margin: 20px 0;
+}
+
+.solusi .container-form .margin-end {
+  margin: 5px 0 50px 0;
+}
+
+.solusi .costum-radio input {
+  display: none;
+}
+
+.solusi .container-form .radio-btn {
+  text-align: left;
+  width: 100%;
+  padding: 20px 3px 20px 12px;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e5e5fc;
+}
+
+.solusi .container-form .radio-btn > i {
+  height: 20px;
+  color: #fff;
+  background: #2926a9;
+  font-size: 0.9rem;
+  transform: translateX(-50%) scale(2);
+  border-radius: 2px;
+  padding: 3px;
+  transition: 0.2s;
+  pointer-events: none;
+  display: inline-block;
+  opacity: 0;
+}
+
+.solusi .container-form .jumlah {
+  display: flex;
+}
+
+.solusi .container-form .jumlah h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2926a9;
+  margin: 0;
+}
+
+.solusi .costum-radio input:checked + .radio-btn {
+  border: 2px solid #2926a9;
+  background-color: #fff;
+}
+
+.solusi .costum-radio input:checked + .radio-btn > i {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+/* --- End of Costum Radio Button --- */
+
+/* --- Costum Check Box --- */
+.solusi .box-setuju {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.solusi .box-setuju input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 25px;
+  width: 37px;
+  border: 2px solid #2926a9;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.solusi .box-setuju label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.solusi .box-setuju input[type="checkbox"]::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  opacity: 0;
+  transform: translateX(-50%) scale(2);
+}
+
+.solusi .box-setuju input[type="checkbox"]:hover {
+  background-color: #a6a5a5;
+}
+
+.solusi .box-setuju input[type="checkbox"]:checked {
+  background: #2926a9;
+}
+
+.solusi .box-setuju input[type="checkbox"]:checked::after {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+/*--- End of Custom Check Box ---*/
+.solusi .container-form input[type="text"],
+.solusi .container-form input[type="email"],
+.solusi .container-form input[type="tel"],
+.solusi .container-form select {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #7f7f7f;
+}
+
+.solusi .container-form input[type="text"],
+.solusi .container-form input[type="email"],
+.solusi .container-form input[type="tel"] {
+  padding-left: 5px;
+}
+
+.solusi .container-form select {
+  padding-left: 0;
+}
+
+.solusi .container-form input[type="text"]:focus,
+.solusi .container-form input[type="email"]:focus,
+.solusi .container-form input[type="tel"]:focus,
+.solusi .container-form select:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.solusi .container-form button.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  background-color: #9b9bfe;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 20px;
+  z-index: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.solusi .container-form button.btn-primary span {
+  margin-right: 10px;
+}
+
+.solusi .container-form .btn-primary:hover {
+  text-decoration: none;
+}
+
+.solusi .container-form .btn-submit[disabled]:hover::before {
+  content: none;
+}
+
+/*--- End of CSS Form Mitra ---*/
+
+.solusi .container-testi .pelanggan {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.solusi .container-testi .pelanggan-info {
+  padding-right: 5px;
+}
+
+.solusi .container-testi .img-testi {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+
+.solusi .container-testi .img-testi img {
+  width: inherit;
+}
+
+.solusi .container-testi {
+  position: relative;
+  top: -70px;
+}
+
+.solusi .container-testi p {
+  color: #cfcece;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.solusi .container-testi .pelanggan h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.solusi .container-testi .pelanggan .posisi {
+  font-size: 0.75rem;
+  color: #919090;
+  font-weight: 500;
+}
+
+/* --- End of Solusi CSS ---*/
+
+/* --- Page Blog CSS --- */
+.page-blog {
+  margin-top: 120px;
+}
+.page-blog .container-judul {
+  padding: 0 200px;
+}
+
+.page-blog .container-judul h2 {
+  color: #2926a9;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.page-blog .container-blog .card {
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.page-blog .container-blog .margin-blog {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.page-blog .container-blog .card .sub-judul {
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.336875px;
+  color: #2926a9;
+  margin-bottom: 5px;
+}
+
+.page-blog .container-blog .card .card-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  letter-spacing: -0.606375px;
+  color: #2926a9;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.page-blog .container-blog .card .card-text {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.471625px;
+  color: #4540ff;
+  margin-bottom: 35px;
+}
+
+.page-blog .card.hvr-underline-reveal::before {
+  background-color: #2926a9;
+}
+
+.page-blog .card.hvr-underline-reveal:hover::before {
+  height: 7px;
+}
+
+.page-blog .text-under-judul {
+  color: #7f7f7f;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+.page-blog .text-under-container {
+  margin: 50px 0;
+  color: #7f7f7f;
+  font-weight: 500;
+}
+
+.alasan-bermitra .end-text a,
+.page-blog .text-under-container a {
+  text-decoration: none;
+}
+
+.alasan-bermitra .end-text a,
+.page-blog .text-under-container a {
+  text-decoration: none;
+  color: #03d0b9;
+}
+
+.alasan-bermitra .end-text .hvr-underline-from-left::before,
+.page-blog .text-under-container .hvr-underline-from-left::before {
+  background-color: #03d0b9;
+  height: 2px;
+}
+
+/* --- End of CSS Page Blog --- */
+
+/* --- CSS Mari Bermitra --- */
+.mari-bermitra {
+  background-color: #2926a9;
+  padding: 0px 130px;
+  margin-bottom: 20px;
+}
+
+.mari-bermitra .background {
+  background-image: url("../img/background/mari-bermitra.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0px 0 150px 0;
+}
+
+.mari-bermitra h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.mari-bermitra p {
+  color: #b9b9b9;
+  font-size: 1.125rem;
+}
+
+.mari-bermitra a {
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #33bef0;
+  color: white;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+.mari-bermitra a:hover {
+  text-decoration: none;
+  color: #2926a9;
+}
+
+.mari-bermitra a::before {
+  background-color: #fff;
+}
+
+/* --- End of CSS Mari Bermitra --- */
+/* --- CSS Footer --- */
+footer {
+  font-family: "Montserrat", sans-serif;
+  margin-top: -10px;
+  background-color: #2926a9;
+  overflow: hidden;
+}
+
+footer .menu {
+  margin-bottom: 50px;
+}
+
+footer .menu h5 {
+  color: #fff;
+}
+
+footer .menu ul {
+  padding: 0;
+  font-size: 15px;
+}
+
+footer .menu li {
+  font-size: 17px;
+  color: #a6a5a5;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+footer .contact {
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+
+footer .contact a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #03d0b9;
+}
+
+footer .contact a:hover {
+  color: #fff;
+}
+
+footer .contact .hvr-underline-from-left::before {
+  background: #fff;
+  height: 2px;
+}
+
+footer .contact p {
+  margin-bottom: 10px;
+}
+
+footer .copyright {
+  padding-bottom: 50px;
+}
+
+footer .contact p,
+footer .copyright p {
+  font-size: 16px;
+  color: #03d0b9;
+}

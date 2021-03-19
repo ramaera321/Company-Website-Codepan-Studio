@@ -3,13 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+// use CodeIgniter\Encryption\Encryption;
 
 class Login extends BaseController
 {
     protected $adminModel;
+    protected $encrypter;
     public function __construct()
     {
         $this->adminModel = new AdminModel();
+        // $config = new \Config\Encryption();
+        // $encryption = new Encryption();
+        // $this->encrypter = $encryption->initialize($config);
     }
     public function index()
     {
@@ -34,7 +39,7 @@ class Login extends BaseController
     {
         $session =  session();
         $email = $this->request->getVar('email');
-        $password = $this->request->getVar('password');
+        $password = md5($this->request->getVar('password'));
         $data = $this->adminModel->where(['email' => $email])->first();
         if ($data) {
             $pass = $data['password'];

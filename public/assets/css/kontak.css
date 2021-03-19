@@ -1,0 +1,85 @@
+.kontak-kami {
+  background: url("../img/background/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+
+.kontak-kami .container-judul,
+.kontak-kami .container-icon {
+  color: #2926a9;
+}
+
+.kontak-kami .container-judul h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.kontak-kami .container-judul p {
+  font-weight: 500;
+}
+
+.kontak-kami .container-judul {
+  margin-bottom: 80px;
+}
+
+.kontak-kami .container-icon {
+  margin-bottom: 100px;
+}
+
+.kontak-kami .container-icon lottie-player {
+  margin: 0 auto;
+}
+
+.kontak-kami .container-icon h5 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.kontak-kami .container-icon p {
+  color: #7f7f7f;
+  font-size: 1rem;
+  padding: 0 30px;
+}
+
+.kontak-kami .container-map {
+  margin-bottom: 60px;
+}
+
+.kontak-kami .container-map iframe {
+  width: 100%;
+}
+
+.kontak-kami .solusi {
+  background-image: none;
+  position: unset;
+  margin-bottom: 60px;
+}
+
+.kontak-kami .text-under-form {
+  color: #7f7f7f;
+}
+
+.kontak-kami .text-under-form a {
+  text-decoration: none;
+}
+
+.kontak-kami .text-under-form .hvr-underline-from-left:before {
+  height: 2px;
+  background: #00cae6;
+  margin-bottom: 0;
+}
+
+.kontak-kami .text-under-form a {
+  text-decoration: none;
+  color: #34b3f1;
+}
+
+.kontak-kami .text-under-form a:hover {
+  text-decoration: none;
+}
+
+.kontak-kami .solusi .container-mitra {
+  position: unset;
+}

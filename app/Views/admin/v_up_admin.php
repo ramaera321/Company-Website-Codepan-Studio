@@ -44,9 +44,10 @@
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Password</span>
+                                <span class="input-group-text" id="basic-addon1">Password Baru</span>
                             </div>
-                            <input type="text" class="rounded-right form-control<?= ($validation->hasError('password')) ? ' is-invalid' : ''; ?>" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="password" value="<?= (old('password')) ? old('password') : $password; ?>">
+                            <input type="text" class="rounded-right form-control<?= ($validation->hasError('password')) ? ' is-invalid' : ''; ?>" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="password" value="<?= old('password') ?>">
+                            <input type="hidden" name="passwordLama" value="<?= $password; ?>">
                             <div class="invalid-feedback">
                                 <?= $validation->getError('password'); ?>
                             </div>
@@ -68,7 +69,7 @@
                             <li>ukuran gambar maksimal 1 mb.</li>
                         </small>
                         <div class="col-sm-2 mt-2">
-                            <img src="/assets/img/<?= $foto; ?>" alt="" class="img-thumbnail img-preview">
+                            <img src="/assets/img/admin/<?= $foto; ?>" alt="" class="img-thumbnail img-preview">
                         </div>
 
 

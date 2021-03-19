@@ -16,13 +16,13 @@
             <h6 class="m-0 font-weight-bold text-primary">Add New Banner</h6>
         </div>
         <div class="card-body add-blog px-4 tambah-admin">
-            <form action="/banner/save" method="post" enctype="multipart/form-data">
+            <form action="/banner/update/<?= $banner['id']; ?>" method="post" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <input type="hidden" name="layanan" value="home">
                 <input type="hidden" name="link" value="index">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Deskripsi</label>
-                    <textarea class="form-control text rounded<?= ($validation->getError('deskripsi')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea" name="deskripsi" value=""><?= old('deskripsi'); ?></textarea>
+                    <textarea class="form-control text rounded<?= ($validation->getError('deskripsi')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea" name="deskripsi" value=""><?= (old('deskripsi')) ? old('deskripsi') : $banner['deskripsi']; ?></textarea>
                     <div class="invalid-feedback">
                         <?= $validation->getError('deskripsi'); ?>
                     </div>
@@ -37,14 +37,14 @@
                         <div class="invalid-feedback invalid-foto">
                             <?= $validation->getError('foto'); ?>
                         </div>
-                        <label class="custom-file-label" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : 'Choose...'; ?></label>
+                        <label class="custom-file-label" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : $banner['foto']; ?></label>
                     </div>
                 </div>
                 <small id="passwordHelpBlock" class="form-text text-muted ml-3">
-                    <li>ukuran gambar maksimal 1 mb.</li>
+                    <li>ukuran gambar maksimal 5 mb.</li>
                 </small>
                 <div class="col-sm-2 mt-2">
-                    <img src="/assets/img/portfolio/image.png" alt="" class="img-thumbnail img-preview shadow-sm">
+                    <img src="/assets/img/banner/<?= $banner['foto']; ?>" alt="" class="img-thumbnail img-preview shadow-sm">
                 </div>
 
                 <input type="submit" value="Create" class="submit btn-save">
@@ -64,30 +64,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    $i = 1;
-                    foreach ($banner as $banner) :
-                    ?>
-                        <tr>
-                            <th scope="row"><?= $i++; ?></th>
-                            <td><?= $banner['deskripsi']; ?></td>
-                            <td><img src="/assets/img/<?= $banner['foto']; ?>" alt="<?= $banner['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-                                <span class="close">&times;</span>
-                                <img class="modal-content" id="img01">
-                                <div id="caption"></div>
-                            </div>
-                            <td>
-                                <a href="/update_banner/<?= $banner['id']; ?>" class=" btn bg-warning"></a>
-                                <form action="/banner/<?= $banner['id']; ?>" method="post" class="d-inline">
-                                    <?= csrf_field(); ?>
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin ingin menghapus data ini ?')"></button>
-                                </form>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><?= $banner['deskripsi']; ?></td>
+                        <td><img src="/assets/img/banner/<?= $banner['foto']; ?>" alt="<?= $banner['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                        <td>
+                            <a href="/update_banner/<?= $banner['id']; ?>" class=" btn bg-warning"></a>
+                            <form action="/banner/<?= $banner['id']; ?>" method="post" class="d-inline">
+                                <?= csrf_field(); ?>
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin ingin menghapus data ini ?')"></button>
+                            </form>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

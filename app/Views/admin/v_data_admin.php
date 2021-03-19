@@ -35,7 +35,7 @@
                             <th scope="row"><?= $i++; ?></th>
                             <td><?= $admin['nama']; ?></td>
                             <td><?= $admin['tipe_admin']; ?></td>
-                            <td><img src="/assets/img/<?= $admin['foto']; ?>" alt="<?= $admin['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                            <td><img src="/assets/img/admin/<?= $admin['foto']; ?>" alt="<?= $admin['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
                             <!-- The Modal -->
                             <div id="myModal" class="modal">
                                 <span class="close">&times;</span>

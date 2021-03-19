@@ -1,0 +1,323 @@
+.portofolio-page{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.portofolio-page .container-judul{
+    color: #2926A9;
+    margin-bottom: 60px;
+}
+
+.portofolio-page .container-judul h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.portofolio-page .container-judul p{
+    font-size: 1rem;
+}
+
+.portofolio-page .container-portofolio .nav-item{
+    width: calc(100%/6);
+    text-align: center;
+}
+
+.portofolio-page .container-portofolio .nav-link{
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+}
+
+.portofolio-page .container-portofolio .nav-link span{
+    color: #2926A9;
+    font-weight: 700;
+    position: relative;
+    white-space: nowrap;
+    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 0;
+    transform: translateY(-5%);
+}
+
+.portofolio-page .container-portofolio .nav-link span::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #00CAE6;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    transform: scaleX(0);
+    transform-origin: left right;
+    transition: transform 650ms;
+}
+.drop-menu ul li:hover:before,
+.portofolio-page .container-portofolio .nav-link:hover span::before,
+.portofolio-page .container-portofolio .nav-link.active span::before{
+    transform: scaleX(1);
+}
+
+.portofolio-page .container-portofolio .tab-pane{
+    transition: all .5s linear;
+}
+
+.portofolio-page .container-portofolio .card{
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 8px 0 rgba(100, 100, 100, 0.2), 0 10px 10px 0 rgba(100, 99, 99, 0.19);
+}
+
+.portofolio-page .container-portofolio .card .card-body{
+    padding: 0;
+    position: relative;
+}
+
+.portofolio-page .container-portofolio .container-judul{
+    padding: 0 8rem;
+    margin-bottom: 80px;
+}
+
+.portofolio-page .container-portofolio .card .img-card-container{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.portofolio-page .container-portofolio .card .logo{
+    position: absolute;
+    width: 30%;
+    z-index: 10;
+    top: 30%;
+    left: 35%;
+}
+
+.portofolio-page .container-portofolio .card .logo.position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    top: 30%;
+    left: 35%;
+}
+
+.portofolio-page .container-portofolio .card .card-img-top{
+    height: 100%;
+    width: auto;
+    position: initial;
+    transition: all .25s ease-in-out;
+}
+
+.portofolio-page .container-portofolio .card:hover .card-img-top{
+    transform: scale(1.2);
+}
+
+.portofolio-page .container-portofolio .card-body{
+    margin-top: 20px;
+}
+
+.portofolio-page .container-portofolio .card-body .mini-judul{
+    font-size: 15px;
+    font-weight: 500;
+    color: #00CAE6;
+    margin-bottom: 5px;
+}   
+
+.portofolio-page .container-portofolio .card-body .card-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2926A9;
+    margin-bottom: 15px;
+    line-height: 1.385em;
+    margin-right: 5px;
+}
+
+.portofolio-page .container-portofolio .card-body .card-text{
+    font-size: .85rem;
+    font-weight: 500;
+    padding-right: 5px;
+    margin-bottom: 70px;
+    margin-right: 10px;
+}
+
+.portofolio-page .container-portofolio .card .btn-primary{
+    border: none;
+    background-color: #00CAE6;
+    width: 100%;
+    padding: 12px;
+}
+
+.portofolio-page .container-portofolio .card a{
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    padding: 40px;
+    border-radius: 25px;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.portofolio-page .container-portofolio .card a:hover{
+    color: #fff;
+}
+
+.portofolio-page .container-portofolio .card a.hvr-bounce-to-top::before{
+    background-color: #2926A9;
+}
+
+.portofolio-page .container-portofolio .jarak-card{
+    margin-bottom: 25px;
+}
+
+/* ==== Isi Portofolio CSS */
+.container-isi-portofolio{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    color: #2926A9;
+}
+
+
+.container-isi-portofolio .container-judul{
+    margin-bottom: 30px;
+    color: #2926A9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-isi-portofolio .container-judul h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container-isi-portofolio nav,
+.container-isi-portofolio .breadcrumb{
+    background: none;
+    padding: 0;
+}
+
+.container-isi-portofolio .breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f30b";
+}
+
+.container-isi-portofolio .img-container{
+    height: auto;
+    width: inherit;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.container-isi-portofolio .img-container img{
+    height: inherit;
+    width: 100%;
+}
+
+.container-isi-portofolio .portofolio-main h5,
+.container-isi-portofolio .portofolio-main p{
+    color: #2926A9;
+}
+
+.container-isi-portofolio .portofolio-main h5{
+    font-weight: 600;
+}
+
+.container-isi-portofolio .prev-next-bar{
+    margin-top: 50px;
+}
+
+.container-isi-portofolio .prev-next-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-isi-portofolio .prev-next-bar a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container-isi-portofolio .btn-prev,
+.container-isi-portofolio .btn-next{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-isi-portofolio .btn-prev .fas,
+.container-isi-portofolio .btn-next .fas{
+    font-size: 40px;
+}
+
+.container-isi-portofolio .btn-prev .fa-caret-left{
+    margin-left: 15px;
+}
+
+.container-isi-portofolio .btn-next .fa-caret-right{
+    margin-left: 18px;
+}
+
+.container-isi-portofolio .prev-next-bar .oval{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-isi-portofolio .prev-next-bar .oval img{
+    margin: 0 3px;
+    width: 12px;
+}
+
+.container-isi-portofolio .prev-next-bar .text-btn{
+    font-size: .75rem;
+}
+
+.container-isi-portofolio .prev-next-bar .text-btn b{
+    font-size: .85rem;
+}
+
+.container-isi-portofolio .prev-next-bar a:hover .fas{
+    color: #fff;
+}
+
+.container-isi-portofolio .prev-next-bar .fa-circle{
+    font-size: 13px !important;
+}
+
+.container-isi-portofolio .prev-next-bar a:hover .fa-circle{
+    color: #2926A9;
+}
+
+.container-isi-portofolio .prev-next-bar a:hover .btn-next,
+.container-isi-portofolio .prev-next-bar a:hover .btn-prev{
+    background: #2926A9;
+}
+
+.container-isi-portofolio .tag{
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.container-isi-portofolio .tag a{
+    font-size: .8rem;
+    padding: 3px 5px;
+    color: #2926A9;
+    border: 1.5px solid #2926A9;
+    text-decoration: none;
+    cursor: pointer;
+}

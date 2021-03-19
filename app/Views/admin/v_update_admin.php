@@ -3,6 +3,15 @@
 <?= $this->section('content'); ?>
 <!-- Begin Page Content -->
 <div class="container-fluid">
+    <?php
+
+    use CodeIgniter\Encryption\Encryption;
+
+    $config = new \Config\Encryption();
+    $config->key = base64_encode(Encryption::createKey(32));
+    $encryption = new CodeIgniter\Encryption\Encryption();
+    $encrypter = $encryption->initialize($config);
+    ?>
 
     <!-- update admin -->
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
@@ -43,9 +52,10 @@
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">Password</span>
+                                <span class="input-group-text" id="basic-addon1">Password Baru</span>
                             </div>
-                            <input type="text" class="form-control<?= ($validation->hasError('password')) ? ' is-invalid' : ''; ?>" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="password" value="<?= (old('password')) ? old('password') : $admin['password']; ?>">
+                            <input type="text" class="form-control<?= ($validation->hasError('password')) ? ' is-invalid' : ''; ?>" placeholder="" aria-label="Username" aria-describedby="basic-addon1" name="password" value="<?= old('password'); ?>">
+                            <input type="hidden" name="passwordLama" value="<?= $admin['password']; ?>">
                             <div class="invalid-feedback">
                                 <?= $validation->getError('password'); ?>
                             </div>
@@ -81,7 +91,7 @@
                             <li>ukuran gambar maksimal 1 mb.</li>
                         </small>
                         <div class="col-sm-2 mt-2">
-                            <img src="/assets/img/<?= $admin['foto']; ?>" alt="" class="img-thumbnail img-preview">
+                            <img src="/assets/img/admin/<?= $admin['foto']; ?>" alt="" class="img-thumbnail img-preview">
                         </div>
 
 

@@ -3,13 +3,18 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+// use CodeIgniter\Encryption\Encryption;
 
 class Admin extends BaseController
 {
 	protected $adminModel;
+	// protected $encrypter;
 	public function __construct()
 	{
 		$this->adminModel = new AdminModel();
+		// $config = new \Config\Encryption();
+		// $encryption = new Encryption();
+		// $this->encrypter = $encryption->initialize($config);
 	}
 
 	public function index()
@@ -21,6 +26,7 @@ class Admin extends BaseController
 				'email' 	=> session()->get('email'),
 				'password' 	=> session()->get('password'),
 				'foto' 	=> session()->get('foto'),
+				'judul' => 'Admin Page'
 			];
 			return view('admin/v_superadmin_home', $data);
 		} else {
@@ -152,14 +158,15 @@ class Admin extends BaseController
 			$fotoName = 'customer-service.png';
 		} else {
 			$fotoName = $fotoProfile->getRandomName();
-			$fotoProfile->move('assets/img', $fotoName);
+			$fotoProfile->move('assets/img/admin', $fotoName);
 		}
 		// $newName = $fotoProfile->getRandomName();
+		$password = $this->request->getVar('password');
 
 		$this->adminModel->save([
 			'nama' => $this->request->getVar('nama'),
 			'email' => $this->request->getVar('email'),
-			'password' => $this->request->getVar('password'),
+			'password' => md5($password),
 			'tipe_admin' => $this->request->getVar('tipe_admin'),
 			'foto' => $fotoName
 		]);
@@ -171,6 +178,14 @@ class Admin extends BaseController
 
 	public function update($id)
 	{
+		$password = $this->request->getVar('password');
+		if ($password == null) {
+			$rules = 'min_length[0]';
+			$dataPassword = $this->request->getVar('passwordLama');
+		} else {
+			$rules = 'min_length[8]';
+			$dataPassword = md5($password);
+		}
 		if (!$this->validate([
 			'nama' => [
 				'rules' => 'required',
@@ -185,7 +200,7 @@ class Admin extends BaseController
 				]
 			],
 			'password' => [
-				'rules' => 'required|min_length[8]',
+				'rules' => $rules,
 				'errors' => [
 					'required' => 'Password harus diisi',
 					'min_length' => 'Password harus berisi minimal 8 karakter'
@@ -208,7 +223,7 @@ class Admin extends BaseController
 			]
 		])) {
 
-			return redirect()->to('/admin/updatePage/' . $this->request->getVar('id'))->withInput()->with('validation', $validation);;
+			return redirect()->to('/admin/updatePage/' . $this->request->getVar('id'))->withInput();
 		}
 
 		$fotoProfile = $this->request->getFile('foto');
@@ -217,8 +232,8 @@ class Admin extends BaseController
 			$fotoName = $this->request->getVar('fotoLama');
 		} else {
 			$fotoName = $fotoProfile->getRandomName();
-			$fotoProfile->move('assets/img', $fotoName);
-			unlink('assets/img/' . $this->request->getVar('fotoLama'));
+			$fotoProfile->move('assets/img/admin', $fotoName);
+			unlink('assets/img/admin/' . $this->request->getVar('fotoLama'));
 		}
 		// $newName = $fotoProfile->getRandomName();
 
@@ -226,7 +241,7 @@ class Admin extends BaseController
 			'id' => $id,
 			'nama' => $this->request->getVar('nama'),
 			'email' => $this->request->getVar('email'),
-			'password' => $this->request->getVar('password'),
+			'password' => $dataPassword,
 			'tipe_admin' => $this->request->getVar('tipe_admin'),
 			'foto' => $fotoName
 		]);
@@ -238,6 +253,14 @@ class Admin extends BaseController
 
 	public function up($id)
 	{
+		$password = $this->request->getVar('password');
+		if ($password == null) {
+			$rules = 'min_length[0]';
+			$dataPassword = $this->request->getVar('passwordLama');
+		} else {
+			$rules = 'min_length[8]';
+			$dataPassword = md5($password);
+		}
 		if (!$this->validate([
 			'nama' => [
 				'rules' => 'required',
@@ -252,7 +275,7 @@ class Admin extends BaseController
 				]
 			],
 			'password' => [
-				'rules' => 'required|min_length[8]',
+				'rules' => $rules,
 				'errors' => [
 					'required' => 'Password harus diisi',
 					'min_length' => 'Password harus berisi minimal 8 karakter'
@@ -284,16 +307,17 @@ class Admin extends BaseController
 			$fotoName = $this->request->getVar('fotoLama');
 		} else {
 			$fotoName = $fotoProfile->getRandomName();
-			$fotoProfile->move('assets/img', $fotoName);
-			// unlink('assets/img/' . $this->request->getVar('fotoLama'));
+			$fotoProfile->move('assets/img/admin', $fotoName);
+			unlink('assets/img/admin/' . $this->request->getVar('fotoLama'));
 		}
 		// $newName = $fotoProfile->getRandomName();
+		$password = $this->request->getVar('password');
 
 		$this->adminModel->save([
 			'id' => $id,
 			'nama' => $this->request->getVar('nama'),
 			'email' => $this->request->getVar('email'),
-			'password' => $this->request->getVar('password'),
+			'password' => $dataPassword,
 			'tipe_admin' => $this->request->getVar('tipe_admin'),
 			'foto' => $fotoName
 		]);
@@ -302,7 +326,7 @@ class Admin extends BaseController
 			'id'        => $id,
 			'nama'      => $this->request->getVar('nama'),
 			'email'     => $this->request->getVar('email'),
-			'password'  => $this->request->getVar('password'),
+			'password'  => md5($password),
 			'tipe_admin' => $this->request->getVar('tipe_admin'),
 			'foto'     => $fotoName,
 		];
@@ -318,7 +342,7 @@ class Admin extends BaseController
 		$admin = $this->adminModel->find($id);
 
 		if ($admin['foto'] != 'customer-service.png') {
-			unlink('assets/img/' . $admin['foto']);
+			unlink('assets/img/admin/' . $admin['foto']);
 		}
 
 		$this->adminModel->delete($id);

@@ -1,0 +1,298 @@
+/* Aturan Layanan */
+.bg-aturanlayanan {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#aturan-layanan {
+  height: 160px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#aturan-layanan .container {
+  z-index: 1;
+  position: relative;
+}
+
+#aturan-layanan::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30%;
+  /* background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0.63)); */
+  position: absolute;
+  bottom: 0;
+}
+
+#aturan-layanan .hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2926a9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 1.1px;
+}
+
+/* Isi aturan Layanan */
+#isi-aturanLayanan {
+  /* background-color: white; */
+  height: 1000px;
+  padding-top: 30px;
+  overflow-x: hidden;
+}
+
+#isi-aturanLayanan ul {
+  margin-top: -40px;
+}
+
+#isi-aturanLayanan .nav li {
+  background-color: transparent;
+  border: none;
+}
+
+#isi-aturanLayanan .nav li.active {
+  background-color: transparent;
+  border: none;
+  color: #34b3f1;
+}
+
+#isi-aturanLayanan .nav li a {
+  font-size: 18px;
+  color: #2926a9;
+  text-decoration: none;
+}
+
+#isi-aturanLayanan .nav li a:hover {
+  font-size: 18px;
+  color: #34b3f1;
+}
+
+#isi-aturanLayanan .tombol {
+  height: 48px;
+  width: 309px;
+  padding: 10px 0;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+#isi-aturanLayanan .hvr-bounce-to-top::before {
+  background-color: #2926a9;
+  color: white;
+}
+
+#isi-aturanLayanan hr {
+  background: #2926a9;
+  height: 2px;
+}
+
+#isi-aturanLayanan .row-isi-pasal {
+  margin-top: 50px;
+}
+
+#isi-aturanLayanan .row-isi-pasal .tab-pane {
+  overflow: auto;
+  text-align: justify;
+  height: 700px;
+}
+
+/* Tabs untuk Versi Dekstop */
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #ayat-pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #judul-ayat,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-ayat {
+  color: #2926a9;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal {
+  margin-bottom: 70px;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #ayat-pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #judul-ayat {
+  font-weight: bold;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane ul {
+  color: #2926a9;
+  list-style-type: decimal;
+  margin-left: 30px;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #ayat-pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #judul-ayat,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-ayat {
+  color: #2926a9;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #pasal,
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-pasal {
+  margin-bottom: 70px;
+}
+
+.view-desktop-aturanLayanan .row-isi-pasal .tab-pane #isi-ayat {
+  margin: 30px;
+  padding: 10px;
+}
+
+/* Akhir Tabs untuk Versi Dekstop */
+
+.view-mobile-aturanLayanan {
+  display: none;
+}
+
+/* Accardion Untuk Versi Mobile */
+#isi-aturanLayanan .wrapper {
+  width: auto;
+  margin: 80px auto 0;
+}
+
+/* Text PASAL */
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  padding: 15px;
+  color: #2926a9;
+  font-weight: 700;
+  border-bottom: 2px solid #2926a9;
+  position: relative;
+  cursor: pointer;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap:first-child .accordion_header {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap:last-child .accordion_header {
+  border-bottom: 2px solid transparent;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap:last-child .accordion_header:hover {
+  border-bottom: 2px solid transparent;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:before,
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 2px;
+  background: #2926a9;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:hover {
+  color: #34b3f1;
+  border-color: #34b3f1;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:hover:before,
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:hover:after {
+  background: #2926a9;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header:after {
+  transform: rotate(-90deg);
+  transition: all 0.5s ease;
+}
+
+/* Background body Accordion */
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_body {
+  width: 100%;
+  height: 0px;
+  transition: all 0.5s ease;
+  background: #34b3f1;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_body p {
+  padding: 15px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  text-align: justify;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header.active {
+  color: #34b3f1;
+  border-color: #2926a9;
+}
+
+#isi-aturanLayanan
+  .wrapper
+  .accordion_wrap:last-child
+  .accordion_header.active {
+  border-bottom: 2px solid #2926a9;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* Collapsed Logo(-) */
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header.active:before,
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header.active:after {
+  background: #34b3f1;
+}
+
+#isi-aturanLayanan .wrapper .accordion_wrap .accordion_header.active:after {
+  transform: rotate(0deg);
+}
+
+#isi-aturanLayanan
+  .wrapper
+  .accordion_wrap
+  .accordion_header.active
+  + .accordion_body {
+  height: 180px;
+}
+
+.view-mobile-aturanLayanan .wrapper .accordion_body #pasal,
+.view-mobile-aturanLayanan .wrapper .accordion_body #isi-pasal {
+  font-weight: bold;
+}
+
+.view-mobile-aturanLayanan .wrapper .accordion_body #pasal,
+.view-mobile-aturanLayanan .wrapper .accordion_body #isi-pasal,
+.view-mobile-aturanLayanan .wrapper .accordion_body #ayat-pasal,
+.view-mobile-aturanLayanan .wrapper .accordion_body #judul-ayat,
+.view-mobile-aturanLayanan .wrapper .accordion_body #isi-ayat {
+  color: #2926a9;
+}
+
+.view-mobile-aturanLayanan .wrapper .accordion_body #ayat-pasal,
+.view-mobile-aturanLayanan .wrapper .accordion_body #judul-ayat {
+  font-weight: bold;
+}
+
+.view-mobile-aturanLayanan .wrapper .accordion_body ul li {
+  color: white;
+  margin-top: 50px;
+  list-style-type: decimal;
+}
+
+/* Ahkir Accardion Untuk Versi Mobile */

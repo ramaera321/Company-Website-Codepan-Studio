@@ -1,0 +1,1833 @@
+@media only screen and (max-width: 1200px) {
+  .solusi .container-form .jumlah h3 {
+    font-size: 0.8rem;
+  }
+
+  /* ==== CSS Page Not Found ==== */
+  .page-not-found .container-text .btn-go {
+    font-size: 0.9rem;
+  }
+
+  .page-not-found .container-text .to-homepage {
+    padding: 12px 25px !important;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .jumbutron .cd-headline {
+    font-size: 6rem;
+  }
+
+  nav .logo {
+    height: 50px !important;
+  }
+
+  #navbarSupportedContent .nav-link::before {
+    bottom: -21px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #navbarSupportedContent .nav-link::before {
+    bottom: -17px !important;
+  }
+
+  /* -- Gerald -- */
+  /* Hadir dengan Solusi */
+  #row-card .card {
+    /* height: 320px; */
+  }
+  #row-card .card-body h5 {
+    font-size: 15px;
+  }
+  #row-card .card-body p {
+    font-size: 30px;
+  }
+  #row-card .card-body span {
+    font-size: 24px;
+  }
+
+  #row-card .card-body span {
+    font-size: 30px;
+  }
+
+  /* Portofolio */
+  #portofolio .card-portofolio .tombol {
+    font-size: 14px;
+  }
+
+  /* Tentang5 */
+  #tentang5 .container {
+    height: 400px;
+  }
+  #tentang5 .judul-tentang5 h1 {
+    margin-top: -140px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  #tentang5 .isi-tentang5 .tombol {
+    width: 300px;
+    height: 60px;
+    padding: 18px;
+  }
+  /* -- End of Gerald -- */
+}
+
+@media only screen and (min-width: 1024px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* ==== Costumize Navbar on screen ==== */
+  /* -- Adjust Heigth Logo heigth -- */
+  nav .logo {
+    height: 40px;
+  }
+  /* ==== End of Costumize Navbar on screen ==== */
+
+  /* ==== Isi Blog CSS === */
+  .right-content {
+    padding-right: 30px;
+  }
+
+  .left-widget {
+    padding-left: 30px !important;
+  }
+
+  /* ==== Isi Portofolio CSS ==== */
+  .container-isi-portofolio .content {
+    padding-right: 100px !important;
+  }
+
+  .figure-img {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* ==== Costum Header CSS ==== */
+  /* --- Make Nav Bar Collapse from rigth side --- */
+  /* -- Adjust width of navbar side collapse when it show -- */
+  header .navbar-collapse.show {
+    width: 50%;
+  }
+
+  /* -- Navbar side collapse properties -- */
+  header .navbar-collapse {
+    background: url("../img/background/page-form.png");
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 0;
+    z-index: 1001;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  /* -- Costum Animation navbar toggler -- */
+  /* - Navbar side collapse toggler properties - */
+  header .navbar-toggler {
+    z-index: 1020;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    transition: 0.3s;
+    padding: 0 1.2em 0.15em 0;
+  }
+
+  .toggle-top {
+    top: 90px;
+  }
+
+  /* - To make 3 strips(humberger) buttons menu - */
+  header .navbar-toggler-inner,
+  header .navbar-toggler-inner::before,
+  header .navbar-toggler-inner::after {
+    width: 1.2em;
+    height: 0.16em;
+    background-color: #2926a9;
+    position: absolute;
+  }
+
+  /* - Default rotate and add transition for humberger buttons - */
+  header .navbar-toggler-inner {
+    transition: 0.2s;
+    transform: rotate(0deg);
+  }
+
+  /* - First(top) strips of humberger buttons - */
+  header .navbar-toggler-inner::before {
+    content: "";
+    display: block;
+    top: -0.3em;
+  }
+
+  /* - Last(bottom) strips of humberger buttons - */
+  header .navbar-toggler-inner::after {
+    content: "";
+    display: block;
+    bottom: -0.3em;
+  }
+
+  /* - Adjust color white for humberger when it has class active - */
+  .navbar-toggler.active {
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    transition: 0.2s;
+    top: 25px;
+    right: 40px;
+  }
+
+  /* - Transform Humberger Buton to cross button when navbar-toggler has active class - */
+  /* - Rotate Humberger buttons(main/center strip) - */
+  .navbar-toggler.active > .navbar-toggler-inner {
+    transition: 0.2s;
+    transform: rotate(45deg);
+  }
+
+  /* - Disapear last strip - */
+  .navbar-toggler.active > .navbar-toggler-inner::before {
+    top: 0;
+    opacity: 0;
+  }
+
+  /* - Rotate first strip */
+  .navbar-toggler.active > .navbar-toggler-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+  }
+  /* - End of Transform Humberger Buton to cross button when navbar-toggler has active class - */
+  /* -- Costum Animation navbar toggler -- */
+
+  /* -- Costum Margin for Menu items -- */
+  header .navbar-collapse ul,
+  header .navbar-collapse .nav-link {
+    margin: unset !important;
+  }
+
+  header .navbar-collapse .navbar-nav {
+    margin-bottom: 20px !important;
+  }
+  /* -- End Costum Margin for Menu items -- */
+
+  /* -- Full width for each menu items -- */
+  #navbarSupportedContent .nav-item {
+    width: 100%;
+  }
+
+  /* -- Colorized and add padding for social media and nav-link container -- */
+  header nav .p-icon-sosmed,
+  #navbarSupportedContent .nav-link {
+    width: 100%;
+    z-index: 0;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  /* -- Change Hover and Active Text to white -- */
+  #navbarSupportedContent .nav-link.active,
+  #navbarSupportedContent .nav-link:hover {
+    color: #fff;
+  }
+
+  /* -- Disapear Underline in navbar item -- */
+  #navbarSupportedContent .nav-link::before {
+    content: none;
+  }
+
+  /* -- Mega Area when screen < 992px -- */
+  /* - Menu Area display flex to arange items layanan IT - */
+  nav .menu-area {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* - Mega Area properties - */
+  nav .mega-area {
+    z-index: 0;
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-top: 0 !important;
+  }
+
+  /* - Disapear Icon - */
+  nav .dropdown-item i {
+    display: none !important;
+  }
+
+  /* - Margin to each dropdown item - */
+  nav .mega-area .dropdown-item {
+    margin-bottom: 10px;
+    text-align: left !important;
+    padding-left: 20px;
+  }
+
+  /* - Font Properties - */
+  nav .dropdown-item a h5 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* - Disapear underline hover effect - */
+  nav .mega-area a::before {
+    content: unset;
+  }
+
+  /* - Adjust item margin - */
+  nav .mega-area a {
+    margin-bottom: 0;
+  }
+
+  /* - To adjust dropdown underline effect position - */
+  nav .mega-area a::before {
+    bottom: 0;
+  }
+
+  /* - Display Code Pan Logo left - */
+  nav .display-logo-left {
+    display: block;
+  }
+
+  /* - Disapear Code Pan Logo center - */
+  nav .display-logo-center {
+    display: none !important;
+  }
+
+  nav .menu-hidden {
+    display: block;
+  }
+  /* -- End of Mega Area when screen < 992px -- */
+
+  /* -- Social media Icon -- */
+  /* - Position Icon to Center, add with and height - */
+  header nav .p-icon-sosmed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+  }
+
+  /* - Color Icon to white - */
+  header nav .p-icon-sosmed a .fab {
+    color: #fff;
+  }
+
+  /* - Color Instagram Button - */
+  header nav .p-icon-sosmed a.ig {
+    background: #833ab4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      #fcb045,
+      #fd1d1d,
+      #833ab4
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      #fcb045,
+      #fd1d1d,
+      #833ab4
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  /* - Color Facebook Button -  */
+  header nav .p-icon-sosmed a.fb {
+    background: #4267b2;
+  }
+
+  /* - Color Linkind Button -  */
+  header nav .p-icon-sosmed a.in {
+    background: #0e76a8;
+  }
+  /* --- End of Make Nav Bar Collapse from rigth side --- */
+  /* ==== Costum Header CSS ==== */
+
+  /* ==== Costum Index/ Default style CSS ==== */
+  /* --- Jenis Layanan --- */
+  .jenis-layanan {
+    margin-bottom: 4rem;
+  }
+
+  .jenis-layanan .card .img-area {
+    height: 70px;
+  }
+
+  .jenis-layanan .container .judul hr {
+    width: 32%;
+  }
+
+  /*--- Portofolio ---*/
+  .portofolio .container-judul {
+    padding: 0 2rem;
+    margin-bottom: 40px;
+  }
+
+  .portofolio .card-body {
+    margin-top: 20px;
+  }
+
+  .portofolio .card .btn-primary {
+    padding: 12px;
+  }
+
+  /*--- Page Solusi ---*/
+  .solusi .container-mitra .keterangan {
+    padding: 30px 15px;
+  }
+
+  .solusi .container-mitra .keterangan h2 {
+    font-size: 1.2rem;
+  }
+
+  /* .solusi .keterangan .items .text-img {
+    width: 220px !important;
+    height: 200px !important;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .solusi .keterangan .items .text-img.gear {
+    margin-right: 1px;
+  }
+
+  .solusi .keterangan .items .text-img lottie-player {
+    width: 40px;
+    margin-top: -10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  } */
+
+  /* .solusi .keterangan .items .text-img lottie-player.target {
+    left: 5px;
+    top: 10px;
+  } */
+  .solusi .container-form {
+    padding: 40px 15px 10px 15px;
+  }
+
+  .solusi .container-form .box-setuju {
+    font-size: 0.8rem;
+  }
+
+  /*--- Button Submit ---*/
+  .solusi .container-form .btn-submit {
+    height: 35px;
+  }
+
+  /*--- Radio Button ---*/
+  .solusi .container-form .costum-radio {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  /*--- End of Radio Button ---*/
+
+  /*--- Testimonial ---*/
+  .solusi .container-testi .img-testi {
+    width: 60px;
+    height: 60px;
+  }
+
+  .solusi .container-testi {
+    top: -100px;
+  }
+
+  .solusi .container-testi .pelanggan .posisi {
+    font-size: 0.7rem;
+  }
+
+  .solusi .box-setuju input[type="checkbox"] {
+    width: 25px;
+  }
+
+  .solusi .container-form button.btn-primary {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .solusi .container-testi .pelanggan {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-around;
+    justify-items: flex-start;
+  }
+
+  .solusi .container-testi .pelanggan-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 !important;
+  }
+
+  .solusi .container-testi .pelanggan-info .img-testi {
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+  }
+
+  /*--- Page Blog ---*/
+  .page-blog .container-judul {
+    padding: 0;
+  }
+
+  .page-blog .container-judul h2 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .page-blog .margin-blog {
+    margin-bottom: 20px;
+  }
+
+  /*--- End of CSS Page Blog ---*/
+
+  .mari-bermitra {
+    padding: 0;
+  }
+
+  .mari-bermitra .background {
+    padding: 80px 0;
+  }
+
+  /* ====== End of Landing Page CSS */
+
+  /* ====== Karir Page CSS ====== */
+  .jumbotron-karir {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+  }
+
+  .list-karir {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .tabel-bergabung {
+    padding-top: 50px !important;
+  }
+  /* ==== End of Karir Page CSS === */
+
+  /* ==== Kontak Kami Page CSS === */
+  .kontak-kami .container-icon .jarak-icon {
+    margin-bottom: 25px;
+  }
+
+  /* ==== Layanan IT Page CSS ===== */
+  .layanan-it .container-button .integritas-sistem {
+    padding-top: 150px !important;
+  }
+
+  /* ===== CSS Page Not Found ==== */
+  .page-not-found {
+    position: relative;
+  }
+
+  .page-not-found .container-text a {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .page-not-found .container-text .btn-homepage {
+    text-align: center;
+  }
+
+  .page-not-found .container-text .to-homepage {
+    padding: 15px 40px !important;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  .page-not-found .container-text .visit-us a {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ==== Portofolio Page CSS ==== */
+  .portofolio-page .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portofolio-page .container-portofolio .nav-item {
+    width: 45% !important;
+    border: 1.8px solid #2926a9;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+  }
+
+  .portofolio-page .container-portofolio .nav-link span {
+    position: unset !important;
+  }
+
+  .portofolio-page .container-portofolio .nav-link span::before {
+    content: unset !important;
+  }
+
+  .portofolio-page .container-portofolio .nav-link::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: #00cae6;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left right;
+    transition: 650ms;
+    z-index: -1;
+  }
+
+  .portofolio-page .container-portofolio .nav-link:hover::before,
+  .portofolio-page .container-portofolio .nav-link.active::before {
+    transform: scaleX(1);
+  }
+
+  .portofolio-page .container-portofolio .nav-link.active span {
+    color: #fff;
+    font-weight: 400;
+  }
+  /* ==== End of Portofolio Page CSS ==== */
+
+  /* -- Gerald -- */
+
+  /* Tentang3 */
+  #tentang3 h1 {
+    font-size: 37px;
+  }
+
+  /* Tentang4 */
+  #tentang4 .card {
+    height: auto;
+  }
+
+  /* Hadir dengan Solusi */
+  #row-card .card {
+    /* height: 330px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #row-card .card-body h5 {
+    font-size: 15px;
+  }
+  #row-card .card-body p {
+    font-size: 30px;
+  }
+  #row-card .card-body span {
+    font-size: 24px;
+  }
+
+  #row-card .card-body span {
+    font-size: 30px;
+  }
+
+  #judulSI p .hvr-bounce-to-top::before {
+    background-color: #2926a9;
+    width: 93%;
+  }
+
+  /* Kunci Sukses */
+  #kunci-sukses .figure-caption h1 {
+    margin-top: 10px;
+  }
+  #kunci-sukses .capt {
+    margin-bottom: 20px;
+  }
+
+  /* Portofolio */
+  #portofolio .card-portofolio {
+    box-shadow: 2px 2px 20px #a6a5a5;
+    display: flex;
+    align-content: center;
+  }
+
+  #portofolio .card-body {
+    margin-top: 20px;
+  }
+
+  #portofolio .card-portofolio .tombol {
+    /* font-size: 14px; */
+  }
+
+  /* Produk */
+  #produk .card-produk .card-body .tombol {
+    width: auto;
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  #produk .card-produk img {
+    width: auto;
+    height: 200px;
+  }
+  #produk .card-produk h5 {
+    font-size: 13px;
+  }
+  #produk .card-produk .card-text {
+    font-size: 10px;
+  }
+  #produk .pembungkus-produk .card-produk .tombol {
+    width: 150px;
+    height: 28px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+
+  /* Mitra Kerja */
+  #mitraKerja .row-biru img {
+    margin: 60px 500px;
+  }
+
+  #mitraKerja .row-putih .img-testi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mitraKerja .row-putih-testi {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #mitraKerja .col-putih-testi {
+    margin-top: 20px !important;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  /* -- End of Gerarld -- */
+}
+
+@media only screen and (max-width: 812px) {
+  /* Hadir Dengan Solusi */
+  #row-card .card {
+    /* height: 330px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #row-card .card-body span {
+    font-size: 30px;
+  }
+  #row-card .card .card-img-rowCard lottie-player {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* ==== Costum Header CSS ==== */
+  /* --- Disapear Contact(Hubungi Kami and Email) --- */
+  header .contact {
+    display: none;
+  }
+
+  /* --- Adjust header pading --- */
+  header {
+    padding: 20px 0 0 0;
+  }
+  /* ==== End of Costum Header CSS ==== */
+
+  /* ==== Fixed WA Buton ==== */
+  /* --- Add Padding and adjust position --- */
+  a.wa-button {
+    padding: 7px 10px;
+    border-radius: 50%;
+    bottom: 30px;
+    bottom: 10px;
+  }
+
+  /* --- Remove margin --- */
+  a.wa-button .fa-whatsapp {
+    margin: 0;
+    font-size: 40px;
+  }
+
+  /* --- Disapear text --- */
+  a.wa-button p {
+    display: none;
+  }
+  /* ==== End of Fixed WA Buton ==== */
+
+  /* ==== Index/ Default CSS ==== */
+  /* --- Jumbotron --- */
+  /* -- Adjust Main Heading Font Size -- */
+  .jumbotron .cd-headline {
+    font-size: 3rem;
+  }
+
+  /* -- Adjust Sub Heading Font Size -- */
+  .jumbotron .content h2 {
+    font-size: 22px;
+  }
+  /* --- End of Jumbotron --- */
+
+  /* --- Page Masalah --- */
+  /* -- Add margin each three point item -- */
+  .page-masalah ul li {
+    margin-bottom: 25px;
+  }
+
+  /* -- Remove padding in describe text -- */
+  .page-masalah .p-keterangan {
+    padding-right: 0;
+  }
+
+  /* -- Add margin in page-masalah -- */
+  .page-masalah .margin {
+    margin-top: 50px;
+  }
+
+  /* -- Font size link button -- */
+  .page-masalah .btn-primary {
+    font-size: 12px;
+  }
+
+  /* -- Center vertical number three point -- */
+  .page-masalah .number {
+    display: flex;
+    align-items: center;
+  }
+
+  /* -- Adjust heading three point font size -- */
+  .page-masalah .number h1 {
+    font-size: 36px;
+  }
+  /* -- End of Page Masalah CSS --- */
+
+  /*--- Jenis Layanan ---*/
+  .jenis-layanan .row {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .jenis-layanan .costum-margin {
+    margin-bottom: 10px;
+  }
+
+  .jenis-layanan .card .card-title {
+    font-size: 1.2rem;
+  }
+
+  .jenis-layanan .card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .jenis-layanan .card .img-area {
+    height: 90px;
+  }
+
+  .jenis-layanan .card .selengkapnya a {
+    width: 80%;
+  }
+
+  .jenis-layanan .container .judul hr {
+    width: 25%;
+  }
+
+  /*--- Portofolio ---*/
+  .portofolio .batas-card {
+    margin: 0 0 25px 0;
+    padding: 0 !important;
+  }
+
+  .mari-bermitra {
+    padding: 0;
+  }
+
+  /* --- Alasan --- */
+  .alasan-bermitra .items .text-img lottie-player.atas {
+    margin-top: -10px;
+  }
+
+  /*--- Solusi ---- */
+  .solusi .container-mitra .keterangan h2 {
+    font-size: 1.4rem;
+  }
+
+  .solusi .container-mitra .form {
+    margin: 20px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+  }
+
+  /*--- Page Blog ---*/
+  .page-blog .container-blog {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .page-blog .container-blog .margin-blog {
+    margin-bottom: 20px;
+  }
+
+  .page-blog .container-blog .card .card-title {
+    font-size: 1.2rem;
+  }
+
+  .page-blog .container-blog .card .sub-judul {
+    font-size: 0.8rem;
+  }
+
+  .page-blog .container-blog .card .card-text {
+    font-size: 0.9rem;
+  }
+
+  .page-blog .card-img-top {
+    padding: 20px 20px 0 20px;
+  }
+
+  footer .panjang-footer {
+    width: 50%;
+  }
+
+  /* ==== End of Landing Page CSS ==== */
+  /* ==== Page Karir CSS ==== */
+  .jumbotron-karir {
+    padding: 70px 30px !important;
+    margin: auto;
+  }
+
+  .jumbotron p {
+    padding: 0 !important;
+  }
+  /* ==== End of Page Karir CSS ==== */
+
+  /* ==== Page Not Found CSS ==== */
+  .page-not-found .container-text {
+    margin-bottom: 70px;
+  }
+  /* ==== End of Page Not Found CSS ==== */
+
+  /* ==== Isi Portofolio CSS ==== */
+  .container-isi-portofolio .container-judul {
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+
+  .container-isi-portofolio .container-judul .img-judul {
+    margin-bottom: 20px;
+  }
+
+  .container-isi-portofolio .container-judul .img-judul img {
+    width: 100px;
+  }
+  /* ==== End of Isi Portofolio CSS ==== */
+
+  /* ==== Isi Blog CSS ==== */
+  .left-widget {
+    margin-top: 50px;
+  }
+
+  .left-widget h5 {
+    margin-bottom: 15px !important;
+  }
+
+  .left-widget .kategori p {
+    padding-left: 10px;
+  }
+  /* ==== End of Isi Blog CSS ==== */
+
+  /* -- Gerald -- */
+  /* Hadir Dengan Solusi */
+  #tentang1 .margin {
+    margin-top: 35px;
+  }
+  #tentang1 .dwnld-btn {
+    margin-top: 30px;
+  }
+
+  #tentang2 .batas-card {
+    margin-top: 30px;
+  }
+
+  #bullets {
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+
+  #row-card .card img {
+  }
+
+  #row-card .card-body h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #2926a9;
+  }
+
+  #row-card .card-body p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2926a9;
+  }
+  #row-card .card-body span {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #a4a3c0;
+  }
+
+  .row-putih .margin-testi {
+    margin-bottom: 40px;
+  }
+
+  /* Portofolio */
+  #portofolio .card-portofolio .tombol {
+    color: white;
+    font-weight: bold;
+  }
+  /* -- End of Gerarld */
+}
+
+@media only screen and (max-width: 640px) {
+  /* -- Tentang1 -- */
+  #tentang1 .dwnld-btn {
+    font-size: 12px;
+  }
+
+  /* -- Tentang2 -- */
+  #tentang2 .card-body {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+
+  /* -- Tentang3 -- */
+  #tentang3 h3 {
+    font-size: 30px;
+  }
+  #tentang3 h1 {
+    font-size: 25px;
+  }
+  #tentang3 p {
+    font-size: 20px;
+  }
+  /* #tentang3 .modal .modal-content {
+    height: 350px;
+  } */
+  /* #tentang3 .modal .modal-content iframe {
+    height: 250px;
+  }
+  #tentang3 .modal .modal-content {
+    margin: -50px;
+  } */
+
+  /* Hadir Dengan Solusi */
+  #judulSI p .hvr-bounce-to-top::before {
+    background-color: #2926a9;
+    width: 50%;
+  }
+
+  #row-card .card-body span {
+    font-size: 30px;
+  }
+
+  /* Produk */
+  #produk .card-produk {
+    width: 60%;
+  }
+
+  /* --Kunci Sukses-- */
+  #kunci-sukses .figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  #kunci-sukses .figure-caption h1 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #kunci-sukses .figure-caption p {
+    text-align: center;
+    color: #7f7f7f;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* ==== Costum Header CSS ==== */
+  /* --- Adjust Header Padding --- */
+  header {
+    padding: 0;
+  }
+
+  /* --- Adjust Header item Margin --- */
+  header ul li {
+    margin: 0;
+  }
+
+  /* --- Adjust Header Buttons (Karir, Blog, Kontak) --- */
+  /* -- Image items Properties -- */
+  header ul li img {
+    margin-top: 25px;
+    height: 40px;
+  }
+
+  /* -- Text font size --  */
+  header ul li p {
+    font-size: 13px;
+  }
+
+  /* -- Remove margin right buttons -- */
+  header li a {
+    margin-right: 0;
+  }
+  /* --- End of Adjust Header Buttons (Karir, Blog, Kontak) --- */
+
+  /* -- Padding in navbar -- */
+  .navbar {
+    padding: 10px;
+  }
+
+  /* -- Adjust position toggler button on active --  */
+  .navbar-toggler.active {
+    top: 15px;
+    right: 10px;
+  }
+
+  /* -- Adjust Logo Size -- */
+  nav .logo {
+    width: inherit;
+    height: 40px;
+  }
+
+  /* -- Margin Button Sosmed -- */
+  nav .btn-sosmed {
+    margin-top: 10px;
+  }
+
+  /* -- Adjust width side nav -- */
+  header .navbar-collapse.show {
+    width: 70%;
+  }
+  /* --- End of Navbar CSS --- */
+  /* ==== End of Costum Header CSS ==== */
+
+  /* ==== Costum Index/ Default CSS ==== */
+  /*--- Jumbotron ---*/
+  /* -- Padding around Jumbotron -- */
+  .jumbotron {
+    padding: 30px 0 30px 0;
+  }
+
+  /* -- Content to left -- */
+  .jumbotron .content {
+    text-align: left;
+    padding: 0;
+  }
+
+  /* -- Sub Heading Font Size -- */
+  .jumbotron .content h2 {
+    font-size: 22px;
+  }
+
+  /* -- Main Heading Font Size -- */
+  .jumbotron .content h1 {
+    font-size: 2.3rem;
+  }
+
+  /* -- Align left Main Heading -- */
+  .jumbotron .content h1 span,
+  .jumbotron .content h1 span b {
+    text-align: left !important;
+  }
+
+  /* -- Adjust line size under main heading -- */
+  .jumbotron hr {
+    width: 20%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 15px !important;
+  }
+
+  /* -- Text Describe Font Size -- */
+  .jumbotron p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  /* --- End Of Jumbotron --- */
+
+  /* --- Page Masalah --- */
+  .page-masalah {
+    padding: 3rem 0;
+  }
+
+  /*--- Jenis Layanan ---*/
+  .jenis-layanan {
+    margin-top: -50px;
+  }
+
+  .jenis-layanan .container .judul hr {
+    width: 10%;
+  }
+
+  .jenis-layanan .card {
+    padding-bottom: 50px;
+  }
+
+  .jenis-layanan .selengkapnya {
+    bottom: 30px;
+  }
+
+  /* --- Portofolio --- */
+  .portofolio {
+    margin-bottom: 2rem;
+  }
+
+  .portofolio .container-judul {
+    padding: 0;
+  }
+
+  .portofolio .row {
+    margin: 0;
+  }
+
+  /*--- Page Solusi ---*/
+  .solusi .container-form .jumlah h3 {
+    font-size: 1rem;
+  }
+
+  .solusi .container-form .margin-end {
+    margin-bottom: 10px;
+  }
+
+  .solusi .container-form .box-setuju {
+    margin-bottom: 20px;
+  }
+
+  .solusi .container-form .btn-submit {
+    width: 100%;
+    height: 40px;
+  }
+
+  .solusi .container-testi .pelanggan {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+
+  .solusi .container-testi .pelanggan .posisi {
+    line-height: 14px;
+  }
+
+  .solusi .box-setuju input[type="checkbox"] {
+    width: 37px;
+  }
+
+  /*--- Page Blog ---*/
+  .page-blog {
+    margin-top: 3rem;
+  }
+
+  /* --- Mari Bermitra --- */
+  .mari-bermitra a {
+    font-size: 12px;
+  }
+
+  footer .copyright p {
+    font-size: 12px;
+  }
+
+  /* ====== End of Landing Page CSS */
+
+  /* ====== Karir Page CSS ====== */
+  .jumbotron-karir {
+    padding: 100px 50px 80px 50px;
+  }
+
+  .jumbotron-karir .content h1 {
+    font-size: 3rem;
+  }
+
+  .tabel-bergabung .sub-judul {
+    margin-bottom: 10px;
+  }
+
+  .tabel-bergabung h2 {
+    font-size: 2.1rem;
+  }
+
+  /* ==== Kontak Kami Page CSS ==== */
+  .kontak-kami .container-judul {
+    margin-bottom: 20px !important;
+  }
+
+  .kontak-kami .container-judul h2 {
+    font-size: 2rem;
+  }
+
+  .kontak-kami .container-judul .text-under-judul {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+
+  /* ==== End of Kontak Kami Page CSS ==== */
+
+  /* ==== Layanan IT Page CSS ==== */
+
+  .layanan-it .container-judul h2 {
+    font-size: 3rem !important;
+  }
+
+  .layanan-it .container-button .pengadaan-it {
+    padding-top: 150px !important;
+  }
+
+  /* ==== End of Layanan IT Page CSS ==== */
+
+  /* ==== CSS Page Not Found ==== */
+  .page-not-found .container-text .to-homepage {
+    width: 100%;
+  }
+
+  /* ==== Portofolio Page CSS === */
+  .portofolio-page .container-portofolio .nav-item {
+    width: 90% !important;
+  }
+
+  /* ==== Isi Blog CSS ==== */
+  .last-update .container-card-blog {
+    padding: 20px;
+  }
+
+  /* -- Gerald -- */
+  /*--- Jumbotron ---*/
+  .centered.jumbotron {
+    padding: 40px 20px;
+  }
+
+  .centered.jumbotron p {
+    text-align: center;
+  }
+
+  #mitraKerja {
+    padding: 50px 10px;
+  }
+
+  #mitraKerja .row-putih {
+    padding: 40px 20px;
+  }
+
+  /* Hadir Dengan Solusi */
+  #row-card .card img {
+    margin: 20px auto;
+  }
+
+  #row-card .card-body h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #2926a9;
+  }
+
+  #row-card .card-body p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2926a9;
+  }
+  #row-card .card-body span {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #a4a3c0;
+  }
+
+  /* Portofolio */
+  #portofolio .card-portofolio .tombol {
+    color: white;
+    font-weight: bold;
+  }
+  /* -- End of Gerald -- */
+}
+
+@media only screen and (max-width: 500px) {
+  body h1,
+  body h2 {
+    font-size: 1.875rem;
+  }
+
+  /* ==== Kontak Kami Page CSS ==== */
+  .kontak-kami {
+    padding-top: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /* ===== Costum Index / Default CSS ==== */
+  /* --- Jumbotron --- */
+  /* -- Adjust Padding Around Jumbotron -- */
+  .jumbotron {
+    padding-top: 40px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* -- Adjust Sub Heading Font Size -- */
+  .jumbotron .content h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  /* -- Adjust Main Heading Font Size -- */
+  .jumbotron .content h1 {
+    font-size: 2.2rem;
+  }
+  /* --- End of Jumbotron --- */
+
+  /* --- Page Masalah --- */
+  .page-masalah .p-keterangan {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* -- Adjust widt button link to 100% of container -- */
+  #tentang1 .dwnld-btn,
+  .page-masalah .btn-primary {
+    width: 100%;
+  }
+  /* --- End of Page Masalah --- */
+
+  /*--- jenis layanan ---*/
+  .jenis-layanan .carousel .costum-margin {
+    padding: 0px !important;
+  }
+
+  /*--- Portofolio ---*/
+  .portofolio .card .img-card-container {
+    height: 110px;
+  }
+
+  .portofolio .card .card-img-top {
+    width: auto;
+  }
+
+  /* ====== Karir Page CSS ====== */
+  .jumbotron-karir {
+    padding: 100px 0px 80px 0px;
+  }
+
+  .jumbotron-karir .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .tabel-bergabung h2 {
+    font-size: 1.4rem;
+  }
+
+  /* ===== Isi Blog CSS ===== */
+  .container-isi-blog .judul-blog h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .container-isi-blog .judul-blog .sub-judul,
+  .container-isi-blog .judul-blog .creator {
+    font-size: 0.9rem;
+  }
+
+  .container-isi-blog .padding-screen {
+    padding: 0 3%;
+  }
+
+  /* -- Gerald -- */
+  /* Jumbotron */
+  .centered.jumbotron a {
+    padding: 10px;
+    width: 60%;
+    font-size: 12px;
+  }
+  .centered.jumbotron .display-4 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .centered.jumbotron center {
+    font-size: 10px;
+  }
+
+  /* Tentang1 */
+  #tentang1 {
+    margin-top: 40px;
+  }
+
+  #tentang1 h2 {
+    text-align: left;
+    font-size: 25px;
+  }
+
+  /* Tentang2 */
+  #tentang2 .card {
+    box-shadow: 2px 2px 20px rgba(100, 78, 78, 0.616);
+    height: 300px;
+    box-sizing: border-box;
+  }
+  #tentang2 .card-body {
+    padding: 20px;
+  }
+
+  /* Tentang3 */
+  #tentang3 {
+    padding-top: 10px;
+    height: auto;
+  }
+
+  #tentang3 .animasi-headline {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  #tentang3 h3 {
+    font-weight: 800;
+    font-size: 14px;
+  }
+  #tentang3 h1 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 73px;
+    color: white;
+  }
+  #tentang3 p {
+    font-weight: 800;
+    font-size: 10px;
+  }
+
+  /* Tentang4 */
+  .gagasan h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2926a9;
+    margin-bottom: 30px;
+  }
+
+  /* Hadir Dengan Solusi */
+  #judulSI h1 {
+    font-size: 30px;
+  }
+  #judulSI p .hvr-bounce-to-top::before {
+    background-color: #2926a9;
+    width: 75%;
+  }
+
+  /* Kunci Sukses */
+  #kunci-sukses {
+    padding: 50px 10px;
+  }
+
+  #kunci-sukses .tag-kecil {
+    font-size: 10px;
+  }
+
+  #kunci-sukses .capt {
+    margin-bottom: 40px;
+  }
+  #kunci-sukses .figure-caption h1 {
+    margin-top: 10px;
+    font-size: 21px;
+  }
+  #kunci-sukses .figure-caption p {
+    margin-bottom: 40px;
+  }
+
+  /* Portofolio */
+  #portofolio .tag-kecil {
+    font-size: 10px;
+  }
+
+  #portofolio .card-portofolio {
+    box-shadow: 2px 2px 20px #a6a5a5;
+    display: flex;
+    align-content: center;
+  }
+
+  #portofolio .card-portofolio .tombol {
+    font-size: 14px;
+  }
+
+  /* Produk */
+  #produk .card-produk {
+    width: auto;
+  }
+  #produk .pembungkus-produk .tag-kecil {
+    font-size: 12px;
+  }
+
+  #produk .pembungkus-produk .card-produk {
+    margin-bottom: 30px;
+  }
+  #produk .pembungkus-produk .card-produk .tombol {
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  #produk .card-produk img {
+    width: auto;
+    height: 200px;
+  }
+
+  /* Aturan Layanan */
+  .view-desktop-aturanLayanan {
+    display: none;
+  }
+
+  .view-mobile-aturanLayanan {
+    display: block;
+  }
+  #isi-aturanLayanan {
+    height: 100%;
+    padding: 30px 0;
+  }
+
+  #isi-aturanLayanan .wrapper {
+    margin: 30px 0;
+  }
+
+  #isi-aturanLayanan .tombol {
+    height: 48px;
+    width: 100% !important;
+    border-radius: 7px;
+    margin: auto;
+  }
+  .view-mobile-aturanLayanan .wrapper .accordion_body #pasal,
+  .view-mobile-aturanLayanan .wrapper .accordion_body #isi-pasal {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .view-mobile-aturanLayanan .wrapper .accordion_body #ayat-pasal,
+  .view-mobile-aturanLayanan .wrapper .accordion_body #judul-ayat {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .view-mobile-aturanLayanan .wrapper .accordion_body #ayat-pasal {
+    margin-top: 30px;
+  }
+
+  /* Tentang5 */
+  #tentang5 {
+    margin-top: -5px;
+  }
+  #tentang5 .container {
+    height: 500px;
+  }
+  #tentang5 .judul-tentang5 h1 {
+    margin-top: -140px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  #tentang5 .isi-tentang5 p {
+    color: #7f7f7f;
+    text-align: center;
+    font-size: 19px;
+  }
+
+  #tentang5 .isi-tentang5 .tombol {
+    width: 240px;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+  /* -- End of Gerald -- */
+}
+
+@media only screen and (max-width: 350px) {
+  /* ==== Costum Header CSS ==== */
+  /* --- Header Contact font properties --- */
+  header .contact .text .judul {
+    font-size: 11px;
+  }
+
+  header .contact .text .isi {
+    font-size: 14px;
+  }
+  /* --- End of Header Contact font properties --- */
+
+  /* --- Add Margin to header buttons(Karir, Blog, Kontak) --- */
+  header ul li img {
+    margin-top: 15px;
+  }
+
+  /* --- Adjust Sosmed Button Size --- */
+  header nav .p-icon-sosmed a {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* --- Adjust Sosmed icon burron size --- */
+  header nav .p-icon-sosmed a .fab {
+    font-size: 20px;
+  }
+  /* ==== End of Costum Header CSS ==== */
+
+  /* ==== Costum Index / Default CSS ==== */
+  /* --- Jumbotron --- */
+  /* -- Adjust Sub Heading FOnt Size -- */
+  .jumbotron .content h2 {
+    font-size: 16px;
+  }
+
+  /* -- Adjust Main Heading Font Size -- */
+  .jumbotron .content h1 {
+    font-size: 1.5rem;
+  }
+
+  /* -- Adjust Describe and link text font size -- */
+  .jumbotron p,
+  .jumbotron a {
+    font-size: 15px;
+  }
+  /* --- End of Jumbotron --- */
+
+  /*--- Jenis Layanan ---*/
+  .jenis-layanan .container .judul h3 {
+    font-size: 1rem;
+  }
+
+  /*--- Portofolio ---*/
+  .portofolio .container-judul {
+    margin-bottom: 40px;
+  }
+
+  .portofolio .card {
+    padding: 16px 13px 14px 13px;
+  }
+
+  .portofolio .card .mini-judul {
+    font-size: 0.7rem;
+  }
+
+  .portofolio .card .card-title {
+    font-size: 1rem;
+  }
+
+  .portofolio .card .card-text {
+    font-size: 0.8rem;
+  }
+
+  .portofolio .batas-card {
+    padding: 0;
+  }
+
+  .jenis-layanan .batas-card {
+    padding: 0;
+  }
+
+  .solusi .container-form .costum-radio {
+    width: 100%;
+  }
+
+  /* ==== Karir Page CSS ==== */
+  .jumbotron-karir .content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* ==== End of Karir Page CSS ==== */
+
+  /* ==== Layanan IT Page CSS ==== */
+  .layanan-it .container-judul h2 {
+    font-size: 2rem !important;
+  }
+  /* ==== End of Layanan IT Page CSS ==== */
+
+  /* ==== Page Not Found CSS ==== */
+  .page-not-found .container-text h2 {
+    font-size: 2.8rem !important;
+  }
+
+  .page-not-found .container-text .text-under-judul {
+    margin-bottom: 40px !important;
+  }
+
+  .page-not-found .container-text .to-homepage {
+    padding: 12px 20px !important;
+  }
+
+  /* -- Gerald -- */
+  /*--- Jumbotron ---*/
+
+  .jumbotron .display-4 {
+    font-size: 30px;
+  }
+
+  .jumbotron .tombol {
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+    padding-top: 9px;
+  }
+
+  .centered.jumbotron a {
+    width: 80%;
+  }
+
+  #tentang1 .dwnld-btn {
+    padding: 15px 10px;
+  }
+
+  #judulSI a {
+    width: 100%;
+  }
+
+  /* Kunci Sukses */
+  #kunci-sukses .tag-besar {
+    font-size: 25px;
+  }
+  #kunci-sukses .figure-caption h1 {
+    margin-top: 10px;
+  }
+
+  #portofolio .card-portofolio h5 {
+    font-size: 1rem;
+  }
+
+  #portofolio .card {
+    padding: 16px 13px 14px 13px;
+  }
+
+  #portofolio .card-portofolio p {
+    font-size: 0.8rem;
+  }
+  /* Tentang 5 */
+  #tentang5 .judul-tentang5 {
+    margin-top: 100px;
+    font-size: 48px;
+  }
+  #tentang5 .isi-tentang5 .tombol {
+    width: 240px;
+    height: 50px;
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  #tentang5 .isi-tentang5 {
+    margin: 10px auto;
+  }
+  #tentang5 {
+    height: 600px;
+  }
+  /* -- End of Gerald -- */
+}

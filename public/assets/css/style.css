@@ -71,10 +71,6 @@
   overflow: hidden;
 }
 
-#im-profile {
-  position: relative;
-}
-
 #ft-profile {
   box-sizing: border-box;
   outline: none;
@@ -97,6 +93,11 @@
 .input-group-prepend span,
 .input-group-prepend label {
   width: 107px;
+}
+
+.tambah-admin .input-group-prepend span,
+.tambah-admin .input-group-prepend label {
+  width: 137px;
 }
 
 .data-captcha .input-group-prepend span,

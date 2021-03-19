@@ -1,0 +1,416 @@
+.list-blog{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+/* --- Gabung dengan judul di isi blog --- */
+.container-isi-blog .container-judul,
+.list-blog .container-judul{
+    color: #2926A9;
+    margin-bottom: 60px;
+}
+
+.container-isi-blog .container-judul h1,
+.list-blog .container-judul h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container-isi-blog .content,
+.list-blog .container-blog .card{
+    color: #2926A9;
+}
+
+.list-blog .container-blog .card a{
+    text-decoration: none;
+    color: unset;
+}
+
+.list-blog .container-blog .card a:hover{
+    text-decoration: none;
+}
+
+.list-blog .container-blog .card.hvr-underline-from-left::before{
+    background-color: #2926A9;
+}
+
+.list-blog .container-blog .sub-judul{
+    color: #00CAE6;
+    font-size: .8rem;
+    margin-bottom: 3px;
+    font-weight:500;
+}
+
+.list-blog .container-blog .card-title{
+    font-size: 1,.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.list-blog .container-blog .card-text{
+    font-size: .95rem;
+    margin-bottom: .8rem;
+}
+
+.list-blog .container-blog .card-penulis,
+.list-blog .container-blog .card-tanggal{
+    font-size: .85rem;
+    margin-bottom: 5px;
+}
+
+.list-blog .container-blog .margin-blog{
+    margin-bottom: 40px;
+}
+
+.list-blog .list-wrapper .list-item{
+    position: relative;
+    cursor: pointer;
+}
+
+.list-blog .simple-pagnation ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.list-blog .simple-pagnation li{
+    display: inline-block;
+    margin: 2px;
+}
+
+.list-blog .simple-pagnation a,
+.list-blog .simple-pagnation li span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #2926A9;
+    border-radius: 50%;
+    margin: 5px;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, .1), 0 2px 5px rgba(0,0,0,.5);
+    transition: all 1s ease;
+}
+
+.list-blog .simple-pagnation li a:hover{
+    background: #2926A9;
+    color: #fff;
+}
+
+.list-blog .simple-pagnation .current{
+    color: #fff;
+    background: #2926A9;
+    border-color: rgb(255, 255, 255);
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.list-blog .simple-pagnation .prev.current,
+.list-blog .simple-pagnation .next.current{
+    background: #2926A9;
+    border: none;
+}
+
+/* === End of List Blog CSS === */
+.container-isi-blog{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px; 
+    margin-bottom: 0;  
+}
+
+.container-isi-blog .container-judul{
+    margin-bottom: 20px;
+}
+
+.container-isi-blog .breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f30b";
+}
+
+.container-isi-blog nav,
+.container-isi-blog .breadcrumb{
+    background: none;
+    padding: 0;
+}
+
+.container-isi-blog ol li a{
+    color: #00CAE6;
+}
+
+.container-isi-blog .blog-main{
+    line-height: 1.5;
+}
+
+.container-isi-blog .img-container{
+    height: auto;
+    width: inherit;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.container-isi-blog .img-container img{
+    height: inherit;
+    width: 100%;
+}
+
+.container-isi-blog .judul-blog .sub-judul{
+    margin-bottom: 10px;
+}
+
+.container-isi-blog .judul-blog h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container-isi-blog .judul-blog .creator{
+    color: #00CAE6;
+    margin-bottom: 20px;
+}
+
+.container-isi-blog .isi-blog{
+    text-align: justify !important;
+}
+
+.container-isi-blog .button{
+    padding: 0;
+}
+
+.container-isi-blog .prev-next-bar{
+    margin-top: 50px;
+}
+
+.container-isi-blog .prev-next-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-isi-blog .prev-next-bar a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.container-isi-blog .btn-prev,
+.container-isi-blog .btn-next{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-isi-blog .btn-prev .fas,
+.container-isi-blog .btn-next .fas{
+    font-size: 40px;
+}
+
+.container-isi-blog .btn-prev .fa-caret-left{
+    margin-left: 15px;
+}
+
+.container-isi-blog .btn-next .fa-caret-right{
+    margin-left: 18px;
+}
+
+.container-isi-blog .prev-next-bar .oval{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-isi-blog .prev-next-bar .oval img{
+    margin: 0 3px;
+    width: 12px;
+}
+
+.container-isi-blog .prev-next-bar .text-btn{
+    font-size: .75rem;
+}
+
+.container-isi-blog .prev-next-bar .text-btn b{
+    font-size: .85rem;
+}
+
+.container-isi-blog .prev-next-bar a:hover .fas{
+    color: #fff;
+}
+
+.container-isi-blog .prev-next-bar .fa-circle{
+    font-size: 13px !important;
+}
+
+.container-isi-blog .prev-next-bar a:hover .fa-circle{
+    color: #2926A9;
+}
+
+.container-isi-blog .prev-next-bar a:hover .btn-next,
+.container-isi-blog .prev-next-bar a:hover .btn-prev{
+    background: #2926A9;
+}
+
+.container-isi-blog .tag{
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.container-isi-blog .tag a{
+    font-size: .8rem;
+    padding: 3px 5px;
+    color: #2926A9;
+    border: 1.5px solid #2926A9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --- Last Update --- */
+.last-update{
+    padding-top: 50px;
+    margin-top: -0.5px;
+    background: #B3B1F7;
+}
+
+.last-update h1{
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.last-update .container-card-blog{
+    margin-bottom: 60px;
+}
+
+.last-update .container-card-blog .card{
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.last-update .container-card-blog .margin-blog{
+    margin-bottom: 20px;
+}
+
+.last-update .container-card-blog .card .sub-judul{
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: -0.336875px;
+    color: #2926A9;
+    margin-bottom: 5px;
+}
+
+.last-update .container-card-blog .card .card-title{
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: -0.606375px;
+    color: #2926A9;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.last-update .container-card-blog .card .card-text{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.471625px;
+    color: #4540FF;
+    margin-bottom: 35px;
+}
+
+.last-update .card.hvr-underline-reveal::before{
+    background-color: #2926A9;
+}
+
+.last-update .card.hvr-underline-reveal:hover::before{
+    height: 7px;
+}
+
+/* --- left-widget --- */
+.left-widget a{
+    text-decoration: none;
+    color: #2926A9;
+}
+
+.left-widget h5{
+    margin-bottom: 20px;   
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.left-widget .kategori{
+    margin-bottom: 50px;
+}
+
+.left-widget .kategori p{
+    margin-bottom: 10px;
+    font-size: .9rem;
+}
+
+.left-widget .kategori a{
+    position: relative;
+    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateY(-5%);
+    z-index: 0;
+}
+
+.left-widget .kategori a::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    background: #2926A9;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    transform-origin: right;
+    transition: 100ms;
+}
+
+.left-widget .kategori a:hover{
+    color: #00CAE6;
+}
+
+.left-widget .kategori a:hover:before{
+    transform: scaleX(0);
+}
+
+.left-widget .popular-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.left-widget .img-popular{
+    height: 70px;
+    overflow: hidden;
+    padding-right: 0;
+}
+
+.left-widget .img-popular img{
+    width: auto;
+    height: 100%;
+}
+
+.left-widget .popular-item a{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1 !important;
+    position: relative;
+    z-index: 0;
+}
+
+.left-widget .popular-item a.hvr-underline-from-left::before{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: #2926A9;
+}

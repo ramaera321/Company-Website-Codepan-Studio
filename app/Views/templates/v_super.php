@@ -78,8 +78,46 @@
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('assets/js/sb-admin-2.min.js'); ?>"></script>
     <script src="https://kit.fontawesome.com/46f670f20d.js" crossorigin="anonymous"></script>
-    <script src="<?= base_url('assets/js/ckeditor/ckeditor.js'); ?>"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
     <script src="<?= base_url('assets/js/script.js'); ?>"></script>
+    <script>
+        function previewImage() {
+            const foto = document.querySelector('#foto');
+            const fotoLabel = document.querySelector('.custom-file-label');
+            const imgPreview = document.querySelector('.img-preview');
+
+            fotoLabel.textContent = foto.files[0].name;
+
+            const fileFoto = new FileReader();
+            fileFoto.readAsDataURL(foto.files[0]);
+
+            fileFoto.onload = function(e) {
+                imgPreview.src = e.target.result;
+            }
+        }
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea1'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea2'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea3'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea4'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 
 </html>

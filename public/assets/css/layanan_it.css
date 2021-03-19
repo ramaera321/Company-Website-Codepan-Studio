@@ -1,0 +1,80 @@
+.layanan-it{
+    background: url("../img/background/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layanan-it .container-judul h1{
+    color: #2926A9;
+    font-weight: 700;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.layanan-it .container-judul{
+    margin-bottom: 60px;
+}
+
+.layanan-it .container-button .batas-button{
+    margin-bottom: 30px;
+}
+
+.layanan-it .container-judul .text-under-judul{
+    font-size: .9rem;
+    color: #7F7F7F;
+}
+
+.layanan-it .container-button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.layanan-it .container-button .sistem-informasi,
+.layanan-it .container-button .aplikasi-mobile,
+.layanan-it .container-button .aplikasi-egov{
+    padding: 150px 0 25px 35px;   
+}
+
+.layanan-it .container-button .integritas-sistem,
+.layanan-it .container-button .pengadaan-it{
+    padding: 200px 0 25px 35px;   
+}
+
+.layanan-it .container-button a:hover{
+    text-decoration: none;
+}
+
+/*--- Atur Backgorund ---*/
+.layanan-it .container-button .sistem-informasi{
+    background: url("../img/layanan-it-page/Gambar-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layanan-it .container-button .aplikasi-mobile{
+    background: url("../img/layanan-it-page/Gambar-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layanan-it .container-button .aplikasi-egov{
+    background: url("../img/layanan-it-page/Gambar-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layanan-it .container-button .integritas-sistem{
+    background: url("../img/layanan-it-page/Gambar-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layanan-it .container-button .pengadaan-it{
+    background: url("../img/layanan-it-page/Gambar-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*--- End of Atur Backgorund ---*/

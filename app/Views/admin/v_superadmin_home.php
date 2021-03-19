@@ -12,10 +12,10 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-sm-12 profile">
+                    <div class="col-sm-12 profile pb-4">
                         <div class="border-profile">
                             <div class="img-profile">
-                                <img src="/assets/img/<?= $foto; ?>" alt="" id="im-profile" onload="profile()">
+                                <img src="/assets/img/admin/<?= $foto; ?>" alt="" id="im-profile" onload="profile()">
                             </div>
                         </div>
                         <p class="nama"><?= ucwords($nama); ?></p>

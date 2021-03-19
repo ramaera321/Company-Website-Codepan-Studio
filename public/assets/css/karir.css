@@ -1,0 +1,169 @@
+.jumbotron{
+    background-image: url("../img/background/Jumbobox\ karir\ update.jpg");
+    padding: 170px 250px 150px 250px;
+}
+
+.jumbotron .content h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.jumbotron p{
+    padding: 0 50px;
+    line-height: 1.15;
+}
+
+.container.aos-init.aos-animate{
+    margin: auto;
+}
+
+.list-karir{
+    padding: 100px 0;
+    background: #F7F7FF;
+}
+
+.list-karir ul{
+    padding: 0;
+    color: #2926A9;
+}
+
+.list-karir ul li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.list-karir ul li .number{
+    margin-right:15px;
+    display: flex;
+    align-items: center;
+}
+
+.list-karir ul li h1{
+    width: 30px;
+    font-weight: 900;
+    font-size: 2.8rem;
+}
+
+.list-karir ul li h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: -2;
+}
+
+.list-karir ul li p{
+    color: #7F7F7F;
+    line-height: 1.3;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.tabel-bergabung{
+    background: #fff;
+    padding: 100px 0 0 0;
+}
+
+.tabel-bergabung .container-judul{
+    text-align: center;
+}
+
+.tabel-bergabung .sub-judul{
+    margin-bottom: 20px;
+}
+
+.tabel-bergabung h2{
+    color: #2926A9;
+    margin-bottom: 25px;
+}
+
+.tabel-bergabung .text-under-judul{
+    color: #7F7F7F;
+    margin-bottom: 55px;
+}
+
+.tabel-bergabung table{
+    border: none;
+    font-weight: 500;
+}
+
+.tabel-bergabung thead{
+    background-color: #2926A9;
+    color: #fff;
+    font-size: .95rem;
+}
+
+.tabel-bergabung tbody{
+    color: #000;
+}
+
+.tabel-bergabung table th,
+.tabel-bergabung table td{
+    padding: 15px;
+}
+
+.tabel-bergabung tbody .lokasi{
+    color: #2926A9;
+}
+
+.tabel-bergabung tbody .btn-tabel{
+    padding: 4px;
+}
+
+.tabel-bergabung tbody .btn-tabel a{
+    font-size: .85rem;
+    display: inline-block;
+    background-color: #33BEF0;
+    padding: 13px 20px;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-right: 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.tabel-bergabung tbody .btn-tabel a{
+    text-decoration: none;
+}
+
+.tabel-bergabung tbody .btn-tabel a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #2926A9;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.tabel-bergabung tbody .btn-tabel a:hover::before{
+    height: 100%;
+}
+
+.tabel-bergabung .text-under-table{
+    margin: 40px 0 50px 0;
+    color: #7F7F7F;
+}
+
+.tabel-bergabung .text-under-table a{
+    color: #00CAE6;
+    text-decoration: none;
+    outline: none;
+}
+
+.tabel-bergabung .text-under-table a.hvr-underline-from-left::before{
+    background: #00CAE6;
+    height: 2px;
+}
+
+.tabel-bergabung p a:hover{
+    text-decoration: none;
+    outline: none;
+    color: none;
+}

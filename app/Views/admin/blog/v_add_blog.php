@@ -104,7 +104,7 @@
                                 <div class="invalid-feedback invalid-foto">
                                     <?= $validation->getError('foto'); ?>
                                 </div>
-                                <label class="custom-file-label" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : 'Choose...'; ?></label>
+                                <label id="label-gambar" class="custom-file-label" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : 'Choose...'; ?></label>
                             </div>
                         </div>
                         <small id="passwordHelpBlock" class="form-text text-muted ml-3">

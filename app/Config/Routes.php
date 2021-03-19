@@ -20,7 +20,9 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+$routes->set404Override(function () {
+	echo view('errors/page_404.php');
+});
 $routes->setAutoRoute(true);
 
 /*
@@ -31,12 +33,26 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+//User Routes
+$routes->get('/', 'Users::index');
+$routes->get('/blog', 'Users::blog');
+$routes->get('/kontak', 'Users::kontak');
+$routes->get('/karir', 'Users::karir');
+$routes->get('/portofolio', 'Users::portofolio');
+$routes->get('/layanan_it', 'Users::layanan_it');
+$routes->get('/tentang_kami', 'Users::tentang_kami');
+$routes->get('/sistem_informasi', 'Users::sistem_informasi');
+$routes->get('/aplikasi_mobile', 'Users::aplikasi_mobile');
+$routes->get('/aplikasi_egov', 'Users::aplikasi_egov');
+$routes->get('/integrasi_sistem', 'Users::integrasi_sistem');
+$routes->get('/pengadaan_it', 'Users::pengadaan_it');
+
 // Admin Routes
-$routes->get('/', 'Admin::index', ['filter' => 'auth']);
+// $routes->get('/', 'Admin::index', ['filter' => 'auth']);
 $routes->get('/admin', 'Admin::index');
 $routes->get('/add_admin', 'Admin::post');
 $routes->get('/data_admin', 'Admin::show');
-$routes->get('/update_admin/(:num)', 'Admin::updatePage');
+$routes->get('/update_admin/(:num)', 'Admin::updatePage/$1');
 $routes->delete('/admin/(:num)', 'Admin::delete/$1');
 
 //Banner

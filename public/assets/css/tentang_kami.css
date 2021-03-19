@@ -1,0 +1,226 @@
+.atas {
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.atas p {
+  color: #7f7f7f;
+}
+/* Tentang1 */
+#tentang1 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#tentang1 h2 {
+  font-size: 1.8rem;
+  color: #2926a9;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 0px;
+}
+
+#tentang1 p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#tentang1 .dwnld-btn {
+  font-weight: 500;
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: #33bef0;
+  padding: 15px 40px;
+  border-radius: 41.5px;
+  text-align: center;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+#tentang1 .dwnld-btn:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#tentang1 .hvr-bounce-to-top::before {
+  background-color: #2926a9;
+}
+
+/* Akhir Tentang1 */
+
+/* Awal Tentang2 */
+#tentang2 {
+  margin-bottom: 80px;
+}
+
+#tentang2 img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+#tentang2 .card-title {
+  font-size: 16px;
+  color: #2926a9;
+  font-weight: bold;
+}
+
+#tentang2 .card {
+  box-shadow: 2px 2px 20px rgba(100, 78, 78, 0.616);
+}
+
+#tentang2 .card-body {
+  padding: 60px 50px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+/* Animasi Ketika Card di Hover Akan Menggerakan Gambar */
+#tentang2 .card:hover lottie-player {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#tentang2 .pembungkus-img-tentang {
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+#tentang2 .pembungkus-img-tentang lottie-player.watch {
+  margin-top: 10px;
+  transform: scale(3.5);
+}
+/* Akhir Tentang2 */
+
+/* Awal Tentang3 */
+#tentang3 {
+  /* margin-left: 15px;
+      margin-right: 15px; */
+  padding: 20px 0 5px 0;
+  text-align: center;
+  background-color: #2926a9 !important;
+  /* height: 524px; */
+  width: auto;
+}
+
+#tentang3 .container {
+  margin-top: 40px;
+}
+
+#tentang3 .animasi-headline {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#tentang3 h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+}
+
+#tentang3 h1 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: white;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 0px;
+}
+
+#tentang3 p {
+  font-weight: 100;
+  font-size: 21px;
+  color: white;
+}
+
+#tentang3 a img {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+}
+
+#tentang3 a img:hover {
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px rgba(100, 78, 78, 0.616);
+}
+
+#tentang3 .modal .modal-content {
+  width: 100%;
+  height: 350px;
+}
+
+#tentang3 .modal .form-group {
+  height: 100%;
+}
+
+#tentang3 .modal h5 {
+  color: #000;
+}
+
+/* Akhir Tentang3 */
+
+/* Tentang4 */
+#tentang4 {
+  overflow-x: hidden;
+}
+
+#tentang4 .gagasan {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#tentang4 .blog-kami {
+  color: #03d0b9;
+  margin-bottom: -5px;
+}
+
+.gagasan h2 {
+  /* font-size: 26px; */
+  font-weight: bold;
+  color: #2926a9;
+  margin-bottom: 30px;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 0px;
+}
+
+.gagasan .subtitle {
+  color: #7f7f7f;
+  margin-bottom: 80px;
+}
+
+.subtitle-bawah {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.subtitle-bawah {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.subtitle-bawah a {
+  font-weight: bold;
+  color: #2926a9;
+  text-decoration: none;
+}
+
+#tentang4 .subtitle-bawah .hvr-underline-from-left::before {
+  background-color: #2926a9;
+  height: 1px;
+}
+
+/* Akhir Tentang4 */

@@ -16,7 +16,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'home'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Home Banner',
@@ -43,7 +43,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'karir'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'karir'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Karir Banner',
@@ -69,7 +69,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'mobile'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'mobile'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Mobile Banner',
@@ -95,7 +95,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Integrasi Sisten Banner',
@@ -121,7 +121,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Pengadaan IT Banner',
@@ -147,7 +147,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'about'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'about'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Tentang Kami Banner',
@@ -173,7 +173,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'egov'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'egov'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'E-Goverment Banner',
@@ -199,7 +199,7 @@ class Banner extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $banner = $this->bannerModel->where(['layanan' => 'informasi'])->findAll();
+                $banner = $this->bannerModel->where(['layanan' => 'informasi'])->first();
                 $data = [
                     'judul' => 'Home Page Data | Admin',
                     'title' => 'Sistem Infromasi Banner',
@@ -248,47 +248,47 @@ class Banner extends BaseController
             return redirect()->to('/login');
         }
     }
-    public function save()
-    {
-        $link = $this->request->getVar('link');
+    // public function save()
+    // {
+    //     $link = $this->request->getVar('link');
 
-        if (!$this->validate([
-            'deskripsi' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Deskripsi harus diisi'
-                ]
-            ],
-            'foto' => [
-                'rules' => 'uploaded[foto]|max_size[foto, 1024]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
-                'errors' => [
-                    'uploaded' => 'gambar harus ditambahkan',
-                    'max_size' => 'Ukuran gambar terlalu besar',
-                    'is_image' => 'File yang dipilih bukan gambar',
-                    'mime_in' => 'File yang dipilih bukan gambar'
+    //     if (!$this->validate([
+    //         'deskripsi' => [
+    //             'rules' => 'required',
+    //             'errors' => [
+    //                 'required' => 'Deskripsi harus diisi'
+    //             ]
+    //         ],
+    //         'foto' => [
+    //             'rules' => 'uploaded[foto]|max_size[foto, 1024]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
+    //             'errors' => [
+    //                 'uploaded' => 'gambar harus ditambahkan',
+    //                 'max_size' => 'Ukuran gambar terlalu besar',
+    //                 'is_image' => 'File yang dipilih bukan gambar',
+    //                 'mime_in' => 'File yang dipilih bukan gambar'
 
-                ]
-            ]
-        ])) {
+    //             ]
+    //         ]
+    //     ])) {
 
-            return redirect()->to('/data_banner_' . $link)->withInput();
-        }
+    //         return redirect()->to('/data_banner_' . $link)->withInput();
+    //     }
 
-        $fotoFile = $this->request->getFile('foto');
-        $namaFoto = $fotoFile->getRandomName();
-        $fotoFile->move('assets/img', $namaFoto);
+    //     $fotoFile = $this->request->getFile('foto');
+    //     $namaFoto = $fotoFile->getRandomName();
+    //     $fotoFile->move('assets/img', $namaFoto);
 
 
-        $this->bannerModel->save([
-            'deskripsi' => $this->request->getVar('deskripsi'),
-            'layanan' => $this->request->getVar('layanan'),
-            'foto' => $namaFoto
-        ]);
+    //     $this->bannerModel->save([
+    //         'deskripsi' => $this->request->getVar('deskripsi'),
+    //         'layanan' => $this->request->getVar('layanan'),
+    //         'foto' => $namaFoto
+    //     ]);
 
-        session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
+    //     session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
 
-        return redirect()->to('/data_banner_' . $link);
-    }
+    //     return redirect()->to('/data_banner_' . $link);
+    // }
 
     public function update($id)
     {
@@ -300,7 +300,7 @@ class Banner extends BaseController
                 ]
             ],
             'foto' => [
-                'rules' => 'max_size[foto, 1024]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
+                'rules' => 'max_size[foto, 5000]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
                 'errors' => [
                     'uploaded' => 'gambar harus ditambahkan',
                     'max_size' => 'Ukuran gambar terlalu besar',
@@ -320,8 +320,8 @@ class Banner extends BaseController
             $namaFoto = $this->request->getVar('fotoLama');
         } else {
             $namaFoto = $fotoFile->getRandomName();
-            $fotoFile->move('assets/img', $namaFoto);
-            unlink('assets/img/' . $this->request->getVar('fotoLama'));
+            $fotoFile->move('assets/img/banner', $namaFoto);
+            // unlink('assets/img/' . $this->request->getVar('fotoLama'));
         }
 
         $this->bannerModel->save([

@@ -1,0 +1,409 @@
+/* Hadir Dengan Solusi */
+#hadirDenganSolusi {
+  margin-top: 30px;
+  padding-top: 30px;
+  /* height: 1700px; */
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+#bullets ul {
+  display: flex;
+  list-style: none;
+}
+
+#bullets .bullets {
+  display: flex;
+  flex-direction: column;
+}
+
+#bullets li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+#bullets .bullets h4 {
+  color: #2926a9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#bullets .bullets p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#judulSI h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #2926a9;
+  font-weight: 700;
+  font-family: "Gotham", sans-serif;
+  letter-spacing: 0px;
+}
+
+#judulSI a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2926a9;
+  padding: 10px 20px 10px 0;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#judulSI a:hover {
+  padding-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#judulISI ul {
+  padding: 0 !important;
+}
+
+#judulISI .fa-long-arrow-alt-right {
+  color: #2926a9;
+}
+
+#judulSI .fa-long-arrow-alt-right:hover {
+  color: white;
+}
+
+#judulSI p .hvr-bounce-to-right::before {
+  background-color: #2926a9;
+  width: 100%;
+}
+
+.p-bottom a {
+  font-weight: 600;
+  color: #03d0b9;
+  text-decoration: none;
+}
+
+#row-card {
+  margin-bottom: 50px;
+}
+
+#row-card .card {
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 2px 2px 20px #a6a5a5;
+  border-top: 16px solid #33bef0;
+}
+
+#row-card .card .card-img-rowCard {
+  margin-bottom: 10px;
+  overflow: hidden;
+  height: 100px;
+}
+#row-card .card .card-img-rowCard lottie-player {
+  margin: 0 auto;
+}
+
+#row-card .card .card-img-rowCard lottie-player.graf {
+  transform: scale(1.1);
+}
+
+#row-card .card .card-img-rowCard lottie-player.phone {
+  transform: scale(1.6);
+}
+
+#row-card .card .card-img-rowCard lottie-player.smile {
+  transform: scale(0.85);
+}
+
+#row-card .card .card-img-rowCard lottie-player.partner {
+  transform: scale(0.6);
+}
+
+#row-card .card-body h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2926a9;
+}
+
+#row-card .card-body p {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2926a9;
+  position: relative;
+}
+
+#row-card .card-body {
+  padding: 0 1.25rem;
+}
+
+#row-card .card-body span {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #a4a3c0;
+}
+
+#hadirDenganSolusi #row-card .pembungkus-counter {
+  gap: 5px;
+}
+
+.solusi {
+  background: none;
+}
+
+.solusi .container-mitra {
+  top: 0 !important;
+  padding-bottom: 70px;
+}
+
+.p-bottom {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.p-bottom .hvr-underline-from-left::before {
+  height: 1px;
+  background-color: #03d0b9;
+}
+
+/* Kunci Sukses */
+#kunci-sukses {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 50px;
+  box-shadow: 2px 2px 20px #a6a5a5;
+}
+
+#kunci-sukses .capt {
+  margin-bottom: 50px;
+}
+
+#kunci-sukses .figure-caption h1 {
+  font-weight: 700;
+  font-size: 21px;
+  color: #2926a9;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#kunci-sukses .figure-caption p {
+  font-weight: 500;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+/* PORTOFOLIO */
+#portofolio {
+  height: auto;
+  background-color: white;
+  padding: 60px 10px;
+  box-shadow: 2px 2px 20px #a6a5a5;
+}
+
+#portofolio .tag-kecil {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #03d0b9;
+}
+
+#portofolio .tag-besar {
+  text-align: center;
+  font-weight: 700;
+  color: #2926a9;
+}
+
+#portofolio .capt {
+  text-align: center;
+  font-weight: 500;
+  color: #7f7f7f;
+  margin-bottom: 30px;
+}
+
+#portofolio .porto-margin {
+  margin-bottom: 30px;
+}
+
+#portofolio .card-portofolio {
+  box-shadow: 2px 2px 20px #a6a5a5;
+  display: flex;
+  align-content: center;
+  padding: 35px 25px 20px 25px;
+  position: relative;
+}
+
+#portofolio .card-body {
+  padding: 0;
+  margin-top: 40px;
+}
+
+#portofolio .card-portofolio .card-img {
+  overflow: hidden;
+  height: initial;
+  border-radius: 10px;
+}
+
+#portofolio .card-portofolio small {
+  font-size: 15px;
+  font-weight: 600;
+  color: #33bef0;
+}
+
+#portofolio .card-portofolio h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2926a9;
+}
+
+#portofolio .card-portofolio p {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #4540ff;
+  margin-bottom: 40px;
+}
+
+#portofolio .card-portofolio .tombol {
+  font-size: 20px;
+  color: white;
+  bottom: 0;
+  position: relative;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+}
+
+#portofolio .card-portofolio .hvr-bounce-to-top::before {
+  background-color: #2926a9;
+}
+
+#portofolio .card-portofolio:hover .card-img-top {
+  transform: scale(1.2);
+}
+
+/* Mitra Kerja */
+#mitraKerja {
+  background-color: #f2f2f2;
+  padding: 50px;
+  overflow-x: hidden;
+}
+
+#mitraKerja .row-biru {
+  background-color: #2926a9;
+  height: 500px;
+}
+
+#mitraKerja .tag-kecil {
+  padding-top: 60px;
+}
+
+#mitraKerja .tag-besar {
+  margin-top: 10px;
+  color: white;
+}
+
+#mitraKerja .row-biru img {
+  margin: 50px 0;
+}
+
+#mitraKerja .row-putih {
+  background-color: white;
+  padding: 40px 50px;
+}
+
+#mitraKerja .row-putih img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#mitraKerja .row-putih ul {
+  margin-top: 60px;
+  padding: 10px 30px;
+  list-style: none;
+  display: flex;
+}
+
+#mitraKerja .row-putih ul li {
+  margin: 0 30px;
+}
+
+#mitraKerja .row-putih h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2926a9;
+}
+
+#mitraKerja .row-putih small {
+  font-weight: 500;
+  font-size: 12px;
+  color: #706e6e;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#mitraKerja .row-putih p {
+  font-weight: 500;
+  color: #706e6e;
+  text-align: left;
+}
+
+#mitraKerja .row-putih .col-putih-testi {
+  margin-top: 40px;
+}
+/* Produk */
+#produk {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+#produk .pembungkus-produk {
+  background-color: white;
+  padding: 50px;
+}
+
+#produk .pembungkus-produk .col-produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#produk .pembungkus-produk .row {
+  margin-bottom: 10px;
+}
+
+#produk .card-produk img {
+  width: auto;
+  height: 300px;
+}
+
+#produk .card-produk .card-body .tombol {
+  width: auto;
+  height: 40px;
+  padding-top: 5px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#produk .card-produk .card-body .hvr-bounce-to-top::before {
+  background-color: #2926a9;
+}
+
+#produk .card-produk h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2926a9;
+}
+
+#produk .pembungkus-produk .capt {
+  margin-bottom: 80px;
+}
+
+#produk .card-produk .card-text {
+  font-size: 15px;
+  margin-bottom: 10px;
+}

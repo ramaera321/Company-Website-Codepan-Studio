@@ -121,3 +121,16 @@ database.default.DBDriver = MySQLi
 #--------------------------------------------------------------------
 
 # logger.threshold = 4
+
+# --------------------------------------------------------------------
+# ReCaptcha 2
+# --------------------------------------------------------------------
+recaptcha2.key = 'XXXXXXXX-XXXXXXXX'
+recaptcha2.secret = 'XXXXXXXX-XXXXXXXX'
+
+# --------------------------------------------------------------------
+# ReCaptcha 3
+# --------------------------------------------------------------------
+recaptcha3.key = 'XXXXXXXX-XXXXXXXX'
+recaptcha3.secret = 'XXXXXXXX-XXXXXXXX'
+recaptcha3.scoreThreshold = 0.5
