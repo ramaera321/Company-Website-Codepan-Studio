@@ -22,7 +22,11 @@
 <!-- <section id="hadirDenganSolusi"> -->
 <section id="hadirDenganSolusi">
     <div class="container">
+<<<<<<< HEAD
         <div class="row mb-ket-solusi">
+=======
+        <div class="row mb-3">
+>>>>>>> 81e8296b8255641558bfd01648b2a23dfba7ac22
             <div class="col-md-5" id="judulSI" data-aos="fade-right">
                 <h1>Kami Hadir dengan Solusi Terbaik</h1>
                 <p>Jasa pembuatan aplikasi mobile ini kami hadirkan untuk memberikan layanan dan solusi bagi Anda.

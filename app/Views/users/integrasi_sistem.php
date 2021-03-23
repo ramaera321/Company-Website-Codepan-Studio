@@ -8,6 +8,22 @@
 <!-- Jumbotron Heading -->
 <div id="mt" class="centered jumbotron jumbotron-fluid"
     style="background-image: url('../img/integrasi-sistem/Jumbotron\ Integrasi\ Sistem.png');">
+<<<<<<< HEAD
+=======
+    <div class="container">
+        <h1 class="display-4">INTEGRASI SISTEM</h1>
+        <p class="lead text-center">
+            Tingkatkan kinerja bisnis Anda dengan data yang terintegrasi
+        </p>
+        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
+    </div>
+</div>
+<!-- Akhir JumboTron -->
+
+<!-- Jumbotron Heading -->
+<div id="mt" class="centered jumbotron jumbotron-fluid"
+    style="background-image: url('../img/integrasi-sistem/Jumbotron\ Integrasi\ Sistem.png');">
+>>>>>>> 81e8296b8255641558bfd01648b2a23dfba7ac22
     <div class="container">
         <h1 class="display-4">INTEGRASI SISTEM</h1>
         <p class="lead text-center">
@@ -21,7 +37,11 @@
 <!-- <section id="hadirDenganSolusi"> -->
 <section id="hadirDenganSolusi">
     <div class="container">
+<<<<<<< HEAD
         <div class="row mb-ket-solusi">
+=======
+        <div class="row mb-3">
+>>>>>>> 81e8296b8255641558bfd01648b2a23dfba7ac22
             <div class="col-md-5" id="judulSI" data-aos="fade-right">
                 <h1>Kami Hadir dengan Solusi Terbaik</h1>
                 <p>Kami hadir memberikan layanan dan solusi atas permasalahan Anda. Kami menawarkan layanan

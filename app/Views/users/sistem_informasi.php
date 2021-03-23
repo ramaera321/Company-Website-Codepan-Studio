@@ -1,5 +1,9 @@
 <?= $this->extend('templates/v_super_user'); ?>
 
+<?= $this->section('style'); ?>
+<link rel="stylesheet" href="/assets/css/dropdown_item.css">
+<?= $this->endSection(); ?>
+
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading -->
 <div id="mt" class="centered jumbotron jumbotron-fluid"
