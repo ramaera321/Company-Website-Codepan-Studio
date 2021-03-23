@@ -120,7 +120,7 @@ $(document).ready(function () {
         nav: false,
       },
       1000: {
-        loop: false,
+        loop: true,
         items: 3,
         navigation: false,
       },
