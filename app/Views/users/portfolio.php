@@ -2,6 +2,7 @@
 
 <?= $this->section('style'); ?>
 <link rel="stylesheet" href="/assets/css/portofolio.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
 <?= $this->endSection(); ?>
 
 <?= $this->section('content_user'); ?>
@@ -23,19 +24,24 @@
                     <a class="nav-link active" data-toggle="tab" href="#all" onclick="refreshAos()"><span>All</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#pengadaan-it" onclick="refreshAos()"><span>Pengadaan IT</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#pengadaan-it" onclick="refreshAos()"><span>Pengadaan
+                            IT</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#aplikasi-mobile" onclick="refreshAos()"><span>Aplikasi Mobile</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#aplikasi-mobile" onclick="refreshAos()"><span>Aplikasi
+                            Mobile</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#sistem-informasi" onclick="refreshAos()"><span>Sistem Informasi</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#sistem-informasi" onclick="refreshAos()"><span>Sistem
+                            Informasi</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#integrasi-sistem" onclick="refreshAos()"><span>Integrasi Sistem</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#integrasi-sistem"
+                        onclick="refreshAos()"><span>Integrasi Sistem</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#aplikasi-egov" onclick="refreshAos()"><span>Aplikasi E-Gov</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#aplikasi-egov" onclick="refreshAos()"><span>Aplikasi
+                            E-Gov</span></a>
                 </li>
             </ul>
 
@@ -62,7 +68,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +90,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +112,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +136,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +158,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +180,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +208,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +230,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +254,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -261,7 +276,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +296,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +326,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +348,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -351,7 +370,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +394,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -395,7 +416,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +438,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -445,7 +468,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +490,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -487,7 +512,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -510,7 +536,8 @@
                                         media pembelajaran programming robot line maze berbasis mobile untuk
                                         membantu siswa SD,SMP,SMA yang ingin belajar programming secara basic dan di
                                         kemas dalam bentuk games secara multiplayer</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -531,7 +558,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic,Video
                                         Iklan, dan Live Streaming. CV. Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography. </p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -552,7 +580,8 @@
                                         Documentasi Event, Aerial Footage, Documenter Film, Motion Graphic, Video
                                         Iklan, dan Live Streaming.CV.Arindra Production banyak sekali keahlian dan
                                         pengalaman yang cukup untuk mengerjakan di bidang Videography.</p>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
                         </div>
@@ -578,7 +607,8 @@
                                     Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live
                                     Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup
                                     untuk mengerjakan di bidang Videography.</p>
-                                <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                <a href="./portofolio_content.php"
+                                    class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
                     </div>
@@ -603,7 +633,8 @@
                                     Aerial Footage, Documenter Film, Motion Graphic, Video Iklan, dan Live
                                     Streaming.CV.Arindra Production banyak sekali keahlian dan pengalaman yang cukup
                                     untuk mengerjakan di bidang Videography.</p>
-                                <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                                <a href="./portofolio_content.php"
+                                    class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
                     </div>
@@ -611,9 +642,31 @@
                 <!-- End of Apliaksi E-Gov Portofolio -->
             </div>
         </div>
+
+        <!-- Pagination -->
+        <nav class="pagination-bar" aria-label="...">
+            <ul class="pagination justify-content-center">
+                <li class="page-item hvr-icon-wobble-horizontal">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fa fa-arrow-left hvr-icon"></i></span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">2</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item hvr-icon-wobble-horizontal">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="fa fa-arrow-right hvr-icon"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
         </path>
     </svg>
 </div>

@@ -6,9 +6,9 @@
 
     <h1 class="h3 mb-4 text-gray-800"><?= $title; ?></h1>
     <?php if (session()->getFlashdata('pesan')) : ?>
-        <div class="alert alert-success" role="alert">
-            <?= session()->getFlashdata('pesan'); ?>
-        </div>
+    <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('pesan'); ?>
+    </div>
     <?php endif; ?>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -21,7 +21,10 @@
                 <input type="hidden" name="link" value="karirbanner">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Deskripsi</label>
-                    <textarea class="form-control text rounded<?= ($validation->getError('deskripsi')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea" name="deskripsi" value=""><?= (old('deskripsi')) ? old('deskripsi') : $banner['deskripsi']; ?></textarea>
+                    <textarea
+                        class="form-control text rounded<?= ($validation->getError('deskripsi')) ? ' is-invalid' : ''; ?>"
+                        id="exampleFormControlTextarea" name="deskripsi"
+                        value=""><?= (old('deskripsi')) ? old('deskripsi') : $banner['deskripsi']; ?></textarea>
                     <div class="invalid-feedback">
                         <?= $validation->getError('deskripsi'); ?>
                     </div>
@@ -32,18 +35,23 @@
                         <span class="input-group-text" id="inputGroupFileAddon01">Gambar Banner</span>
                     </div>
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input<?= ($validation->getError('foto')) ? 'is-invalid' : ''; ?>" id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()" value="<?= old('foto'); ?>">
+                        <input type="file"
+                            class="custom-file-input<?= ($validation->getError('foto')) ? 'is-invalid' : ''; ?>"
+                            id="foto" aria-describedby="inputGroupFileAddon01" name="foto" onchange="previewImage()"
+                            value="<?= old('foto'); ?>">
                         <div class="invalid-feedback invalid-foto">
                             <?= $validation->getError('foto'); ?>
                         </div>
-                        <label class="custom-file-label" for="inputGroupFile01"><?= (old('foto')) ? old('foto') : $banner['foto']; ?></label>
+                        <label class="custom-file-label"
+                            for="inputGroupFile01"><?= (old('foto')) ? old('foto') : $banner['foto']; ?></label>
                     </div>
                 </div>
                 <small id="passwordHelpBlock" class="form-text text-muted ml-3">
                     <li>ukuran gambar maksimal 5 mb.</li>
                 </small>
                 <div class="col-sm-2 mt-2">
-                    <img src="/assets/img/banner/<?= $banner['foto']; ?>" alt="" class="img-thumbnail img-preview shadow-sm">
+                    <img src="/assets/img/banner/<?= $banner['foto']; ?>" alt=""
+                        class="img-thumbnail img-preview shadow-sm">
                 </div>
 
                 <input type="submit" value="Create" class="submit btn-save">
@@ -67,7 +75,8 @@
                     <tr>
                         <th scope="row">1</th>
                         <td><?= $banner['deskripsi']; ?></td>
-                        <td><img src="/assets/img/<?= $banner['foto']; ?>" alt="<?= $banner['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
+                        <td><img src="/assets/img/banner/<?= $banner['foto']; ?>" alt="<?= $banner['foto']; ?>"
+                                class="img-thumbnail show-thumbnail myImg"></td>
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span class="close">&times;</span>
@@ -79,7 +88,8 @@
                             <form action="/banner/<?= $banner['id']; ?>" method="post" class="d-inline">
                                 <?= csrf_field(); ?>
                                 <input type="hidden" name="_method" value="DELETE">
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin ingin menghapus data ini ?')"></button>
+                                <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('apakah anda yakin ingin menghapus data ini ?')"></button>
                             </form>
                         </td>
                     </tr>

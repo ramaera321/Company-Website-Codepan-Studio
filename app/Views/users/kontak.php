@@ -2,6 +2,7 @@
 
 <?= $this->section('style'); ?>
 <link rel="stylesheet" href="/assets/css/kontak.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
 <?= $this->endSection(); ?>
 
 <?= $this->section('content_user'); ?>

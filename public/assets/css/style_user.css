@@ -1563,6 +1563,52 @@ a.wa-button:hover {
 }
 
 /* --- End of CSS Mari Bermitra --- */
+
+/* --- Pagination --- */
+nav.pagination-bar {
+  background: none;
+}
+
+nav.pagination-bar .page-item {
+  cursor: pointer;
+  margin: 0 2px;
+  outline: none;
+}
+
+nav.pagination-bar .page-item.active .page-link {
+  background: #2926a9;
+}
+
+nav.pagination-bar .page-link {
+  padding: 15px 20px;
+  color: #2926a9;
+  border: none;
+}
+
+nav.pagination-bar li:first-child .page-link {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 15px 20px 15px 25px;
+}
+
+nav.pagination-bar .page-item.active a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+nav.pagination-bar a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+nav.pagination-bar li:last-child .page-link {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 15px 25px 15px 20px;
+}
+
 /* --- CSS Footer --- */
 footer {
   font-family: "Montserrat", sans-serif;

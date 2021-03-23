@@ -13,7 +13,9 @@
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link href="<?= base_url('assets/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); ?>" rel="stylesheet">
+    <link
+        href="<?= base_url('assets/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); ?>"
+        rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/css/sb-admin-2.css'); ?>" rel="stylesheet">
@@ -50,7 +52,8 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -69,11 +72,13 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url('assets/vendor/jquery/jquery.min.js'); ?>"></script>
-    <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+
+    <script src="<?= base_url('https://code.jquery.com/jquery-3.5.1.slim.min.js'); ?>"></script>
+    <script src="<?= base_url('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'); ?>"></script>
+    <script src="<?= base_url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js'); ?>"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="<?= base_url('assets/vendor/jquery-easing/jquery.easing.min.js'); ?>"></script>
+
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url('assets/js/sb-admin-2.min.js'); ?>"></script>
@@ -81,42 +86,42 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
     <script src="<?= base_url('assets/js/script.js'); ?>"></script>
     <script>
-        function previewImage() {
-            const foto = document.querySelector('#foto');
-            const fotoLabel = document.querySelector('.custom-file-label');
-            const imgPreview = document.querySelector('.img-preview');
+    function previewImage() {
+        const foto = document.querySelector('#foto');
+        const fotoLabel = document.querySelector('.custom-file-label');
+        const imgPreview = document.querySelector('.img-preview');
 
-            fotoLabel.textContent = foto.files[0].name;
+        fotoLabel.textContent = foto.files[0].name;
 
-            const fileFoto = new FileReader();
-            fileFoto.readAsDataURL(foto.files[0]);
+        const fileFoto = new FileReader();
+        fileFoto.readAsDataURL(foto.files[0]);
 
-            fileFoto.onload = function(e) {
-                imgPreview.src = e.target.result;
-            }
+        fileFoto.onload = function(e) {
+            imgPreview.src = e.target.result;
         }
-        ClassicEditor
-            .create(document.querySelector('#exampleFormControlTextarea1'))
-            .catch(error => {
-                console.error(error);
-            });
+    }
+    ClassicEditor
+        .create(document.querySelector('#exampleFormControlTextarea1'))
+        .catch(error => {
+            console.error(error);
+        });
 
-        ClassicEditor
-            .create(document.querySelector('#exampleFormControlTextarea2'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#exampleFormControlTextarea3'))
-            .catch(error => {
-                console.error(error);
-            });
+    ClassicEditor
+        .create(document.querySelector('#exampleFormControlTextarea2'))
+        .catch(error => {
+            console.error(error);
+        });
+    ClassicEditor
+        .create(document.querySelector('#exampleFormControlTextarea3'))
+        .catch(error => {
+            console.error(error);
+        });
 
-        ClassicEditor
-            .create(document.querySelector('#exampleFormControlTextarea4'))
-            .catch(error => {
-                console.error(error);
-            });
+    ClassicEditor
+        .create(document.querySelector('#exampleFormControlTextarea4'))
+        .catch(error => {
+            console.error(error);
+        });
     </script>
 </body>
 

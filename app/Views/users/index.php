@@ -1,5 +1,9 @@
 <?= $this->extend('templates/v_super_user'); ?>
 
+<?= $this->section('style'); ?>
+<link rel="stylesheet" href="/assets/css/responsive.css">
+<?= $this->endSection(); ?>
+
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading with background from file -->
 <div id="mt" class="jumbotron d-flex justify-content-end"

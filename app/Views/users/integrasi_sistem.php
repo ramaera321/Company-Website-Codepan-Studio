@@ -2,6 +2,7 @@
 
 <?= $this->section('style'); ?>
 <link rel="stylesheet" href="/assets/css/dropdown_item.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
 <?= $this->endSection(); ?>
 
 <?= $this->section('content_user'); ?>
@@ -26,7 +27,7 @@
                 <h1>Kami Hadir dengan Solusi Terbaik</h1>
                 <p>Kami hadir memberikan layanan dan solusi atas permasalahan Anda. Kami menawarkan layanan
                     integrasi sistem yang handal dan terpercaya.</p>
-                <p><a class="hvr-bounce-to-top" href="#">Dapatkan Konsultasi Gratis <i
+                <p><a class="hvr-bounce-to-right" href="#">Dapatkan Konsultasi Gratis <i
                             class="fas fa-long-arrow-alt-right hvr-icon-fade"></i></a></p>
             </div>
 

@@ -2,6 +2,7 @@
 
 <?= $this->section('style'); ?>
 <link rel="stylesheet" href="/assets/css/dropdown_item.css">
+<link rel="stylesheet" href="/assets/css/responsive.css">
 <?= $this->endSection(); ?>
 
 <?= $this->section('content_user'); ?>
@@ -10,9 +11,8 @@
     style="background-image: url('../img/aplikasi-egov/Jumbotron\ EGOV.png');">
     <div class="container">
         <h1 class="display-4">Aplikasi E-GOV</h1>
-        <p class="lead text-center">Melalui aplikasi pemerintah E-Gov kami senantiasa berkontribusi dalam teknologi
-            IT untuk
-            kemajuan negeri
+        <p class="lead text-center">Melalui aplikasi pemerintah E-Gov kami senantiasa berkontribusi dalam teknologi IT
+            untuk kemajuan negeri
         </p>
         <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
     </div>
@@ -28,7 +28,7 @@
                 <p>Melalui aplikasi pemerintah (E-Gov). Kami hadir memberikan layanan dan solusi atas permasalahan
                     Anda. Kami menawarkan layanan yang kompetitif dan prima menggunakan metode yang handal dan
                     terpercaya.</p>
-                <p><a class="hvr-bounce-to-top" href="#">Dapatkan Konsultasi Gratis <i
+                <p><a class="hvr-bounce-to-right" href="#">Dapatkan Konsultasi Gratis <i
                             class="fas fa-long-arrow-alt-right hvr-icon-fade"></i></a></p>
             </div>
 
