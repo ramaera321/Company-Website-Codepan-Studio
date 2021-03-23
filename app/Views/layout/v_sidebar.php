@@ -2,9 +2,9 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
         <div class="sidebar-brand-icon">
-            <img src="/assets/img/icon/LogoPertamaArtboard6.png" alt="">
+            <img src="/assets/img/logo/LogoPertamaArtboard6.png" alt="">
         </div>
     </a>
     <!-- 
