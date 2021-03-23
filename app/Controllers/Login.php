@@ -18,21 +18,24 @@ class Login extends BaseController
     }
     public function index()
     {
-        helper(['form']);
         return view('templates/v_login');
     }
 
     public function admin()
     {
-        $data = [
-            'id' => session()->get('id'),
-            'tipe_admin' => session()->get('tipe_admin'),
-            'nama'     => session()->get('nama'),
-            'email'     => session()->get('email'),
-            'password'     => session()->get('password'),
-            'foto'     => session()->get('foto'),
-        ];
-        return view('admin/v_superadmin_home', $data);
+        if (session()->get('logged_in')) {
+            $data = [
+                'id' => session()->get('id'),
+                'tipe_admin' => session()->get('tipe_admin'),
+                'nama'     => session()->get('nama'),
+                'email'     => session()->get('email'),
+                'password'     => session()->get('password'),
+                'foto'     => session()->get('foto'),
+            ];
+            return view('admin/v_superadmin_home', $data);
+        } else {
+            return redirect()->to('/login');
+        }
     }
 
     public function auth()

@@ -19,7 +19,7 @@ class Admin extends BaseController
 
 	public function index()
 	{
-		if (session()->get('logged_in')) {
+		if (session()->get('logged_in') == true) {
 			$data = [
 				'tipe_admin' => session()->get('tipe_admin'),
 				'nama' 	=> session()->get('nama'),

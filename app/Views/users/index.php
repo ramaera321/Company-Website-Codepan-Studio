@@ -769,18 +769,6 @@
         <p class="text-center text-under-container" data-aos="fade-up">Wawasan baru membantu Anda melakukan
             pekerjaan dengan lebih baik dan efisien. <a href="" class="hvr-underline-from-left">Lihat semua
                 artikel.</a></p>
-
-        <?php
-        helper(['form', 'reCaptcha']);
-
-        echo form_open();
-
-        echo reCaptcha3('reCaptcha3', ['id' => 'recaptcha_v3'], ['action' => 'contactForm']);
-
-        echo form_submit('submit', 'Submit');
-
-        echo form_close();
-        ?>
     </div>
 
 </div>

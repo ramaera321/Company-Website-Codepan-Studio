@@ -48,6 +48,7 @@ $routes->get('/integrasi_sistem', 'Users::integrasi_sistem');
 $routes->get('/pengadaan_it', 'Users::pengadaan_it');
 
 // Admin Routes
+$routes->get('/login', 'Login::index');
 // $routes->get('/', 'Admin::index', ['filter' => 'auth']);
 $routes->get('/admin', 'Admin::index');
 $routes->get('/add_admin', 'Admin::post');
