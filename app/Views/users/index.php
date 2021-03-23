@@ -2,7 +2,8 @@
 
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading with background from file -->
-<div id="mt" class="jumbotron d-flex justify-content-end" style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
+<div id="mt" class="jumbotron d-flex justify-content-end"
+    style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
     <!-- Container using boostrap 4 and scroll animation fade from down using Animated On Scroll -->
     <div class="container" data-aos="fade-down">
         <!-- Content -->
@@ -139,14 +140,17 @@
                         <!-- Icon -->
                         <div class="img-area laptop" style="display:flex; justify-content:center; align-items:center;">
                             </script>
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wkossx6a.json" background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay></lottie-player>
+                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wkossx6a.json"
+                                background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay>
+                            </lottie-player>
 
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
+                                    class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -165,13 +169,16 @@
                         <!-- Icon -->
                         <div class="img-area phone">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_viopfy4u.json" background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay></lottie-player>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_viopfy4u.json"
+                                background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay>
+                            </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal"> SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal"> SELENGKAPNYA <i
+                                    class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -190,13 +197,16 @@
                         <!-- Icon -->
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qc9iczkv.json" background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qc9iczkv.json"
+                                background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay>
+                            </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
+                                    class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -215,14 +225,17 @@
                         <!-- Icon -->
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aanhnju9.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aanhnju9.json"
+                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                            </lottie-player>
 
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
+                                    class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -239,13 +252,16 @@
                         <p class="card-text">Komponen Instruktur IT yang berkualitas untuk sistem yang handal</p>
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ssodehfl.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ssodehfl.json"
+                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                            </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
+                                    class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -372,7 +388,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_dunmkucz.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_dunmkucz.json"
+                            background="transparent" speed="1" loop autoplay></lottie-player>
                     </div>
                     <div class="col-9 text">
                         <h3>Respon Cepat</h3>
@@ -384,7 +401,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q32pr5gh.json" background="transparent" speed="1" loop autoplay>
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q32pr5gh.json"
+                            background="transparent" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -400,7 +418,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_U8MhmH.json" background="transparent" style="transform: scale(1.3);" speed="1" loop autoplay>
+                        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_U8MhmH.json"
+                            background="transparent" style="transform: scale(1.3);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -417,7 +436,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player class="atas" src="https://assets2.lottiefiles.com/packages/lf20_iq0zmgip.json" background="transparent" style="transform: scale(0.7);" speed="1" loop autoplay>
+                        <lottie-player class="atas" src="https://assets2.lottiefiles.com/packages/lf20_iq0zmgip.json"
+                            background="transparent" style="transform: scale(0.7);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -432,7 +452,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_lqbg5smd.json" background="transparent" style="transform: scale(1.7);" speed="1" loop autoplay>
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_lqbg5smd.json"
+                            background="transparent" style="transform: scale(1.7);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -448,7 +469,8 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player class="atas" src="https://assets5.lottiefiles.com/packages/lf20_qdbb21wb.json" background="transparent" style="transform: scale(0.9);" speed="1" loop autoplay>
+                        <lottie-player class="atas" src="https://assets5.lottiefiles.com/packages/lf20_qdbb21wb.json"
+                            background="transparent" style="transform: scale(0.9);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -485,7 +507,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -499,7 +522,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -512,7 +536,9 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-4">
-                                <lottie-player class="target" src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player class="target"
+                                    src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -646,7 +672,7 @@
                             </div>
 
                             <!-- Agreement -->
-                            <div class="col-lg-7 box-setuju">
+                            <div class="col-lg-7 box-setuju d-flex justify-content-start">
                                 <input type="checkbox" id="setuju" name="setuju">
                                 <!-- Agreement Text -->
                                 <label for="setuju">Saya menyetujui bahwa data yang saya isi adalah benar</label>
@@ -655,11 +681,13 @@
 
                             <!-- Submit Button -->
                             <div class="col-lg-5 text-center">
-                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled">Kirim
+                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn"
+                                    disabled="disabled">Kirim
                                 </button>
 
                                 <button class="btn btn-primary d-none" type="button" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
                                     Loading...
                                 </button>
                             </div>
@@ -769,18 +797,6 @@
         <p class="text-center text-under-container" data-aos="fade-up">Wawasan baru membantu Anda melakukan
             pekerjaan dengan lebih baik dan efisien. <a href="" class="hvr-underline-from-left">Lihat semua
                 artikel.</a></p>
-
-        <?php
-        helper(['form', 'reCaptcha']);
-
-        echo form_open();
-
-        echo reCaptcha3('reCaptcha3', ['id' => 'recaptcha_v3'], ['action' => 'contactForm']);
-
-        echo form_submit('submit', 'Submit');
-
-        echo form_close();
-        ?>
     </div>
 
 </div>

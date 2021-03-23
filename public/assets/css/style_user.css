@@ -244,7 +244,7 @@ nav {
 /* - Add color when navbar items on hover or active - */
 #navbarSupportedContent .nav-link.active,
 #navbarSupportedContent .nav-link:hover {
-  color: #03d0b9;
+  color: #2926a9;
 }
 
 /* - Add Underline Properties but doesn't show - */
@@ -254,7 +254,7 @@ nav .mega-area a::before,
   position: absolute;
   left: 0;
   bottom: -21px;
-  background-color: #03d0b9;
+  background-color: #2926a9;
   width: 100%;
   height: 3px;
   transform: scaleX(0);
@@ -264,7 +264,7 @@ nav .mega-area a::before,
 
 /* - Change Icon Layanan IT items color when hover - */
 nav .mega-area a:hover i {
-  color: #03d0b9;
+  color: #2926a9;
 }
 
 /* - Adjust position mega-area dropdown "layanan it" items underline - */
@@ -279,23 +279,6 @@ nav .mega-area a:hover::before,
 #navbarSupportedContent .nav-link:hover::before {
   transform: scaleX(1);
 }
-/* -- Hover underline navbar item -- */
-/* 
-.navbar-light .navbar-nav .active > .nav-link {
-  color: #2926a9;
-} */
-
-/* nav .navbar-nav li {
-  display: flex;
-  align-items: center;
-} */
-/* 
-nav ul {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-} */
 
 /* -- Remove list style of navbar items -- */
 nav ul li {
@@ -624,7 +607,7 @@ a.wa-button:hover {
   border-radius: 50px;
   padding: 15px 40px;
   font-weight: 500;
-  background: #03d0b9; /* Color Button */
+  background: #33bef0; /* Color Button */
   border: none;
   transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   position: relative;
@@ -981,7 +964,7 @@ a.wa-button:hover {
 .portofolio .card-body .mini-judul {
   font-size: 15px;
   font-weight: 500;
-  color: #03d0b9;
+  color: #33bef0;
   margin-bottom: 5px;
 }
 
@@ -1004,7 +987,7 @@ a.wa-button:hover {
 
 .portofolio .card .btn-primary {
   border: none;
-  background-color: #03d0b9;
+  background-color: #33bef0;
   width: 100%;
   padding: 12px;
 }
@@ -1123,7 +1106,7 @@ a.wa-button:hover {
 }
 
 .solusi .keterangan p {
-  color: #03d0b9;
+  color: #33bef0;
 }
 
 .solusi .keterangan .sub-judul {
@@ -1284,8 +1267,8 @@ a.wa-button:hover {
 .solusi .box-setuju input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
-  height: 25px;
-  width: 37px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #2926a9;
   margin-right: 10px;
   border-radius: 4px;
@@ -1299,6 +1282,7 @@ a.wa-button:hover {
 .solusi .box-setuju label {
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
 .solusi .box-setuju input[type="checkbox"]::after {
@@ -1424,12 +1408,14 @@ a.wa-button:hover {
   padding-left: 0;
 }
 
+#mitraKerja .row-putih h5,
 .solusi .container-testi .pelanggan h5 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 3px;
 }
 
+#mitraKerja .row-putih .posisi,
 .solusi .container-testi .pelanggan .posisi {
   font-size: 0.75rem;
   color: #919090;
@@ -1516,12 +1502,12 @@ a.wa-button:hover {
 .alasan-bermitra .end-text a,
 .page-blog .text-under-container a {
   text-decoration: none;
-  color: #03d0b9;
+  color: #33bef0;
 }
 
 .alasan-bermitra .end-text .hvr-underline-from-left::before,
 .page-blog .text-under-container .hvr-underline-from-left::before {
-  background-color: #03d0b9;
+  background-color: #33bef0;
   height: 2px;
 }
 
@@ -1613,7 +1599,7 @@ footer .contact {
 footer .contact a {
   text-decoration: none;
   cursor: pointer;
-  color: #03d0b9;
+  color: #33bef0;
 }
 
 footer .contact a:hover {
@@ -1636,5 +1622,5 @@ footer .copyright {
 footer .contact p,
 footer .copyright p {
   font-size: 16px;
-  color: #03d0b9;
+  color: #33bef0;
 }
