@@ -6,7 +6,8 @@
 
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading -->
-<div id="mt" class="centered jumbotron jumbotron-fluid" style="background-image: url('../img/tentang-kami/Jumbotron.png')">
+<div id="mt" class="centered jumbotron jumbotron-fluid"
+    style="background-image: url('../img/tentang-kami/Jumbotron.png')">
     <div class="container">
         <h1 class="display-4">TENTANG KAMI</h1>
         <p class="lead text-center">
@@ -50,7 +51,9 @@
                         <div class="card-body">
                             <!-- <img src="/img/compass.png" alt="" /> -->
                             <div class="pembungkus-img-tentang">
-                                <lottie-player class="watch" src="https://assets6.lottiefiles.com/packages/lf20_zixiihzc.json" speed="1" style="width: 100%; height: auto; transform: scale(3.5);" loop autoplay>
+                                <lottie-player class="watch"
+                                    src="https://assets6.lottiefiles.com/packages/lf20_zixiihzc.json" speed="1"
+                                    style="width: 100%; height: auto; transform: scale(3.5);" loop autoplay>
                                 </lottie-player>
                             </div>
                             <h5 class="card-title">MISI KAMI</h5>
@@ -66,7 +69,8 @@
                         <div class="card-body">
                             <!-- <img src="/img/flag.png" alt="" /> -->
                             <div class="pembungkus-img-tentang">
-                                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ecpurfi6.json" speed="1" style="width: 100%; height: 100%" loop autoplay>
+                                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ecpurfi6.json"
+                                    speed="1" style="width: 100%; height: 100%" loop autoplay>
                                 </lottie-player>
                             </div>
                             <h5 class="card-title">PENDEKATAN & BUDAYA KAMI</h5>
@@ -108,20 +112,25 @@
                 </div>
                 <!--Akhir container-->
 
-                <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="hvr-pulse" src="../img/tentang-kami/play-button.png" alt="" /></a>
+                <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="hvr-pulse"
+                        src="../img/tentang-kami/play-button.png" alt="" /></a>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Video</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                    <span id="video-close-button-id" aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pp4SSw_0uXA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe id="youtube-player-id" width="100%" height="100%"
+                                        src="https://www.youtube.com/embed/pp4SSw_0uXA" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +207,19 @@
 <!-- End of Page Blog -->
 <div class="svg-wave" style="background-color: transparent">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+<<<<<<< HEAD
+=======
+        </path>
+    </svg>
+</div>
+
+<div class="svg-wave" style="background-color: transparent">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+>>>>>>> 81e8296b8255641558bfd01648b2a23dfba7ac22
         </path>
     </svg>
 </div>

@@ -1,8 +1,13 @@
 <?= $this->extend('templates/v_super_user'); ?>
 
+<?= $this->section('style'); ?>
+<link rel="stylesheet" href="/assets/css/dropdown_item.css">
+<?= $this->endSection(); ?>
+
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading -->
-<div id="mt" class="centered jumbotron jumbotron-fluid" style="background-image: url('../img/aplikasi-egov/Jumbotron\ EGOV.png');">
+<div id="mt" class="centered jumbotron jumbotron-fluid"
+    style="background-image: url('../img/aplikasi-egov/Jumbotron\ EGOV.png');">
     <div class="container">
         <h1 class="display-4">Aplikasi E-GOV</h1>
         <p class="lead text-center">Melalui aplikasi pemerintah E-Gov kami senantiasa berkontribusi dalam teknologi
@@ -17,18 +22,23 @@
 <!-- <section id="hadirDenganSolusi"> -->
 <section id="hadirDenganSolusi">
     <div class="container">
-        <div class="row">
+<<<<<<< HEAD
+        <div class="row mb-ket-solusi">
+=======
+        <div class="row mb-3">
+>>>>>>> 81e8296b8255641558bfd01648b2a23dfba7ac22
             <div class="col-md-5" id="judulSI" data-aos="fade-right">
                 <h1>Kami Hadir dengan Solusi Terbaik</h1>
                 <p>Melalui aplikasi pemerintah (E-Gov). Kami hadir memberikan layanan dan solusi atas permasalahan
                     Anda. Kami menawarkan layanan yang kompetitif dan prima menggunakan metode yang handal dan
                     terpercaya.</p>
-                <p><a class="hvr-bounce-to-top" href="#">Dapatkan Konsultasi Gratis <i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <p><a class="hvr-bounce-to-top" href="#">Dapatkan Konsultasi Gratis <i
+                            class="fas fa-long-arrow-alt-right hvr-icon-fade"></i></a></p>
             </div>
 
             <div class="col-md-7" id="bullets" data-aos="fade-left">
                 <ul>
-                    <li><img src="../img/sistem-informasi/Pointer.png" alt=""></li>
+                    <li><img src="/assets/img/assets/Pointer.png" alt=""></li>
                     <li class="bullets">
                         <h4>Meningkatkan Transparansi</h4>
                         <p>Memudahkan penyampaian informasi atau laporan kepada masyarakat sehingga pemerintah lebih
@@ -36,21 +46,21 @@
                     </li>
                 </ul>
                 <ul>
-                    <li><img src="../img/sistem-informasi/Pointer.png" alt=""></li>
+                    <li><img src="/assets/img/assets/Pointer.png" alt=""></li>
                     <li class="bullets">
                         <h4>Lebih Mudah</h4>
                         <p>Aplikasi E-Gov akan mempermudah pengelolaan data pemerintahan.</p>
                     </li>
                 </ul>
                 <ul>
-                    <li><img src="../img/sistem-informasi/Pointer.png" alt=""></li>
+                    <li><img src="/assets/img/assets/Pointer.png" alt=""></li>
                     <li class="bullets">
                         <h4>Data Aman</h4>
                         <p>Dengan aplikasi e-gov, pengelolaan data aman dan mudah.</p>
                     </li>
                 </ul>
                 <ul>
-                    <li><img src="../img/sistem-informasi/Pointer.png" alt=""></li>
+                    <li><img src="/assets/img/assets/Pointer.png" alt=""></li>
                     <li class="bullets">
                         <h4>Lebih Efisien</h4>
                         <p>Dengan aplikasi e-gov, maka terciptanya peningkatan efisiensi beban operasional.</p>
@@ -61,11 +71,12 @@
         <!--Akhir Row-->
 
         <div class="row" id="row-card" data-aos="fade-down" data-aos-delay="200">
-            <div class="col-lg-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 mb-4 margin-rowCard">
+                <div class="card h-100">
                     <!-- <img src="/img/Path.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="graf" src="https://assets6.lottiefiles.com/packages/lf20_nl9bgfle.json" background="transparent" speed="1" loop autoplay>
+                        <lottie-player class="graf" src="https://assets2.lottiefiles.com/packages/lf20_nl9bgfle.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
@@ -80,13 +91,15 @@
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 mb-4 margin-rowCard">
+                <div class="card h-100">
                     <!-- <img src="/img/smile.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="smile" src="https://assets1.lottiefiles.com/packages/lf20_qc9sajgo.json" background="transparent" speed="1" loop autoplay>
+                        <lottie-player class="smile" src="https://assets7.lottiefiles.com/packages/lf20_qdbb21wb.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
                         </lottie-player>
                     </div>
+
                     <div class="card-body">
                         <div id="counter">
                             <div class="pembungkus-counter d-flex justify-content-center align-items-center">
@@ -99,11 +112,12 @@
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 mb-4 margin-rowCard">
+                <div class="card h-100">
                     <!-- <img src="/img/Shape.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="phone" src="https://assets7.lottiefiles.com/packages/lf20_tlzxty4j.json" background="transparent" speed="1" loop autoplay>
+                        <lottie-player class="phone" src="https://assets9.lottiefiles.com/packages/lf20_tlzxty4j.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
@@ -118,16 +132,18 @@
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="card">
+            <div class="col-lg-3 col-md-6 mb-4 margin-rowCard">
+                <div class="card h-100">
                     <!-- <img src="/img/user.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="partner" src="https://assets4.lottiefiles.com/packages/lf20_2wrjlrbz.json" background="transparent" speed="1" loop autoplay>
+                        <lottie-player class="partner" src="https://assets1.lottiefiles.com/packages/lf20_2wrjlrbz.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
                         <div id="counter">
-                            <div class="pembungkus-counter d-flex justify-content-center align-items-center align-items-center">
+                            <div
+                                class="pembungkus-counter d-flex justify-content-center align-items-center align-items-center">
                                 <p class="card-text counter-value" id="count4" data-count="1">20</p>
                                 <span id="span4">partner</span>
                             </div>
@@ -139,7 +155,8 @@
         </div>
         <!--Akhir Row-Card-->
 
-        <p class="p-bottom">Kami akan membantu Anda mencapai tujuan. <a class="hvr-underline-from-left" href="#">Konsultasi sekarang.</a></p>
+        <p class="p-bottom">Kami akan membantu Anda mencapai tujuan. <a class="hvr-underline-from-left"
+                href="#">Konsultasi sekarang.</a></p>
     </div>
     <!--Akhir Container 1-->
 
@@ -204,8 +221,8 @@
         </div>
         <!--Akhir Row1-->
         <div class="row" data-aos="fade-up" data-aos-offset="10" data-aos-delay="300">
-            <div class="col-md-4">
-                <div class="card card-portofolio">
+            <div class="col-lg-4 col-md-6 porto-margin">
+                <div class="card card-portofolio h-100">
                     <div class="card-img">
                         <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
                     </div>
@@ -221,8 +238,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card card-portofolio">
+            <div class="col-lg-4 col-md-6 porto-margin">
+                <div class="card card-portofolio h-100">
                     <div class="card-img">
                         <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
                     </div>
@@ -238,8 +255,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card card-portofolio">
+            <div class="col-lg-4 col-md-6 porto-margin">
+                <div class="card card-portofolio h-100">
                     <div class="card-img">
                         <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
                     </div>
@@ -273,19 +290,19 @@
             </div>
         </div>
         <!--Akhir Row1-->
-        <div class="row row-putih">
-            <div class="col-md-6">
+        <div class="row row-putih d-flex justify-content-between">
+            <div class="col-md-6 margin-testi">
                 <div class="row row-putih-testi" data-aos="fade-right">
                     <div class="col-lg-4 col-putih-testi">
                         <div class="img-testi">
                             <img src="../img/sistem-informasi/Reza Arindra.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>Reza Arindra Fadillah</h2>
-                            <small>CEO & Project Manager <br>CV. Arindra Production</small>
+                            <h5 class="nama-pelanggan">Reza Arindra Fadillah</h5>
+                            <p class="posisi">CEO & Project Manager CV. Arindra Production</p>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="mx-0 mt-1 col-lg-8">
                         <p>Terima kasih kepada Codepan Studio Surabaya, aplikasinya sangat membantu. Sudah kami
                             gunakan seluruhnya. Lalu layanan dari Profio secara kesuluruhan juga sudah cukup baik
                             mulai dari komunikasi, hasil, dan ketepatan dalam menyelesaikannya.</p>
@@ -293,18 +310,20 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 margin-testi">
                 <div class="row row-putih-testi" data-aos="fade-right" data-aos-delay="200">
                     <div class="col-lg-4 col-putih-testi">
                         <div class="img-testi">
                             <img src="../img/sistem-informasi/Andrea.png" alt="">
                         </div>
                         <div class="info">
-                            <h2>Andrea</h2>
-                            <small>CEO & Project Manager <br>CV. Arindra Production</small>
+                            <div class="info">
+                                <h5 class="nama-pelanggan">Andrea Piacquadio</h5>
+                                <p class="posisi">CEO & Project Manager PT. Angkasa Indah</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="mx-0 mt-1 col-lg-8">
                         <p>Layanan jasa dari Codepan Studio Surabaya baik, koordinasinya tanggap dan cepat,
                             pelayanannya maksimal. Overall bagus.</p>
                     </div>
@@ -333,7 +352,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -347,7 +367,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -360,7 +381,9 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-4">
-                                <lottie-player class="target" src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player class="target"
+                                    src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -488,7 +511,7 @@
                             </div>
 
                             <!-- Agreement -->
-                            <div class="col-lg-7 box-setuju">
+                            <div class="col-lg-7 box-setuju d-flex justify-content-start">
                                 <input type="checkbox" id="setuju" name="setuju">
                                 <!-- Agreement Text -->
                                 <label for="setuju">Saya menyetujui bahwa data yang saya isi adalah benar</label>
@@ -497,11 +520,13 @@
 
                             <!-- Submit Button -->
                             <div class="col-lg-5 text-center">
-                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled">Kirim
+                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn"
+                                    disabled="disabled">Kirim
                                 </button>
 
                                 <button class="btn btn-primary d-none" type="button" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
                                     Loading...
                                 </button>
                             </div>
@@ -515,7 +540,8 @@
         <!-- End of Container Mitra -->
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
         </path>
     </svg>
 </div>
