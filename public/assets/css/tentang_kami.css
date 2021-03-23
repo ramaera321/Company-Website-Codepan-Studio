@@ -80,7 +80,7 @@
 }
 
 /* Animasi Ketika Card di Hover Akan Menggerakan Gambar */
-#tentang2 .card:hover lottie-player {
+#tentang2 .card:hover .pembungkus-img-tentang {
   -webkit-animation-name: hvr-buzz;
   animation-name: hvr-buzz;
   -webkit-animation-duration: 0.15s;
