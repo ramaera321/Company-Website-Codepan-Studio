@@ -1701,6 +1701,9 @@
     width: 100%;
   }
 
+  .mari-bermitra a {
+    padding: 15px 30px;
+  }
   /* ==== Karir Page CSS ==== */
   .jumbotron-karir .content h1 {
     font-size: 2.5rem;

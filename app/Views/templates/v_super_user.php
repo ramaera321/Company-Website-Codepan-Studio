@@ -39,7 +39,6 @@
 
     <!-- Costum CSS -->
     <link rel="stylesheet" href="/assets/css/style_user.css">
-    <link rel="stylesheet" href="/assets/css/dropdown_item.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <?= $this->renderSection('style'); ?>
 </head>
