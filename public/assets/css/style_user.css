@@ -262,6 +262,14 @@ nav .mega-area a::before,
   transition: transform 650ms;
 }
 
+nav .dropdown .hvr-bubble-top::before {
+  border-color: transparent;
+}
+
+nav .dropdown:hover .hvr-bubble-top::before {
+  border-color: transparent transparent #ffffff;
+}
+
 /* - Change Icon Layanan IT items color when hover - */
 nav .mega-area a:hover i {
   color: #2926a9;

@@ -15,16 +15,39 @@
                 untuk bisnis Anda. Segera konsultasikan dengan kami sekarang juga.</p>
         </div>
         <div class="container-button row">
-            <div class="col-lg-4 col-sm-6 batas-button" data-aos="fade-up"><a href="" class="sistem-informasi">SISTEM
-                    INFORMASI</a></div>
-            <div class="col-lg-4 col-sm-6 batas-button" data-aos="fade-up" data-aos-delay="200"><a href=""
-                    class="aplikasi-mobile">APLIKASI MOBILE</a></div>
-            <div class="col-lg-4 col-sm-6 batas-button" data-aos="fade-up" data-aos-delay="400"><a href=""
-                    class="aplikasi-egov">APLIKASI E-GOV</a></div>
-            <div class="col-lg-6 col-sm-6 batas-button" data-aos="fade-up"><a href=""
-                    class="integritas-sistem">INTEGRASI SISTEM</a></div>
-            <div class="col-lg-6 col-sm-12 batas-button" data-aos="fade-up" data-aos-delay="200"><a href=""
-                    class="pengadaan-it">PENGADAAN IT</a></div>
+            <div class="col-lg-4 col-sm-6 batas-button hvr-icon-wobble-horizontal" data-aos="fade-up">
+                <a href="" class="sistem-informasi d-flex justify-content-between align-items-center">
+                    <p>SISTEM INFORMASI</p>
+                    <i class="fa fa-arrow-right hvr-icon"></i>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 batas-button hvr-icon-wobble-horizontal" data-aos="fade-up"
+                data-aos-delay="200">
+                <a href="" class="aplikasi-mobile d-flex justify-content-between align-items-center">
+                    <p>APLIKASI MOBILE</p>
+                    <i class="fa fa-arrow-right hvr-icon"></i>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 batas-button hvr-icon-wobble-horizontal" data-aos="fade-up"
+                data-aos-delay="400">
+                <a href="" class="aplikasi-egov d-flex justify-content-between align-items-center">
+                    <p>APLIKASI E-GOV</p>
+                    <i class="fa fa-arrow-right hvr-icon"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 col-sm-6 batas-button hvr-icon-wobble-horizontal" data-aos="fade-up">
+                <a href="" class="integritas-sistem d-flex justify-content-between align-items-center">
+                    <p>INTEGRASI SISTEM</p>
+                    <i class="fa fa-arrow-right hvr-icon"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 col-sm-12 batas-button hvr-icon-wobble-horizontal" data-aos="fade-up"
+                data-aos-delay="200">
+                <a href="" class="pengadaan-it d-flex justify-content-between align-items-center">
+                    <p>PENGADAAN IT</p>
+                    <i class="fa fa-arrow-right hvr-icon"></i>
+                </a>
+            </div>
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
