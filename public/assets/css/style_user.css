@@ -1457,8 +1457,7 @@ a.wa-button:hover {
 }
 
 .page-blog .container-blog .margin-blog {
-  padding-right: 5px;
-  padding-left: 5px;
+  margin-bottom: 25px;
 }
 
 .page-blog .container-blog .card .sub-judul {
