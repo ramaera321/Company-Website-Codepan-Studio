@@ -758,7 +758,7 @@
         <div class="container-blog row">
             <!-- Card Blog 1 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                <div class="card hvr-underline-reveal">
+                <div class="card hvr-underline-reveal h-100">
                     <img src="./img/page-blog/Foto-Blog1.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="sub-judul">04/10/2020</p>
@@ -771,7 +771,7 @@
 
             <!-- Card Blog 2 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="300">
-                <div class="card hvr-underline-reveal">
+                <div class="card hvr-underline-reveal h-100">
                     <img src="./img/page-blog/Foto-Blog2.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="sub-judul">04/10/2020</p>
@@ -784,7 +784,7 @@
 
             <!-- Card Blog 3 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="600">
-                <div class="card hvr-underline-reveal">
+                <div class="card hvr-underline-reveal h-100">
                     <img src="./img/page-blog/Foto-Blog3.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="sub-judul">04/10/2020</p>
