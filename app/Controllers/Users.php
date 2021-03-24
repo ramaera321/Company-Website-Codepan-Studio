@@ -3,21 +3,32 @@
 namespace App\Controllers;
 
 use App\Models\BannerModel;
+use App\Models\BlogModel;
+use App\Models\PortfolioModel;
+use CodeIgniter\I18n\Time;
 
 class Users extends BaseController
 {
     protected $bannerModel;
+    protected $portfolioModel;
+    protected $blogModel;
     public function __construct()
     {
         $this->bannerModel = new BannerModel();
+        $this->portfolioModel = new PortfolioModel();
+        $this->blogModel = new BlogModel();
     }
 
     public function index()
     {
         $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $portfolio = $this->portfolioModel->findAll();
+        $blog = $this->blogModel->findAll();
         $data = [
             'judul' => 'Home Codepan Surabaya',
             'banner' => $banner,
+            'portfolio' => $portfolio,
+            'blog' => $blog,
         ];
         return view('users/index', $data);
     }
