@@ -22,8 +22,8 @@ class Users extends BaseController
     public function index()
     {
         $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
-        $portfolio = $this->portfolioModel->findAll();
-        $blog = $this->blogModel->findAll();
+        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->findAll(2);
+        $blog = $this->blogModel->orderBy('id', 'desc')->findAll(3);
         $data = [
             'judul' => 'Home Codepan Surabaya',
             'banner' => $banner,

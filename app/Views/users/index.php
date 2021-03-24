@@ -702,7 +702,7 @@
             ?>
                 <!-- Card Blog 1 -->
                 <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                    <div class="card hvr-underline-reveal">
+                    <div class="card hvr-underline-reveal h-100">
                         <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
                             <?php
@@ -711,8 +711,7 @@
                             ?>
                             <p class="sub-judul"><?= $tanggal; ?></p>
                             <h5 class="card-title"><?= $blog['judul']; ?></h5>
-                            <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                                yang dapat di terapkan pada jaringan private inte…</p>
+                            <div class="card-text"><?= $blog['materi']; ?></div>
                         </div>
                     </div>
                 </div>
