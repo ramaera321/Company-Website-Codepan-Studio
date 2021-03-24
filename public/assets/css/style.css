@@ -279,6 +279,21 @@
   cursor: pointer;
   z-index: 0;
 }
+.add-blog .back {
+  width: 15%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: thick;
+  box-shadow: 0 0 2px grey;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  float: right;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 0;
+  margin-right: 20px;
+}
 /* .btn-submit {
   font-family: "Lato";
   text-transform: uppercase;
@@ -313,6 +328,17 @@ button:active {
   background-position: left bottom;
 }
 .btn-save:hover {
+  background-position: right top;
+}
+.btn-back {
+  padding: 0.7em 1.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #d40202 50%, #f71717 50%);
+  background-size: 100% 200%;
+  background-position: left bottom;
+}
+.btn-back:hover {
   background-position: right top;
 }
 

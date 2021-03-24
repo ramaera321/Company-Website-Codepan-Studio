@@ -39,6 +39,20 @@ function previewImage(){
         imgPreview.src = e.target.result;
     }
 }
+function previewLogo(){
+    const foto = document.querySelector('#logo');
+    const fotoLabel = document.querySelector('#logo-label');
+    const imgPreview = document.querySelector('.logo-preview');
+
+    fotoLabel.textContent = foto.files[0].name;
+
+    const fileFoto = new FileReader();
+    fileFoto.readAsDataURL(foto.files[0]);
+
+    fileFoto.onload = function (e) {
+        imgPreview.src = e.target.result;
+    }
+}
 
 function profile() {
     const imgProfile = document.querySelector('#im-profile');

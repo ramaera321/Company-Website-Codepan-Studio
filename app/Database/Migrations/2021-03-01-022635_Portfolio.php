@@ -55,6 +55,10 @@ class Portfolio extends Migration
 				'type'       	=> 'VARCHAR',
 				'constraint' 	=> '255',
 			],
+			'logo'       	=> [
+				'type'       	=> 'VARCHAR',
+				'constraint' 	=> '255',
+			],
 			'bagian_dari'       	=> [
 				'type'       	=> 'VARCHAR',
 				'constraint' 	=> '25',

@@ -31,7 +31,7 @@
                     foreach ($portfolio as $portfolio) :
                     ?>
                         <tr>
-                            <th scope="row">2</th>
+                            <th scope="row"><?= $i++; ?></th>
                             <td><?= $portfolio['judul']; ?></td>
                             <td><?= $portfolio['kategori']; ?></td>
                             <td><?= $portfolio['penulis']; ?></td>

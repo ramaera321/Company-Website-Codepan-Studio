@@ -266,7 +266,6 @@ class Blog extends BaseController
             'blog_slug' => $slug
         ]);
 
-        $slugLama = $this->request->getVar('slug');
         $tagLama = $this->request->getVar('idTag');
         $this->blogTagModel->delete($tagLama);
 

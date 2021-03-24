@@ -36,8 +36,8 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Custom Components:</h6>
                 <a class="collapse-item" href="/data_banner_home">Content Banner</a>
+                <a class="collapse-item" href="/data_judul/">Data Judul Banner</a>
                 <a class="collapse-item" href="/data_solusi/">Data Solusi Masalah</a>
-                <a class="collapse-item" href="/data_captcha/">Data Captcha</a>
             </div>
         </div>
     </li>

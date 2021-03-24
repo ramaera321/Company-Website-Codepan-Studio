@@ -76,7 +76,7 @@
                             <label for="exampleFormControlTextarea1" class="font-weight-bold">Tentang Mitra</label>
                             <textarea class="form-control text<?= ($validation->getError('tentang_mitra')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea1" name="tentang_mitra" value=""><?= old('tentang_mitra'); ?></textarea>
                             <div class="invalid-feedback">
-                                <?= $validation->getError('tentang_materi'); ?>
+                                <?= $validation->getError('tentang_mitra'); ?>
                             </div>
                         </div>
 
@@ -136,6 +136,24 @@
                         </small>
                         <div class="col-sm-2 mt-2">
                             <img src="/assets/img/portfolio/image.png" alt="" class="img-thumbnail img-preview shadow-sm">
+                        </div>
+                        <div class="input-group mb-3 mt-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Logo</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input<?= ($validation->getError('logo')) ? ' is-invalid' : ''; ?>" id="logo" aria-describedby="inputGroupFileAddon01" name="logo" onchange="previewLogo()" value="<?= old('logo'); ?>">
+                                <div class="invalid-feedback invalid-foto">
+                                    <?= $validation->getError('logo'); ?>
+                                </div>
+                                <label id="logo-label" class="custom-file-label" for="inputGroupFile01"><?= (old('logo')) ? old('logo') : 'Choose...'; ?></label>
+                            </div>
+                        </div>
+                        <small id="passwordHelpBlock" class="form-text text-muted ml-3">
+                            <li>ukuran gambar maksimal 1 mb.</li>
+                        </small>
+                        <div class="col-sm-2 mt-2">
+                            <img src="/assets/img/portfolio/image.png" alt="" class="img-thumbnail logo-preview shadow-sm">
                         </div>
 
                         <input type="submit" value="Create" class="submit btn-save">

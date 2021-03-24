@@ -25,6 +25,7 @@ class Login extends BaseController
     {
         if (session()->get('logged_in')) {
             $data = [
+                'judul' => 'Admin',
                 'id' => session()->get('id'),
                 'tipe_admin' => session()->get('tipe_admin'),
                 'nama'     => session()->get('nama'),

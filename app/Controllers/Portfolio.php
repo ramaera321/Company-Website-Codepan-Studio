@@ -150,25 +150,25 @@ class Portfolio extends BaseController
             'tentang_mitra' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Materi harus diisi'
+                    'required' => 'Tentang Mitra harus diisi'
                 ]
             ],
             'tantangan' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Materi harus diisi'
+                    'required' => 'Tantangan harus diisi'
                 ]
             ],
             'solusi' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Materi harus diisi'
+                    'required' => 'Solusi harus diisi'
                 ]
             ],
             'hasil' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Materi harus diisi'
+                    'required' => 'Hasil harus diisi'
                 ]
             ],
             'penulis' => [
@@ -186,10 +186,20 @@ class Portfolio extends BaseController
                     'mime_in' => 'File yang dipilih bukan gambar'
 
                 ]
+            ],
+            'logo' => [
+                'rules' => 'uploaded[foto]|max_size[foto, 1024]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
+                'errors' => [
+                    'uploaded' => 'logo harus ditambahkan',
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'File yang dipilih bukan gambar',
+                    'mime_in' => 'File yang dipilih bukan gambar'
+
+                ]
             ]
         ])) {
 
-            return redirect()->to('/add_portfolio')->withInput();
+            return redirect()->to('/add_porto')->withInput();
         }
 
         $gambarUtama = $this->request->getFile('foto');
@@ -200,6 +210,9 @@ class Portfolio extends BaseController
             $fotoName = $gambarUtama->getRandomName();
             $gambarUtama->move('assets/img/portfolio', $fotoName);
         }
+        $logoUtama = $this->request->getFile('logo');
+        $logoName = $logoUtama->getRandomName();
+        $logoUtama->move('assets/img/portfolio/logo', $fotoName);
         // $newName = $fotoProfile->getRandomName();
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
@@ -215,22 +228,9 @@ class Portfolio extends BaseController
             'hasil' => $this->request->getVar('hasil'),
             'penulis' => $this->request->getVar('penulis'),
             'foto' => $fotoName,
+            'logo' => $logoName,
             'bagian_dari' => 'Portfolio'
         ]);
-
-        // $db = \Config\Database::connect();
-        // $portfolio_tag = $db->table('portfolio_tag');
-        // $checkbox = $_POST['tag'];
-        // $data_tag = array();
-        // for ($i = 0; $i < count($checkbox); $i++) {
-        //     $data_tag[] = array(
-        //         'nama_tag' => $checkbox[$i],
-        //         'portfolio_slug' => $slug
-        //     );
-        // }
-
-
-        // $this->portfolioTagModel->insertBatch($data_tag);
 
         $checkbox = $this->request->getVar('tag');
         $tag = implode(" ", $checkbox);
@@ -241,7 +241,7 @@ class Portfolio extends BaseController
 
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
 
-        return redirect()->to('/data_portfolio');
+        return redirect()->to('/data_porto');
     }
     public function update($id)
     {
@@ -311,10 +311,20 @@ class Portfolio extends BaseController
                     'mime_in' => 'File yang dipilih bukan gambar'
 
                 ]
+            ],
+            'logo' => [
+                'rules' => 'max_size[foto, 1024]|is_image[foto]|mime_in[foto,image/jpg,image/JPG,image/jpeg,image/JPEG,image/png]',
+                'errors' => [
+                    'uploaded' => 'logo harus ditambahkan',
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'File yang dipilih bukan gambar',
+                    'mime_in' => 'File yang dipilih bukan gambar'
+
+                ]
             ]
         ])) {
 
-            return redirect()->to('/update_portfolio/' . $this->request->getVar('slug'))->withInput();
+            return redirect()->to('/update_porto/' . $this->request->getVar('slug'))->withInput();
         }
 
 
@@ -327,6 +337,17 @@ class Portfolio extends BaseController
             $gambarUtama->move('assets/img/portfolio', $fotoName);
             unlink('assets/img/portfolio/' . $this->request->getVar('fotoLama'));
         }
+
+        $logoUtama = $this->request->getFile('logo');
+
+        if ($gambarUtama->getError() == 4) {
+            $logoName = $this->request->getVar('logoLama');
+        } else {
+            $logoName = $logoUtama->getRandomName();
+            $logoUtama->move('assets/img/portfolio/logo', $logoName);
+            unlink('assets/img/portfolio/logo/' . $this->request->getVar('logoLama'));
+        }
+
         // $newName = $fotoProfile->getRandomName();
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
@@ -338,7 +359,6 @@ class Portfolio extends BaseController
             'portfolio_slug' => $slug
         ]);
 
-        $slugLama = $this->request->getVar('slug');
         $tagLama = $this->request->getVar('idTag');
         $this->portfolioTagModel->delete($tagLama);
 
@@ -354,12 +374,13 @@ class Portfolio extends BaseController
             'hasil' => $this->request->getVar('hasil'),
             'penulis' => $this->request->getVar('penulis'),
             'foto' => $fotoName,
+            'logo' => $logoName,
             'bagian_dari' => 'Portfolio'
         ]);
 
         session()->setFlashdata('pesan', 'Data berhasil diubah.');
 
-        return redirect()->to('/data_portfolio');
+        return redirect()->to('/data_porto');
     }
 
     public function delete($id)
@@ -372,6 +393,7 @@ class Portfolio extends BaseController
         if ($portfolio['foto'] != 'image.png') {
             unlink('/assets/img/portfolio' . $portfolio['foto']);
         }
+        unlink('/assets/img/portfolio/logo' . $portfolio['logo']);
         $this->portfolioModel->delete($id);
         session()->getFlashdata('pesan', 'data telah dihapus');
         return redirect()->to('/data_portfolio');

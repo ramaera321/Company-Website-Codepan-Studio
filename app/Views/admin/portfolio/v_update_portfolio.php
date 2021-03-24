@@ -20,6 +20,7 @@
                         <?= csrf_field(); ?>
                         <input type="hidden" name="slug" value="<?= $portfolio['slug']; ?>">
                         <input type="hidden" name="fotoLama" value="<?= $portfolio['foto']; ?>">
+                        <input type="hidden" name="logoLama" value="<?= $portfolio['logo']; ?>">
                         <input type="hidden" name="idTag" value="<?= $portfolio_tag['id']; ?>">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -85,7 +86,7 @@
                             <label for="exampleFormControlTextarea1" class="font-weight-bold">Tentang Mitra</label>
                             <textarea class="form-control text<?= ($validation->getError('tentang_mitra')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea1" name="tentang_mitra" value=""><?= (old('tentang_mitra')) ? old('tentang_mitra') : $portfolio['tentang_mitra']; ?></textarea>
                             <div class="invalid-feedback">
-                                <?= $validation->getError('tentang_materi'); ?>
+                                <?= $validation->getError('tentang_mitra'); ?>
                             </div>
                         </div>
 
@@ -147,7 +148,27 @@
                             <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" alt="" class="img-thumbnail img-preview shadow-sm">
                         </div>
 
+                        <div class="input-group mb-3 mt-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Logo</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input<?= ($validation->getError('logo')) ? ' is-invalid' : ''; ?>" id="logo" aria-describedby="inputGroupFileAddon01" name="logo" onchange="previewLogo()" value="<?= (old('foto')) ? old('foto') : $portfolio['logo']; ?>">
+                                <div class="invalid-feedback invalid-foto">
+                                    <?= $validation->getError('logo'); ?>
+                                </div>
+                                <label id="logo-label" class="custom-file-label" for="inputGroupFile01"><?= (old('logo')) ? old('logo') : $portfolio['logo']; ?></label>
+                            </div>
+                        </div>
+                        <small id="passwordHelpBlock" class="form-text text-muted ml-3">
+                            <li>ukuran gambar maksimal 1 mb.</li>
+                        </small>
+                        <div class="col-sm-2 mt-2">
+                            <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" alt="" class="img-thumbnail logo-preview shadow-sm">
+                        </div>
+
                         <input type="submit" value="Update" class="submit btn-save">
+                        <a href="/data_porto" class="btn btn-danger back btn-back">Back</a>
                     </form>
                 </div>
             </div>
