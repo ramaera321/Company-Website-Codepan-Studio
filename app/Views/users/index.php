@@ -759,7 +759,9 @@
             <!-- Card Blog 1 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
                 <div class="card hvr-underline-reveal h-100">
-                    <img src="./img/page-blog/Foto-Blog1.png" class="card-img-top" alt="...">
+                    <div class="cont-card-img">
+                        <img src="./img/page-blog/Foto-Blog1.png" onload="cardImg()" alt="...">
+                    </div>
                     <div class="card-body">
                         <p class="sub-judul">04/10/2020</p>
                         <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>

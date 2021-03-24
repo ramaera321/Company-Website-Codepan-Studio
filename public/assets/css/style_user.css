@@ -1451,6 +1451,11 @@ a.wa-button:hover {
   font-size: 1rem;
 }
 
+.cont-card-img {
+  width: 100%;
+  height: 210px;
+}
+
 .page-blog .container-blog .margin-blog {
   padding-right: 5px;
   padding-left: 5px;
