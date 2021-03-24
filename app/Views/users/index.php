@@ -711,7 +711,7 @@
                             ?>
                             <p class="sub-judul"><?= $tanggal; ?></p>
                             <h5 class="card-title"><?= $blog['judul']; ?></h5>
-                            <div class="card-text"><?= $blog['materi']; ?></div>
+                            <div class="card-text"><?= $blog['describ']; ?></div>
                         </div>
                     </div>
                 </div>
