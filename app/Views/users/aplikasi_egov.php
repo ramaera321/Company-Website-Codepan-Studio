@@ -112,9 +112,7 @@
                 <div class="card h-100">
                     <!-- <img src="/img/Shape.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="phone" src="https://assets9.lottiefiles.com/packages/lf20_tlzxty4j.json"
-                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
-                        </lottie-player>
+                        <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
                     </div>
                     <div class="card-body">
                         <div id="counter">
