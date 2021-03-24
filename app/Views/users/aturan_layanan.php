@@ -6,7 +6,7 @@
 <?= $this->endSection(); ?>
 
 <?= $this->section('content_user'); ?>
-<div id="mt" class="bg-aturanlayanan" style="background: url(../img/background/bg.png);">
+<div id="mt" class="bg-aturanlayanan" style="background: url(/assets/img/background/bg.png);">
     <!-- Aturan Layanan -->
     <section id="aturan-layanan">
         <div class="container">
@@ -30,32 +30,25 @@
                     <br>
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="#pasal1" class="nav-link hvr-underline-from-left active" data-toggle="tab"
-                                data-aos="fade-right">Pasal 1</a>
+                            <a href="#pasal1" class="nav-link hvr-underline-from-left active" data-toggle="tab" data-aos="fade-right">Pasal 1</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal2" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="200">Pasal 2</a>
+                            <a href="#pasal2" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="200">Pasal 2</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal3" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="300">Pasal 3</a>
+                            <a href="#pasal3" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="300">Pasal 3</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal4" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="400">Pasal 4</a>
+                            <a href="#pasal4" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="400">Pasal 4</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal5" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="500">Pasal 5</a>
+                            <a href="#pasal5" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="500">Pasal 5</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal6" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="600">Pasal 6</a>
+                            <a href="#pasal6" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="600">Pasal 6</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#pasal7" class="nav-link hvr-underline-from-left" data-toggle="tab"
-                                data-aos="fade-right" data-aos-delay="700">Pasal 7</a>
+                            <a href="#pasal7" class="nav-link hvr-underline-from-left" data-toggle="tab" data-aos="fade-right" data-aos-delay="700">Pasal 7</a>
                         </li>
                     </ul>
 
@@ -616,8 +609,7 @@
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1"
-            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
         </path>
     </svg>
 </div>

@@ -86,6 +86,14 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="exampleFormControlTextarea2" class="font-weight-bold">Describ Preview</label>
+                            <textarea rows="4" class="form-control rounded text<?= ($validation->getError('describ')) ? ' is-invalid' : ''; ?>" id="describ" name="describ" value=""><?= (old('describ')) ? old('describ') : $blog['describ']; ?></textarea>
+                            <div class="invalid-feedback">
+                                <?= $validation->getError('describ'); ?>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label for="exampleFormControlTextarea1">Materi Blog</label>
                             <textarea class="form-control text<?= ($validation->getError('materi')) ? ' is-invalid' : ''; ?>" id="exampleFormControlTextarea1" name="materi" value=""><?= (old('materi')) ? old('materi') : $blog['materi']; ?></textarea>
                             <div class="invalid-feedback">

@@ -8,7 +8,7 @@
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading -->
 <div id="mt" class="centered jumbotron jumbotron-fluid"
-    style="background-image: url('../img/sistem-informasi/Jumbotron SI.png');">
+    style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
     <div class="container" data-aos="fade-up">
         <h1 class="display-4">SISTEM INFORMASI</h1>
         <p class="lead text-center">

@@ -391,9 +391,9 @@ class Portfolio extends BaseController
         $tag_id = $portfolio_tag['id'];
         $this->portfolioTagModel->delete($tag_id);
         if ($portfolio['foto'] != 'image.png') {
-            unlink('/assets/img/portfolio' . $portfolio['foto']);
+            unlink('/assets/img/portfolio/' . $portfolio['foto']);
         }
-        unlink('/assets/img/portfolio/logo' . $portfolio['logo']);
+        unlink('/assets/img/portfolio/logo/' . $portfolio['logo']);
         $this->portfolioModel->delete($id);
         session()->getFlashdata('pesan', 'data telah dihapus');
         return redirect()->to('/data_portfolio');

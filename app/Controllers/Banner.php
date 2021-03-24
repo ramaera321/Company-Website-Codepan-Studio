@@ -321,7 +321,7 @@ class Banner extends BaseController
         } else {
             $namaFoto = $fotoFile->getRandomName();
             $fotoFile->move('assets/img/banner', $namaFoto);
-            // unlink('assets/img/' . $this->request->getVar('fotoLama'));
+            unlink('assets/img/banner/' . $this->request->getVar('fotoLama'));
         }
 
         $this->bannerModel->save([
@@ -340,7 +340,7 @@ class Banner extends BaseController
     {
         $banner = $this->bannerModel->find($id);
         $layanan = $banner['layanan'];
-        unlink('assets/img/' . $banner['foto']);
+        unlink('assets/img/banner/' . $banner['foto']);
         $this->bannerModel->delete($id);
         session()->getFlashdata('pesan', 'Data berhasil dihapus');
         return redirect()->to('/data_banner_' . $layanan);

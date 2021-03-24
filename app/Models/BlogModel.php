@@ -8,7 +8,7 @@ class BlogModel extends Model
 {
     protected $table = 'blog';
     protected $useTimestamps = true;
-    protected $allowedFields = ['judul', 'slug', 'kategori', 'sub_kategori', 'materi', 'penulis', 'foto', 'bagian_dari'];
+    protected $allowedFields = ['judul', 'slug', 'kategori', 'sub_kategori', 'describ', 'materi', 'penulis', 'foto', 'bagian_dari'];
 
     // public function getKarir($id = false)
     // {

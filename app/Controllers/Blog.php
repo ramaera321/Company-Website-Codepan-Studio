@@ -114,6 +114,12 @@ class Blog extends BaseController
                     'required' => 'Sub Kategori harus diisi'
                 ]
             ],
+            'describ' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Deskripsi harus diisi'
+                ]
+            ],
             'materi' => [
                 'rules' => 'required',
                 'errors' => [
@@ -158,6 +164,7 @@ class Blog extends BaseController
             'slug' => $slug,
             'kategori' => $this->request->getVar('kategori'),
             'sub_kategori' => $this->request->getVar('sub_kategori'),
+            'describ' => $this->request->getVar('describ'),
             'materi' => $this->request->getVar('materi'),
             'penulis' => $this->request->getVar('penulis'),
             'foto' => $fotoName,
@@ -218,6 +225,12 @@ class Blog extends BaseController
                     'required' => 'Sub Kategori harus diisi'
                 ]
             ],
+            'describ' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Deskripsi harus diisi'
+                ]
+            ],
             'materi' => [
                 'rules' => 'required',
                 'errors' => [
@@ -275,6 +288,7 @@ class Blog extends BaseController
             'slug' => $slug,
             'kategori' => $this->request->getVar('kategori'),
             'sub_kategori' => $this->request->getVar('sub_kategori'),
+            'describ' => $this->request->getVar('describ'),
             'materi' => $this->request->getVar('materi'),
             'penulis' => $this->request->getVar('penulis'),
             'foto' => $fotoName,
@@ -294,7 +308,7 @@ class Blog extends BaseController
         $tag_id = $blog_tag['id'];
         $this->blogTagModel->delete($tag_id);
         if ($blog['foto'] != 'image.png') {
-            unlink('/assets/img/blog' . $blog['foto']);
+            unlink('assets/img/blog/' . $blog['foto']);
         }
         $this->blogModel->delete($id);
         session()->getFlashdata('pesan', 'data telah dihapus');
