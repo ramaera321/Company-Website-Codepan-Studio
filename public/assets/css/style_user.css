@@ -1635,12 +1635,12 @@ footer .menu {
   margin-bottom: 50px;
 }
 
-footer .menu h5 {
+footer .menu h5 .a {
   color: rgb(238, 238, 238);
   font-weight: 500;
 }
 
-footer .menu h5:hover {
+footer .menu h5 .a:hover {
   color: #fff;
 }
 
@@ -1651,12 +1651,15 @@ footer .menu ul {
 
 footer .menu li {
   font-size: 17px;
-  color: #a6a5a5;
   list-style: none;
   margin-bottom: 10px;
 }
 
-footer .menu li:hover {
+footer .menu li .a {
+  color: #a6a5a5;
+}
+
+footer .menu li .a:hover {
   color: #d4d4d4;
 }
 
