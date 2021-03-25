@@ -723,16 +723,10 @@
             <?php
             foreach ($blog as $blog) :
             ?>
-<<<<<<< HEAD
-                <!-- Card Blog 1 22-->
-                <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                    <div class="card hvr-underline-reveal h-100">
-=======
             <!-- Card Blog 1 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
                 <div class="card hvr-underline-reveal h-100">
                     <div class="cont-card-img">
->>>>>>> origin/master
                         <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
                     </div>
                     <div class="card-body">
