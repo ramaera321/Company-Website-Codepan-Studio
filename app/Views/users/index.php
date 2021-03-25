@@ -723,33 +723,34 @@
             <?php
             foreach ($blog as $blog) :
             ?>
-            <!-- Card Blog 1 22-->
+            <!-- Card Blog 1 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
                 <div class="card hvr-underline-reveal h-100">
-                    <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <?php
+                    <div class="cont-card-img">
+                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <?php
                         $timestamp = strtotime($blog['created_at']);
                         $tanggal = date('d/m/Y', $timestamp)
                         ?>
-                    <p class="sub-judul"><?= $tanggal; ?></p>
-                    <h5 class="card-title"><?= $blog['judul']; ?></h5>
-                    <div class="card-text"><?= $blog['describ']; ?></div>
+                        <p class="sub-judul"><?= $tanggal; ?></p>
+                        <h5 class="card-title"><?= $blog['judul']; ?></h5>
+                        <div class="card-text"><?= $blog['describ']; ?></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <?php
+            <?php
             endforeach;
     ?>
-    </div>
-    <!-- End of Container Blog -->
+        </div>
+        <!-- End of Container Blog -->
 
-    <!-- Text under container -->
-    <p class="text-center text-under-container" data-aos="fade-up">Wawasan baru membantu Anda melakukan
-        pekerjaan dengan lebih baik dan efisien. <a href="" class="hvr-underline-from-left">Lihat semua
-            artikel.</a></p>
-</div>
+        <!-- Text under container -->
+        <p class="text-center text-under-container" data-aos="fade-up">Wawasan baru membantu Anda melakukan
+            pekerjaan dengan lebih baik dan efisien. <a href="" class="hvr-underline-from-left">Lihat semua
+                artikel.</a></p>
+    </div>
 
 </div>
 <!-- End of Page Blog -->
