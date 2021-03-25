@@ -21,48 +21,48 @@
                 <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right">
                     <ul>
                         <li>
-                            <h5>Produk</h5>
+                            <h5><a href="">Produk</a></h5>
                         </li>
-                        <li>Twins Robo Apps</li>
+                        <li><a href="">Twins Robo Apps</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="200">
                     <ul>
                         <li>
-                            <h5>Layanan IT</h5>
+                            <h5><a href="">Layanan IT</a></h5>
                         </li>
-                        <li>Sistem Informasi</li>
-                        <li>Aplikasi Mobile</li>
-                        <li>Aplikasi E-Gov</li>
-                        <li>Intergrasi Sistem</li>
-                        <li>Pengadaan IT</li>
+                        <li><a href="">Sistem Informasi</a></li>
+                        <li><a href="">Aplikasi Mobile</a></li>
+                        <li><a href="">Aplikasi E-Gov</a></li>
+                        <li><a href="">Intergrasi Sistem</a></li>
+                        <li><a href="">Pengadaan IT</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="400">
                     <ul>
                         <li>
-                            <h5>Perusahaan</h5>
+                            <h5><a href="">Perusahaan</a></h5>
                         </li>
-                        <li>Tentang Kami</li>
-                        <li>Pakta Integritas</li>
-                        <li>Aturan Layanan</li>
-                        <li>Kontak Kami</li>
-                        <li>Karir</li>
-                        <li>Blog</li>
+                        <li><a href="">Tentang Kami</a></li>
+                        <li><a href="">Pakta Integritas</a></li>
+                        <li><a href="">Aturan Layanan</a></li>
+                        <li><a href="">Kontak Kami</a></li>
+                        <li><a href="">Karir</a></li>
+                        <li><a href="">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 panjang-footer mb-3" data-aos="fade-right" data-aos-delay="600">
                     <ul>
                         <li>
-                            <h5>Akun Kami</h5>
+                            <h5><a href="">Akun Kami</a></h5>
                         </li>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
-                        <li>Youtube</li>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">Youtube</a></li>
                     </ul>
                 </div>
             </div>

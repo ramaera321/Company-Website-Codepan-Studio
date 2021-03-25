@@ -173,3 +173,32 @@ $("#video-close-button-id").click(function () {
     $(this).attr("src", el_src);
   });
 });
+
+function cardImg() {
+  const imgProfile = document.querySelector("#im-profile");
+  const width = imgProfile.naturalWidth;
+  const height = imgProfile.naturalHeight;
+
+  if (width < height) {
+    imgProfile.style.width = "100%";
+    imgProfile.style.height = "auto";
+    let n = 1;
+    let nilai = (height - width) / 2;
+    let data_margin = (nilai / width) * 100;
+    let margin = (210 * data_margin) / 100;
+    imgProfile.style.marginTop = "-" + margin + "px";
+  } else if (width > height) {
+    imgProfile.style.width = "auto";
+    imgProfile.style.height = "100%";
+    let n = 2;
+    const nilai = (width - height) / 2;
+    let data_margin = (nilai / width) * 100;
+    let margin = (210 * data_margin) / 100;
+    imgProfile.style.marginLeft = "-" + margin + "px";
+  } else {
+    imgProfile.style.width = "100%";
+    imgProfile.style.height = "auto";
+    let n = 0;
+    imgProfile.style.margin = "0";
+  }
+}
