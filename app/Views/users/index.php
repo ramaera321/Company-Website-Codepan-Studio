@@ -700,7 +700,7 @@
             <?php
             foreach ($blog as $blog) :
             ?>
-                <!-- Card Blog 1 -->
+                <!-- Card Blog 1 22-->
                 <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
                     <div class="card hvr-underline-reveal h-100">
                         <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
