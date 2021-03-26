@@ -396,6 +396,6 @@ class Portfolio extends BaseController
         unlink('/assets/img/portfolio/logo/' . $portfolio['logo']);
         $this->portfolioModel->delete($id);
         session()->getFlashdata('pesan', 'data telah dihapus');
-        return redirect()->to('/data_portfolio');
+        return redirect()->to('/data_porto');
     }
 }
