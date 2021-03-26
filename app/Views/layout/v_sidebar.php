@@ -107,6 +107,21 @@
         </div>
     </li>
 
+    <!-- Nav Item - Portofolio Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed sidebar-layout" href="#" data-toggle="collapse" data-target="#collapseKomentar" aria-expanded="true" aria-controls="collapseKomentar">
+            <i class="fas fa-file-invoice"></i>
+            <span class="sidebar-text">Komentar</span>
+        </a>
+        <div id="collapseKomentar" class="collapse" aria-labelledby="headingKomentar" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Menu Komentar :</h6>
+                <a class="collapse-item" href="/data_komentar">Data Komentar</a>
+                <a class="collapse-item" href="/add_komentar">Add Komentar</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Nav Item - Layanan IT Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed sidebar-layout service" href="#" data-toggle="collapse" data-target="#collapseLayanan" aria-expanded="true" aria-controls="collapseLayanan">

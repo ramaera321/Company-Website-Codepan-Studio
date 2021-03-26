@@ -122,6 +122,7 @@ $routes->delete('/pasal/(:num)', 'Pasal::delete/$1');
 
 //Komentar
 $routes->get('/data_komentar', 'Komentar::index');
+$routes->get('/add_komentar', 'Komentar::post');
 $routes->get('/update_komentar/(:num)', 'Komentar::UpdateKomentar/$1');
 $routes->delete('/komentar/(:num)', 'Komentar::delete/$1');
 

@@ -8,7 +8,7 @@ class KomentarModel extends Model
 {
     protected $table = 'komentar';
     protected $useTimestamps = true;
-    protected $allowedFields = ['nama', 'jabatan', 'perusahaan', 'komentar', 'foto'];
+    protected $allowedFields = ['jabatan', 'perusahaan', 'komentar', 'id_admin'];
 
     // public function getKarir($id = false)
     // {
