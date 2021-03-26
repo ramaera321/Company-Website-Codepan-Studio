@@ -23,6 +23,9 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override(function () {
 	echo view('errors/page_404.php');
 });
+$routes->get('error', function () {
+	echo view('errors/not_found_admin.php');
+});
 $routes->setAutoRoute(true);
 
 /*
