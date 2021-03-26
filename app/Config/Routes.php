@@ -117,6 +117,11 @@ $routes->get('/data_pasal', 'Pasal::index');
 $routes->get('/update_pasal/(:num)', 'Pasal::UpdatePasal/$1');
 $routes->delete('/pasal/(:num)', 'Pasal::delete/$1');
 
+//Komentar
+$routes->get('/data_komentar', 'Komentar::index');
+$routes->get('/update_komentar/(:num)', 'Komentar::UpdateKomentar/$1');
+$routes->delete('/komentar/(:num)', 'Komentar::delete/$1');
+
 //Kategori
 $routes->get('/data_kategori', 'Kategori::post');
 $routes->get('/update_kategori/(:num)', 'Kategori::updateKategori/$1');

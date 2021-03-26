@@ -109,7 +109,7 @@
                 </div>
                 <!--Akhir container-->
 
-                <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="hvr-pulse" src="../img/tentang-kami/play-button.png" alt="" /></a>
+                <a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img class="hvr-pulse" src="/assets/img/tentang-kami/asset/play-button.png" alt="" /></a>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -148,32 +148,32 @@
 
         <!-- Container Blog -->
         <div class="container-blog row">
-            <!-- Card Blog 1 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                <div class="card hvr-underline-reveal">
-                    <img src="../img/page-blog/Foto-Blog1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="sub-judul">04/10/2020</p>
-                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
-                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                            yang dapat di terapkan pada jaringan private inte…</p>
+            <?php
+            foreach ($blog as $blog) :
+            ?>
+                <!-- Card Blog 1 -->
+                <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
+                    <div class="card hvr-underline-reveal h-100">
+                        <div class="cont-card-img">
+                            <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <?php
+                            $timestamp = strtotime($blog['created_at']);
+                            $tanggal = date('d/m/Y', $timestamp)
+                            ?>
+                            <p class="sub-judul"><?= $tanggal; ?></p>
+                            <h5 class="card-title"><?= $blog['judul']; ?></h5>
+                            <p class="card-text"><?= $blog['describ']; ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php
+            endforeach;
+            ?>
 
-            <!-- Card Blog 2 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="300">
-                <div class="card hvr-underline-reveal">
-                    <img src="../img/page-blog/Foto-Blog2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="sub-judul">04/10/2020</p>
-                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
-                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                            yang dapat di terapkan pada jaringan private inte…</p>
-                    </div>
-                </div>
-            </div>
-
+<<<<<<< HEAD
+=======
             <!-- Card Blog 3 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="600">
                <div class="card hvr-underline-reveal h-100">
@@ -188,6 +188,7 @@
                     </div>
                 </div>
             </div>
+>>>>>>> origin/master
         </div>
         <!-- End of Container Blog -->
 

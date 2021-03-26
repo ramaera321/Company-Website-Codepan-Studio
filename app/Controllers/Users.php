@@ -35,27 +35,25 @@ class Users extends BaseController
 
     public function blog()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $blog = $this->blogModel->orderBy('id', 'desc')->findAll();
         $data = [
             'judul' => 'Blog Page',
-            'banner' => $banner,
+            'blog' => $blog,
         ];
         return view('users/blog', $data);
     }
 
     public function kontak()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
         $data = [
             'judul' => 'Kontak Page',
-            'banner' => $banner,
         ];
         return view('users/kontak', $data);
     }
 
     public function karir()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'karir'])->first();
         $data = [
             'judul' => 'Karir Page',
             'banner' => $banner,
@@ -65,80 +63,100 @@ class Users extends BaseController
 
     public function portofolio()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->findAll();
+        $portfolio_mobile = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi Mobile'])->findAll();
+        $portfolio_pengadaan = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Pengadaan IT'])->findAll();
+        $portfolio_SI = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Sistem Informasi'])->findAll();
+        $portfolio_integrasi = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Integrasi Sistem'])->findAll();
+        $portfolio_egov = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi E-Gov'])->findAll();
         $data = [
             'judul' => 'Portofolio Page',
-            'banner' => $banner,
+            'portfolio' => $portfolio,
+            'portfolio_mobile' => $portfolio_mobile,
+            'portfolio_pengadaan' => $portfolio_pengadaan,
+            'portfolio_SI' => $portfolio_SI,
+            'portfolio_integrasi' => $portfolio_integrasi,
+            'portfolio_egov' => $portfolio_egov,
         ];
         return view('users/portfolio', $data);
     }
 
     public function layanan_it()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
         $data = [
             'judul' => 'Layanan IT Page',
-            'banner' => $banner,
         ];
         return view('users/layanan_it', $data);
     }
 
     public function tentang_kami()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'about'])->first();
+        $blog = $this->blogModel->orderBy('id', 'desc')->findAll(3);
         $data = [
             'judul' => 'Tentang Kami Page',
             'banner' => $banner,
+            'blog' => $blog,
         ];
         return view('users/tentang_kami', $data);
     }
 
     public function sistem_informasi()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'informasi'])->first();
+        $portfolio_SI = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Sistem Informasi'])->findAll();
         $data = [
             'judul' => 'Sistem Informasi Page',
             'banner' => $banner,
+            'portfolio' => $portfolio_SI,
         ];
         return view('users/sistem_informasi', $data);
     }
 
     public function aplikasi_mobile()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'mobile'])->first();
+        $portfolio_mobile = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi Mobile'])->findAll();
         $data = [
             'judul' => 'Aplikasi Mobile Page',
             'banner' => $banner,
+            'portfolio' => $portfolio_mobile,
         ];
         return view('users/aplikasi_mobile', $data);
     }
 
     public function aplikasi_egov()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'egov'])->first();
+        $portfolio_egov = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi E-Gov'])->findAll();
         $data = [
             'judul' => 'Aplikasi E-Goverment Page',
             'banner' => $banner,
+            'portfolio' => $portfolio_egov,
         ];
         return view('users/aplikasi_egov', $data);
     }
 
     public function integrasi_sistem()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->first();
+        $portfolio_integrasi = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Integrasi Sistem'])->findAll();
         $data = [
             'judul' => 'Integrasi Sistem Page',
             'banner' => $banner,
+            'portfolio' => $portfolio_integrasi,
         ];
         return view('users/integrasi_sistem', $data);
     }
 
     public function pengadaan_it()
     {
-        $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
+        $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->first();
+        $portfolio_pengadaan = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Pengadaan IT'])->findAll();
         $data = [
             'judul' => 'Pengadaan IT Page',
             'banner' => $banner,
+            'portfolio' => $portfolio_pengadaan,
         ];
         return view('users/pengadaan_it', $data);
     }
