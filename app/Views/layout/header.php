@@ -12,7 +12,7 @@
                     <img src="/assets/img/header/chat-icon.png" alt="">
                     <div class="text">
                         <p class="judul">Hubungi Kami</p>
-                        <a href="tel:+6281252200089" class="isi">081252200089</a>
+                        <a href=" tel:081252200089" class="isi">081252200089</a>
                     </div>
                 </div>
                 <!-- End of Container Hubungi Kami (telepon) -->
@@ -60,13 +60,10 @@
     <nav id="navbar" class="mt-4 mb-0 navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Navbar Logo Brand for Codepan Studio Logo when screen < 992px -->
-            <a class="navbar-brand display-logo-left" href="#"><img class="logo mr-auto"
-                    src="/assets/img/navbar/logo-codepan.png" alt="" class=""></a>
+            <a class="navbar-brand display-logo-left" href="/"><img class="logo mr-auto" src="/assets/img/navbar/logo-codepan.png" alt="" class=""></a>
 
             <!-- Toggler Button using boostrap 4 and small costumize on animation when screen < 992px -->
-            <button id="toggleTop" class="navbar-toggler toggle-top" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button id="toggleTop" class="navbar-toggler toggle-top" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-inner"></span>
             </button>
             <!-- End of Toggler Button using boostrap 4 and small costumize on animation when screen < 992px -->
@@ -76,14 +73,12 @@
                 <ul class="navbar-nav mr-5">
                     <!-- Simple Menu Beranda -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/" onclick="moveMenuNav(this)">BERANDA <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/" onclick="moveMenuNav(this)">BERANDA <span class="sr-only">(current)</span></a>
                     </li>
 
                     <!-- Simple Menu Tentang Kami -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/tentang_kami" onclick="moveMenuNav(this)">TENTANG KAMI <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/tentang_kami" onclick="moveMenuNav(this)">TENTANG KAMI <span class="sr-only">(current)</span></a>
                     </li>
 
                     <!-- Simple Menu Portofolio -->
@@ -95,8 +90,7 @@
                     <!-- Dropdown Menu Layanan IT -->
                     <li class="nav-item dropdown menu-area">
                         <!-- Dropdown Menu Button -->
-                        <a class="nav-link dropdown-toggle" href="#" onclick="moveMenuNav(this)" id="mega-one"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" onclick="moveMenuNav(this)" id="mega-one" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             LAYANAN IT
                         </a>
 
@@ -176,8 +170,7 @@
                 </ul>
 
                 <!-- Navbar Logo for Large Screen > 992px  -->
-                <a href="#" class="d-flex justify-content-center display-logo-center"><img class="logo mr-auto"
-                        src="/assets/img/logo/logo-codepan.png" alt="" class=""></a>
+                <a href="/" class="d-flex justify-content-center display-logo-center"><img class="logo mr-auto" src="/assets/img/logo/logo-codepan.png" alt="" class=""></a>
 
                 <!-- Container Social Media Buttons -->
                 <ul class="d-flex justify-content-md-center ml-auto p-icon-sosmed">

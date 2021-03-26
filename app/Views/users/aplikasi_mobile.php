@@ -110,7 +110,7 @@
                 <div class="card h-100">
                     <!-- <img src="/img/Shape.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
+                        <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
                     </div>
                     <div class="card-body">
                         <div id="counter">
@@ -162,7 +162,7 @@
         <div class="row">
             <div class="col-lg-4" data-aos="zoom-out">
                 <figure class="figure">
-                    <img src="../img/sistem-informasi/card1.png" class="figure-img img-fluid rounded" alt="...">
+                    <img src="/assets/img/syarat-implementasi/card1.png" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <h1>1. Masterplan</h1>
                         <p>Memiliki masterplan atau konsep pengembangan teknologi akan menjadi nilai plus dalam
@@ -172,7 +172,7 @@
             </div>
             <div class="col-lg-4" data-aos="zoom-out" data-aos-delay="200">
                 <figure class="figure">
-                    <img src="../img/sistem-informasi/card2.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <img src="/assets/img/syarat-implementasi/card2.jpg" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <h1>2. Kebijakan</h1>
                         <p>Pemangku kepentingan sudah mengeluarkan keputusan terkait rencana pengembangan sistem
@@ -182,7 +182,7 @@
             </div>
             <div class="col-lg-4" data-aos="zoom-out" data-aos-delay="300">
                 <figure class="figure">
-                    <img src="../img/sistem-informasi/card5.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <img src="/assets/img/syarat-implementasi/card5.jpg" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption">
                         <h1>3. Core System</h1>
                         <p>Sudah ada aturan proses kerja dalam institusi yang telah dibakukan dan di sahkan.
@@ -211,57 +211,26 @@
         </div>
         <!--Akhir Row1-->
         <div class="row" data-aos="fade-up" data-aos-offset="10" data-aos-delay="300">
-            <div class="col-lg-4 col-md-6 porto-margin">
-                <div class="card card-portofolio h-100">
-                    <div class="card-img">
-                        <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <small class="card-info">Aplikasi Mobile</small>
-                        <h5 class="card-title">Twins Robo Apps (Aplikasi Pembelajaraan
-                            Program Komputer) </h5>
-                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media
-                            pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA
-                            yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara
-                            multiplayer</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 porto-margin">
-                <div class="card card-portofolio h-100">
-                    <div class="card-img">
-                        <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <small class="card-info">Aplikasi Mobile</small>
-                        <h5 class="card-title">Twins Robo Apps (Aplikasi Pembelajaraan
-                            Program Komputer) </h5>
-                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media
-                            pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA
-                            yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara
-                            multiplayer</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
+            <?php
+            foreach ($portfolio as $portfolio) :
+            ?>
+                <div class="col-lg-4 col-md-6 porto-margin">
+                    <div class="card card-portofolio h-100">
+                        <div class="card-img">
+                            <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top hvr-grow" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <small class="card-info"><?= $portfolio['kategori']; ?></small>
+                            <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                            <p class="card-text"><?= $portfolio['tentang_mitra']; ?></p>
+                            <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 porto-margin">
-                <div class="card card-portofolio h-100">
-                    <div class="card-img">
-                        <img src="../img/sistem-informasi/card4.jpg" class="card-img-top hvr-grow" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <small class="card-info">Aplikasi Mobile</small>
-                        <h5 class="card-title">Twins Robo Apps (Aplikasi Pembelajaraan
-                            Program Komputer) </h5>
-                        <p class="card-text">Tentang Aplikasi Twins Robo Apps Merupakan suatu aplikasi media
-                            pembelajaran programming robot line maze berbasis mobile untuk membantu siswa SD,SMP,SMA
-                            yang ingin belajar programming secara basic dan di kemas dalam bentuk games secara
-                            multiplayer</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            endforeach;
+            ?>
+
         </div>
         <!--AKhir Row2-->
 
@@ -276,7 +245,7 @@
                 <h5 class="tag-kecil">Mitra Kerja</h5>
                 <h1 class="tag-besar">MITRA KERJA KAMI</h1>
                 <p class="capt">Kami bermitra dengan berbagai macam instansi dan perusahaan</p>
-                <img src="../img/sistem-informasi/Arindra.png" alt="" data-aos="fade-down">
+                <img src="/assets/img/mitra/Arindra.png" alt="" data-aos="fade-down">
             </div>
         </div>
         <!--Akhir Row1-->
