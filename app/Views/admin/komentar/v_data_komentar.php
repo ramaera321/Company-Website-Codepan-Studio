@@ -5,7 +5,11 @@
 <div class="container-fluid">
 
     <h1 class="h3 mb-4 text-gray-800">Komentar</h1>
-    <?php if (session()->getFlashdata('pesan')) : ?>
+    <?php
+
+    use App\Models\AdminModel;
+
+    if (session()->getFlashdata('pesan')) : ?>
         <div class="alert alert-success" role="alert">
             <?= session()->getFlashdata('pesan'); ?>
         </div>
@@ -13,7 +17,7 @@
 
     <div class="card shadow mb-4">
         <div class="blog-header">
-            <a href="/add_blog">Add Komentar</a>
+            <a href="/add_komentar">Add Komentar</a>
         </div>
     </div>
 
@@ -27,20 +31,24 @@
                         <th scope="col">Jabatan</th>
                         <th scope="col">Perusahaan</th>
                         <th scope="col">Komentar</th>
-                        <th scope="col">Foto</th>
                         <th scope="col" width="200px">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i = 1; ?>
+                    <?php
+                    $i = 1;
+                    ?>
                     <?php foreach ($komentar as $komentar) : ?>
                         <tr>
+                            <?php
+                            $id_admin = $komentar['id_admin'];
+                            $admin = $adminData->where(['id' => $id_admin])->first();
+                            ?>
                             <th scope="row"><?= $i++; ?></th>
-                            <td><?= $komentar['nama']; ?></td>
+                            <td><?= ucwords($admin['nama']); ?></td>
                             <td><?= $komentar['jabatan']; ?></td>
                             <td><?= $komentar['perusahaan']; ?></td>
                             <td><?= $komentar['komentar']; ?></td>
-                            <td><img src="/assets/img/komentar/<?= $komentar['foto']; ?>" alt="<?= $komentar['foto']; ?>" class="img-thumbnail show-thumbnail myImg"></td>
                             <td>
                                 <a href="/update_komentar/<?= $komentar['id']; ?>" class="bg-warning btn"></a>
                                 <form action="/komentar/<?= $komentar['id']; ?>" method="post" class="d-inline">
