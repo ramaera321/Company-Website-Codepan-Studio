@@ -121,6 +121,7 @@ class Users extends BaseController
 
     public function sistem_informasi()
     {
+        $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'informasi'])->first();
         $portfolio_SI = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Sistem Informasi'])->findAll();
@@ -129,12 +130,14 @@ class Users extends BaseController
             'banner' => $banner,
             'portfolio' => $portfolio_SI,
             'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/sistem_informasi', $data);
     }
 
     public function aplikasi_mobile()
     {
+        $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'mobile'])->first();
         $portfolio_mobile = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi Mobile'])->findAll();
@@ -143,12 +146,14 @@ class Users extends BaseController
             'banner' => $banner,
             'portfolio' => $portfolio_mobile,
             'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/aplikasi_mobile', $data);
     }
 
     public function aplikasi_egov()
     {
+        $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'egov'])->first();
         $portfolio_egov = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi E-Gov'])->findAll();
@@ -157,12 +162,14 @@ class Users extends BaseController
             'banner' => $banner,
             'portfolio' => $portfolio_egov,
             'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/aplikasi_egov', $data);
     }
 
     public function integrasi_sistem()
     {
+        $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->first();
         $portfolio_integrasi = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Integrasi Sistem'])->findAll();
@@ -171,12 +178,14 @@ class Users extends BaseController
             'banner' => $banner,
             'portfolio' => $portfolio_integrasi,
             'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/integrasi_sistem', $data);
     }
 
     public function pengadaan_it()
     {
+        $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->first();
         $portfolio_pengadaan = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Pengadaan IT'])->findAll();
@@ -185,6 +194,7 @@ class Users extends BaseController
             'banner' => $banner,
             'portfolio' => $portfolio_pengadaan,
             'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/pengadaan_it', $data);
     }
