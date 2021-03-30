@@ -1,6 +1,7 @@
 <!-- Container Form -->
 <div class="container-form">
-    <form>
+    <form action="/pemesanan/save" method="POST">
+        <?= csrf_field(); ?>
         <div class="row">
             <!-- Alert -->
             <div class="alert alert-success alert-dismissible fade show col-md-12 d-none" role="alert">
@@ -9,30 +10,40 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <?php if ($pesan) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?= $pesan; ?>
+                </div>
+            <?php endif; ?>
             <!-- Input Nama -->
             <div class="col-md-6 margin-text">
-                <input type="text" class="form-control" placeholder="Nama Anda*" required>
+                <input type="text" name="nama" class="form-control" placeholder="Nama Anda*" required>
             </div>
 
             <!-- Input Email -->
             <div class="col-md-6 margin-text">
-                <input type="email" class="form-control" placeholder="Email Anda*" required>
+                <input type="email" name="email" class="form-control" placeholder="Email Anda*" required>
             </div>
 
             <!-- Input No. HP -->
             <div class="col-md-6 margin-text">
-                <input type="tel" class="form-control" placeholder="No HP*" required>
+                <input type="tel" name="no" class="form-control" placeholder="No HP*" required>
             </div>
 
             <!-- Input Nama Perusahaan -->
             <div class="col-md-6 margin-text">
-                <input type="text" class="form-control" placeholder="Nama Perusahaan*" required>
+                <input type="text" name="nama_perusahaan" class="form-control" placeholder="Nama Perusahaan*" required>
             </div>
 
             <!-- Select Layanan IT -->
             <div class="col-md-12 margin-select">
-                <select class="form-control">
-                    <option>Layanan IT apa yang Anda butuhkan ?*</option>
+                <select class="form-control" name="layanan_it">
+                    <option value="" selected hidden disabled>Layanan IT apa yang Anda butuhkan ?*</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Aplikasi Mobile">Aplikasi Mobile</option>
+                    <option value="Aplikasi E-Goverment">Aplikasi E-Goverment</option>
+                    <option value="Integrasi Sistem">Integrasi Sistem</option>
+                    <option value="Pengadaan IT">Pengadaan IT</option>
                 </select>
             </div>
             <!-- End of Select Layanan IT -->
@@ -96,26 +107,19 @@
 
             <!-- Select Bidang Perusahaan -->
             <div class="col-md-12 margin-select">
-                <select class="form-control" id="exampleFormControlSelect1" placeholder="holder">
+                <select class="form-control" id="exampleFormControlSelect1" placeholder="holder" name="bidang">
                     <!-- Value of Select Bidang Perusahaan -->
-                    <option>Pilih bidang perusahaan Anda</option>
-                    <option>Pariwisata</option>
-                    <option>Keuangan</option>
-                    <option>Hukum</option>
-                    <option>Manajemen</option>
+                    <option value="" selected hidden disabled>Pilih bidang perusahaan Anda</option>
+                    <option value="Pariwisata">Pariwisata</option>
+                    <option value="Keuangan">Keuangan</option>
+                    <option value="Hukum">Hukum</option>
+                    <option value="Manajemen">Manajemen</option>
                 </select>
             </div>
             <!-- End of Select Bidang Perusahaan -->
 
             <!-- Verification Input -->
-            <div class="col-md-7 margin-end">
-                <input type="text" class="form-control" placeholder="Verification *" required>
-            </div>
-
-            <!-- Verification Code Place -->
-            <div class="col-md-5 margin-end">
-                <img src="" alt="">
-            </div>
+            <div class="g-recaptcha ml-3 pb-3" data-sitekey="6LdtkpQaAAAAAAqlBXUJls3ZQsJGm8RZa3yov6bq"></div>
 
             <!-- Agreement -->
             <div class="col-lg-7 box-setuju d-flex justify-content-start">
@@ -127,13 +131,12 @@
 
             <!-- Submit Button -->
             <div class="col-lg-5 text-center">
-                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled">Kirim
-                </button>
+                <input type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled" value="Kirim">
 
-                <button class="btn btn-primary d-none" type="button" disabled>
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <input type="submit" class="btn btn-primary d-none" disabled>
+                <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Loading...
-                </button>
+                </button> -->
             </div>
 
         </div>

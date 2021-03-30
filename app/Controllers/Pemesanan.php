@@ -27,63 +27,31 @@ class Pemesanan extends BaseController
     public function save()
     {
 
-        if (!$this->validate([
-            'nama' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'email' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'no' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'nama_perusahaan' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'layanan_it' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'jumlah_orang' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-            'bidang_perusahaan' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Nama harus diisi'
-                ]
-            ],
-        ])) {
-
-            return redirect()->to('')->withInput();
+        $captcha = $this->request->getVar('g-recaptcha-response');
+        if (!$captcha) {
+            $data = [
+                'error' => true,
+                'pesan' => 'Please check the the captcha form.',
+            ];
+            return redirect()->to('/')->with('pesan', 'Please check the the captcha form.');
         }
-
-        $this->pemesananModel->save([
-            'nama' => $this->request->getVar('nama'),
-            'email' => $this->request->getVar('email'),
-            'no' => $this->request->getVar('no'),
-            'nama_perusahaan' => $this->request->getVar('nama_perusahaan'),
-            'layanan_it' => $this->request->getVar('layanan_it'),
-            'jumlah_orang' => $this->request->getVar('jumlah_orang'),
-            'bidang_perusahaan' => $this->request->getVar('bidang_perusahaan'),
-        ]);
+        $secretKey = "6LdtkpQaAAAAAI3zW1RTPmAwYxm8uxe7V009fXAI";
+        $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+        $response = file_get_contents($url);
+        $responseKeys = json_decode($response, true);
+        if ($responseKeys["success"]) {
+            $this->pemesananModel->save([
+                'nama' => $this->request->getVar('nama'),
+                'email' => $this->request->getVar('email'),
+                'no' => $this->request->getVar('no'),
+                'nama_perusahaan' => $this->request->getVar('nama_perusahaan'),
+                'layanan_it' => $this->request->getVar('layanan_it'),
+                'jumlah_orang' => $this->request->getVar('jumlahKaryawan'),
+                'bidang_perusahaan' => $this->request->getVar('bidang'),
+            ]);
+        } else {
+            echo '<h2>You are spammer ! Get the @$%K out</h2>';
+        }
 
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
 
