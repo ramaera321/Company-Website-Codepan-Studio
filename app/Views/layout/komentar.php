@@ -9,7 +9,7 @@
                     $id_admin = $komentar['id_admin'];
                     $admin = $adminData->where(['id' => $id_admin])->first();
                     ?>
-                    <img src="/assets/img/saran/foto-mas-arindra.png" alt="">
+                    <img src="/assets/img/admin/customer-service.png" alt="">
                 </div>
                 <div class="info">
                     <h5 class="nama-pelanggan"><?= ucwords($admin['nama']); ?></h5>

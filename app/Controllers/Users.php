@@ -7,6 +7,7 @@ use App\Models\BannerModel;
 use App\Models\BlogModel;
 use App\Models\KarirModel;
 use App\Models\KomentarModel;
+use App\Models\PemesananModel;
 use App\Models\PortfolioModel;
 use CodeIgniter\I18n\Time;
 
@@ -18,6 +19,7 @@ class Users extends BaseController
     protected $karirModel;
     protected $komentarModel;
     protected $adminModel;
+    protected $pemesananModel;
     public function __construct()
     {
         $this->bannerModel = new BannerModel();
@@ -26,6 +28,7 @@ class Users extends BaseController
         $this->karirModel = new KarirModel();
         $this->komentarModel = new KomentarModel();
         $this->adminModel = new AdminModel();
+        $this->pemesananModel = new PemesananModel();
     }
 
     public function index()
