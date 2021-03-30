@@ -421,16 +421,18 @@
   /*--- End of Radio Button ---*/
 
   /*--- Testimonial ---*/
+  /* #mitraKerja .container-testi .img-testi,
   .solusi .container-testi .img-testi {
     width: 60px;
     height: 60px;
-  }
+  } */
 
+  #mitraKerja .container-testi,
   .solusi .container-testi {
     top: -100px;
   }
 
-  #mitraKerja .row-putih .posisi,
+  #mitraKerja .container-testi .pelanggan .posisi,
   .solusi .container-testi .pelanggan .posisi {
     font-size: 0.7rem;
   }
@@ -441,14 +443,17 @@
     margin-top: 20px;
   }
 
+  #mitraKerja .container-testi .pelanggan,
   .solusi .container-testi .pelanggan {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
     justify-content: space-around;
     justify-items: flex-start;
+    margin-bottom: 40px;
   }
 
+  #mitraKerja .container-testi .pelanggan-info,
   .solusi .container-testi .pelanggan-info {
     display: flex;
     flex-direction: row;
@@ -457,8 +462,9 @@
     padding: 0 !important;
   }
 
+  #mitraKerja .container-testi .pelanggan-info .img-testi,
   .solusi .container-testi .pelanggan-info .img-testi {
-    margin-right: 5px;
+    margin-right: 10px;
     height: 50px;
     width: 50px;
   }
@@ -662,7 +668,7 @@
     font-size: 13px;
   }
 
-  /* Mitra Kerja */
+  /* Mitra Kerja
   #mitraKerja .row-biru img {
     margin: 60px 500px;
   }
@@ -688,7 +694,7 @@
     margin-right: 5px;
     height: 50px;
     width: 50px;
-  }
+  } */
   /* -- End of Gerarld -- */
 }
 
@@ -1195,11 +1201,13 @@
     height: 40px;
   }
 
+  #mitraKerja .container-testi .pelanggan,
   .solusi .container-testi .pelanggan {
     margin-bottom: 50px;
     margin-left: 10px;
   }
 
+  #mitraKerja .container-testi .pelanggan .posisi,
   .solusi .container-testi .pelanggan .posisi {
     line-height: 14px;
   }
@@ -1294,7 +1302,7 @@
     padding: 50px 10px;
   }
 
-  #mitraKerja .row-putih {
+  #mitraKerja .container-testi {
     padding: 40px 20px;
   }
 
@@ -1395,7 +1403,6 @@
   .portofolio .card .card-img-top {
     width: auto;
   }
-
   /* ====== Karir Page CSS ====== */
   .jumbotron-karir {
     padding: 100px 0px 80px 0px;

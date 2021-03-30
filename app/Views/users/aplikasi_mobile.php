@@ -259,47 +259,9 @@
             </div>
         </div>
         <!--Akhir Row1-->
-        <div class="row row-putih d-flex justify-content-between">
-            <div class="col-md-6 margin-testi">
-                <div class="row row-putih-testi" data-aos="fade-right">
-                    <div class="col-lg-4 col-putih-testi">
-                        <div class="img-testi">
-                            <img src="../img/sistem-informasi/Reza Arindra.png" alt="">
-                        </div>
-                        <div class="info">
-                            <h5 class="nama-pelanggan">Reza Arindra Fadillah</h5>
-                            <p class="posisi">CEO & Project Manager CV. Arindra Production</p>
-                        </div>
-                    </div>
-                    <div class="mx-0 mt-1 col-lg-8">
-                        <p>Terima kasih kepada Codepan Studio Surabaya, aplikasinya sangat membantu. Sudah kami
-                            gunakan seluruhnya. Lalu layanan dari Profio secara kesuluruhan juga sudah cukup baik
-                            mulai dari komunikasi, hasil, dan ketepatan dalam menyelesaikannya.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 margin-testi">
-                <div class="row row-putih-testi" data-aos="fade-right" data-aos-delay="200">
-                    <div class="col-lg-4 col-putih-testi">
-                        <div class="img-testi">
-                            <img src="../img/sistem-informasi/Andrea.png" alt="">
-                        </div>
-                        <div class="info">
-                            <div class="info">
-                                <h5 class="nama-pelanggan">Andrea Piacquadio</h5>
-                                <p class="posisi">CEO & Project Manager PT. Angkasa Indah</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mx-0 mt-1 col-lg-8">
-                        <p>Layanan jasa dari Codepan Studio Surabaya baik, koordinasinya tanggap dan cepat,
-                            pelayanannya maksimal. Overall bagus.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <!-- Testi -->
+        <!-- komentar Admin -->
+        <?= $this->include('layout/komentar'); ?>
         <!--Akhir Row2-->
 
     </div>
