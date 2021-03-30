@@ -1356,7 +1356,7 @@ a.wa-button:hover {
   width: 100%;
   text-decoration: none;
   background-color: #9b9bfe;
-  /* padding: 10px 30px; */ /* use if you using button for btn submit */
+  padding: 10px 30px; /* use if you using button for btn submit */
   color: #fff;
   margin-top: 25px;
   font-size: 0.9rem;
@@ -1375,7 +1375,7 @@ a.wa-button:hover {
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 20px;
-  padding: 10px 30px; /*use if you using input for btn submit */
+  /* padding: 10px 30px; use if you using input for btn submit */
   width: 100%;
   height: 100%;
   z-index: 0;

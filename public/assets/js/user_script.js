@@ -93,11 +93,15 @@ function refreshAos() {
   });
 }
 
-$(document).on("click", "#setuju", function () {
-  $(".btn-submit").attr({
-    disabled: !$(this).is(":checked"),
-  });
-});
+// $(document).on("click", "#setuju", function () {
+//   $(".btn-submit").attr({
+//     disabled: !$(this).is(":checked"),
+//   });
+// });
+
+function enableBtn(){
+  document.getElementById("kirim_btn").disabled = false;
+}
 
 //Owl Carousel
 $(document).ready(function () {

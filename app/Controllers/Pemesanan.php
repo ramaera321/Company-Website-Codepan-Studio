@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\PemesananModel;
 
+
 class Pemesanan extends BaseController
 {
     protected $pemesananModel;
@@ -26,6 +27,7 @@ class Pemesanan extends BaseController
 
     public function save()
     {
+        $email = \Config\Services::email();
 
         $captcha = $this->request->getVar('g-recaptcha-response');
         if (!$captcha) {
