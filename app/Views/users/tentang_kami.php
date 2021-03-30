@@ -172,11 +172,9 @@
             endforeach;
             ?>
 
-<<<<<<< HEAD
-=======
             <!-- Card Blog 3 -->
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="600">
-               <div class="card hvr-underline-reveal h-100">
+                <div class="card hvr-underline-reveal h-100">
                     <div class="cont-card-img">
                         <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
                     </div>
@@ -188,7 +186,6 @@
                     </div>
                 </div>
             </div>
->>>>>>> origin/master
         </div>
         <!-- End of Container Blog -->
 
