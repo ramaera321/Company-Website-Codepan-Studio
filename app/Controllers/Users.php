@@ -128,6 +128,7 @@ class Users extends BaseController
             'judul' => 'Sistem Informasi Page',
             'banner' => $banner,
             'portfolio' => $portfolio_SI,
+            'komentar' => $komentar,
         ];
         return view('users/sistem_informasi', $data);
     }
@@ -141,6 +142,7 @@ class Users extends BaseController
             'judul' => 'Aplikasi Mobile Page',
             'banner' => $banner,
             'portfolio' => $portfolio_mobile,
+            'komentar' => $komentar,
         ];
         return view('users/aplikasi_mobile', $data);
     }
@@ -154,6 +156,7 @@ class Users extends BaseController
             'judul' => 'Aplikasi E-Goverment Page',
             'banner' => $banner,
             'portfolio' => $portfolio_egov,
+            'komentar' => $komentar,
         ];
         return view('users/aplikasi_egov', $data);
     }
@@ -167,6 +170,7 @@ class Users extends BaseController
             'judul' => 'Integrasi Sistem Page',
             'banner' => $banner,
             'portfolio' => $portfolio_integrasi,
+            'komentar' => $komentar,
         ];
         return view('users/integrasi_sistem', $data);
     }
@@ -180,6 +184,7 @@ class Users extends BaseController
             'judul' => 'Pengadaan IT Page',
             'banner' => $banner,
             'portfolio' => $portfolio_pengadaan,
+            'komentar' => $komentar,
         ];
         return view('users/pengadaan_it', $data);
     }
