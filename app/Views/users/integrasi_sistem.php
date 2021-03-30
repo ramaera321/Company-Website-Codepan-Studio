@@ -113,7 +113,7 @@
                     <!-- <img src="/img/Shape.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
                         <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json"
-                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                            background="transparent" speed="1" style="width: 70px; height: auto;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
