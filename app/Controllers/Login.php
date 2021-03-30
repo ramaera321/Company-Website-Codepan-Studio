@@ -48,7 +48,7 @@ class Login extends BaseController
         if ($data) {
             $pass = $data['password'];
             // $verify_pass = password_verify($password, $pass);
-            if ($password != $pass) {
+            if ($password == $pass) {
                 $ses_data = [
                     'id'        => $data['id'],
                     'nama'      => $data['nama'],

@@ -2,8 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Models\AdminModel;
 use App\Models\BannerModel;
 use App\Models\BlogModel;
+use App\Models\KomentarModel;
 use App\Models\PortfolioModel;
 use CodeIgniter\I18n\Time;
 
@@ -12,23 +14,31 @@ class Users extends BaseController
     protected $bannerModel;
     protected $portfolioModel;
     protected $blogModel;
+    protected $komentarModel;
+    protected $adminModel;
     public function __construct()
     {
         $this->bannerModel = new BannerModel();
         $this->portfolioModel = new PortfolioModel();
         $this->blogModel = new BlogModel();
+        $this->komentarModel = new KomentarModel();
+        $this->adminModel = new AdminModel();
     }
 
     public function index()
     {
+        $komentar = $this->komentarModel->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
         $portfolio = $this->portfolioModel->orderBy('id', 'desc')->findAll(2);
         $blog = $this->blogModel->orderBy('id', 'desc')->findAll(3);
+        $admin = $this->adminModel;
         $data = [
             'judul' => 'Home Codepan Surabaya',
             'banner' => $banner,
             'portfolio' => $portfolio,
             'blog' => $blog,
+            'komentar' => $komentar,
+            'adminData' => $admin,
         ];
         return view('users/index', $data);
     }

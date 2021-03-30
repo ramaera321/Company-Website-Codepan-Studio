@@ -180,6 +180,21 @@
             <?php
             endforeach;
             ?>
+
+            <!-- Card Blog 3 -->
+            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="600">
+                <div class="card hvr-underline-reveal h-100">
+                    <div class="cont-card-img">
+                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p class="sub-judul">04/10/2020</p>
+                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
+                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
+                            yang dapat di terapkan pada jaringan private inte…</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End of Container Blog -->
 
