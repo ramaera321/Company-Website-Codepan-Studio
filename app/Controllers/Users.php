@@ -33,7 +33,7 @@ class Users extends BaseController
 
     public function index()
     {
-        $komentar = $this->komentarModel->findAll(2);
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'home'])->first();
         $portfolio = $this->portfolioModel->orderBy('id', 'desc')->findAll(2);
         $blog = $this->blogModel->orderBy('id', 'desc')->findAll(3);
@@ -121,6 +121,7 @@ class Users extends BaseController
 
     public function sistem_informasi()
     {
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'informasi'])->first();
         $portfolio_SI = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Sistem Informasi'])->findAll();
         $data = [
@@ -133,6 +134,7 @@ class Users extends BaseController
 
     public function aplikasi_mobile()
     {
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'mobile'])->first();
         $portfolio_mobile = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi Mobile'])->findAll();
         $data = [
@@ -145,6 +147,7 @@ class Users extends BaseController
 
     public function aplikasi_egov()
     {
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'egov'])->first();
         $portfolio_egov = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi E-Gov'])->findAll();
         $data = [
@@ -157,6 +160,7 @@ class Users extends BaseController
 
     public function integrasi_sistem()
     {
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'integrasi'])->first();
         $portfolio_integrasi = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Integrasi Sistem'])->findAll();
         $data = [
@@ -169,6 +173,7 @@ class Users extends BaseController
 
     public function pengadaan_it()
     {
+        $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->first();
         $portfolio_pengadaan = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Pengadaan IT'])->findAll();
         $data = [
