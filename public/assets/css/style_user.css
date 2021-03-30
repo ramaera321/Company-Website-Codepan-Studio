@@ -330,7 +330,7 @@ nav .mega-area {
   width: 75%;
   left: 0px;
   right: 0;
-  top: 60px;
+  top: 50px;
   padding: 10px 15px;
   margin-left: 10px;
 }
@@ -1385,10 +1385,6 @@ a.wa-button:hover {
   display: flex;
   justify-content: space-between;
   color: #fff;
-}
-
-.solusi .container-testi .pelanggan-info {
-  padding-right: 5px;
 }
 
 .solusi .container-testi .img-testi {

@@ -204,7 +204,8 @@
             </div>
             <div class="col-lg-6 margin-figure" data-aos="zoom-out" data-aos-delay="300">
                 <figure class="figure">
-                    <img src="/assets/img/syarat-implementasi/card7.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <img src="/assets/img/syarat-implementasi/card7.jpg" class="figure-img big img-fluid rounded"
+                        alt="...">
                     <figcaption class="figure-caption">
                         <h1>4. Infrastruktur</h1>
                         <p>Kesiapan volume infrastruktur juga perlu diperhatikan, dengan melakukan integrasi bisa
@@ -214,7 +215,7 @@
             </div>
             <div class="col-lg-6 margin-figure" data-aos="zoom-out" data-aos-delay="400">
                 <figure class="figure">
-                    <img src="/assets/img/syarat-implementasi/card10.jpg" class="figure-img img-fluid rounded"
+                    <img src="/assets/img/syarat-implementasi/card10.jpg" class="figure-img big img-fluid rounded"
                         alt="...">
                     <figcaption class="figure-caption">
                         <h1>5. Bisnis Proses</h1>

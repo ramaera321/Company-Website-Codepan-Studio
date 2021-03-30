@@ -104,7 +104,11 @@
 
   .figure-img {
     width: 100%;
-    min-height: 200px;
+    height: 200px;
+  }
+
+  .figure-img.big {
+    height: 330px;
   }
 }
 

@@ -194,7 +194,7 @@
   font-size: 1.5rem;
   color: #2926a9;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 #kunci-sukses .figure-caption p {
   font-weight: 500;
@@ -203,7 +203,7 @@
 }
 
 #kunci-sukses .margin-figure {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .figure-img {

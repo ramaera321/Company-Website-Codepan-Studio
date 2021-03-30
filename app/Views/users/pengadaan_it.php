@@ -163,7 +163,8 @@
         <div class="row" style="display: flex; justify-content: center;">
             <div class="col-sm-6" data-aos="zoom-out">
                 <figure class="figure">
-                    <img src="/assets/img/syarat-implementasi/card2.jpg" class="figure-img img-fluid rounded" alt="...">
+                    <img src="/assets/img/syarat-implementasi/card2.jpg" class="figure-img big img-fluid rounded"
+                        alt="...">
                     <figcaption class="figure-caption">
                         <h1>1. Kebijakan</h1>
                         <p>Sudah diputuskan mengenai perencanaan pengadaan yang akan dilakukan.</p>
@@ -172,7 +173,7 @@
             </div>
             <div class="col-sm-6" data-aos="zoom-out" data-aos-delay="200">
                 <figure class="figure">
-                    <img src="/assets/img/syarat-implementasi/card11.png" class="figure-img img-fluid rounded"
+                    <img src="/assets/img/syarat-implementasi/card11.png" class="figure-img big img-fluid rounded"
                         alt="...">
                     <figcaption class="figure-caption">
                         <h1>2. Tenaga Ahli</h1>
