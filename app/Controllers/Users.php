@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\AdminModel;
 use App\Models\BannerModel;
 use App\Models\BlogModel;
+use App\Models\KarirModel;
 use App\Models\KomentarModel;
 use App\Models\PortfolioModel;
 use CodeIgniter\I18n\Time;
@@ -14,6 +15,7 @@ class Users extends BaseController
     protected $bannerModel;
     protected $portfolioModel;
     protected $blogModel;
+    protected $karirModel;
     protected $komentarModel;
     protected $adminModel;
     public function __construct()
@@ -21,6 +23,7 @@ class Users extends BaseController
         $this->bannerModel = new BannerModel();
         $this->portfolioModel = new PortfolioModel();
         $this->blogModel = new BlogModel();
+        $this->karirModel = new KarirModel();
         $this->komentarModel = new KomentarModel();
         $this->adminModel = new AdminModel();
     }
@@ -63,10 +66,12 @@ class Users extends BaseController
 
     public function karir()
     {
+        $karir = $this->karirModel->findAll();
         $banner = $this->bannerModel->where(['layanan' => 'karir'])->first();
         $data = [
             'judul' => 'Karir Page',
             'banner' => $banner,
+            'karir' => $karir,
         ];
         return view('users/karir', $data);
     }
