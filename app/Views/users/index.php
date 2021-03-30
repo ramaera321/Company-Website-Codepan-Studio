@@ -145,7 +145,8 @@
                         <div class="img-area laptop" style="display:flex; justify-content:center; align-items:center;">
                             </script>
                             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wkossx6a.json"
-                                background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay>
+                                background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay
+                                setSubframe(false)>
                             </lottie-player>
 
                         </div>
@@ -174,7 +175,8 @@
                         <div class="img-area phone">
                             </script>
                             <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_viopfy4u.json"
-                                background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay>
+                                background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay
+                                setSubframe(false)>
                             </lottie-player>
                         </div>
 
@@ -202,7 +204,8 @@
                         <div class="img-area">
                             </script>
                             <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qc9iczkv.json"
-                                background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay>
+                                background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay
+                                setSubframe(false)>
                             </lottie-player>
                         </div>
 
@@ -230,7 +233,8 @@
                         <div class="img-area">
                             </script>
                             <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aanhnju9.json"
-                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
+                                setSubframe(false)>
                             </lottie-player>
 
                         </div>
@@ -257,7 +261,8 @@
                         <div class="img-area">
                             </script>
                             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ssodehfl.json"
-                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
+                                setSubframe(false)>
                             </lottie-player>
                         </div>
 
@@ -386,8 +391,13 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_U8MhmH.json"
+                        <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_U8MhmH.json"
                             background="transparent" style="transform: scale(1.3);" speed="1" loop autoplay>
+                        </lottie-player> -->
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_pepphvu9.json"
+                            background="transparent"
+                            style="transform: scale(3); padding-left:5px; width:100%; height: 100px;" speed="1" loop
+                            autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">

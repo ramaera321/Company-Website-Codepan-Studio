@@ -256,7 +256,11 @@
             </div>
         </div>
         <!--Akhir Row1-->
-        <div class="row row-putih d-flex justify-content-between">
+        <!-- Testi -->
+        <!-- komentar Admin -->
+        <?= $this->include('layout/komentar'); ?>
+
+        <!-- <div class="row row-putih d-flex justify-content-between">
             <div class="col-md-6 margin-testi">
                 <div class="row row-putih-testi" data-aos="fade-right">
                     <div class="col-lg-4 col-putih-testi">
@@ -296,7 +300,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!--Akhir Row2-->
 
     </div>
