@@ -93,13 +93,13 @@ function refreshAos() {
   });
 }
 
-//Owl Carousel
 $(document).on("click", "#setuju", function () {
   $(".btn-submit").attr({
     disabled: !$(this).is(":checked"),
   });
 });
 
+//Owl Carousel
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,

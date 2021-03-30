@@ -11,9 +11,9 @@
                 </button>
             </div>
             <?php if ($pesan) : ?>
-                <div class="alert alert-success" role="alert">
-                    <?= $pesan; ?>
-                </div>
+            <div class="alert alert-success" role="alert">
+                <?= $pesan; ?>
+            </div>
             <?php endif; ?>
             <!-- Input Nama -->
             <div class="col-md-6 margin-text">
@@ -119,19 +119,31 @@
             <!-- End of Select Bidang Perusahaan -->
 
             <!-- Verification Input -->
-            <div class="g-recaptcha ml-3 pb-3" data-sitekey="6LdtkpQaAAAAAAqlBXUJls3ZQsJGm8RZa3yov6bq"></div>
+            <div class="g-recaptcha col-md-12 d-flex align-items-center"
+                data-sitekey="6LdtkpQaAAAAAAqlBXUJls3ZQsJGm8RZa3yov6bq"></div>
 
             <!-- Agreement -->
-            <div class="col-lg-7 box-setuju d-flex justify-content-start">
-                <input type="checkbox" id="setuju" name="setuju">
-                <!-- Agreement Text -->
-                <label for="setuju">Saya menyetujui bahwa data yang saya isi adalah benar</label>
-            </div>
+            <!-- <div class="col-lg-7 box-setuju d-flex justify-content-start">
+                <input type="checkbox" id="setuju" name="setuju"> -->
+            <!-- Agreement Text -->
+            <!-- <label for="setuju">Saya menyetujui bahwa data yang saya isi adalah benar</label>
+            </div> -->
             <!-- End of Agreement -->
 
             <!-- Submit Button -->
-            <div class="col-lg-5 text-center">
-                <input type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled" value="Kirim">
+            <div class="col-md-12 text-center d-flex align-items-center">
+
+                <!-- <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled"
+                    value="Kirim">Kirim
+                </button>
+
+                <button class="btn btn-primary d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                </button> -->
+                <button class="btn-primary btn-submit" disabled="disable">
+                    <input type="submit" id="kirim_btn" value="Kirim">
+                </button>
 
                 <input type="submit" class="btn btn-primary d-none" disabled>
                 <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
