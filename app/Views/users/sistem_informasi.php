@@ -7,7 +7,8 @@
 
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading -->
-<div id="mt" class="centered jumbotron jumbotron-fluid" style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
+<div id="mt" class="centered jumbotron jumbotron-fluid"
+    style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
     <div class="container" data-aos="fade-up">
         <h1 class="display-4">SISTEM INFORMASI</h1>
         <p class="lead text-center">
@@ -26,7 +27,8 @@
                 <h1>Kami Hadir dengan Solusi Terbaik</h1>
                 <p>Kami hadir memberikan layanan dan solusi atas permasalahan Anda. Kami menawarkan layanan sistem
                     informasi yang kompetitif dan prima menggunakan metode yang handal dan terpercaya.</p>
-                <p><a class="hvr-bounce-to-right" href="#">Dapatkan Konsultasi Gratis <i class="fas fa-long-arrow-alt-right hvr-icon-fade"></i></a></p>
+                <p><a class="hvr-bounce-to-right" href="#">Dapatkan Konsultasi Gratis <i
+                            class="fas fa-long-arrow-alt-right hvr-icon-fade"></i></a></p>
             </div>
 
             <div class="col-md-7" id="bullets" data-aos="fade-left">
@@ -70,7 +72,8 @@
                 <div class="card h-100">
                     <!-- <img src="/img/Path.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="graf" src="https://assets2.lottiefiles.com/packages/lf20_nl9bgfle.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                        <lottie-player class="graf" src="https://assets2.lottiefiles.com/packages/lf20_nl9bgfle.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
@@ -89,7 +92,8 @@
                 <div class="card h-100">
                     <!-- <img src="/img/smile.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="smile" src="https://assets7.lottiefiles.com/packages/lf20_qdbb21wb.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                        <lottie-player class="smile" src="https://assets7.lottiefiles.com/packages/lf20_qdbb21wb.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
                         </lottie-player>
                     </div>
 
@@ -109,7 +113,9 @@
                 <div class="card h-100">
                     <!-- <img src="/img/Shape.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json" background="transparent" speed="1" style="width: 100% !important; height: 100% !important;" loop autoplay>
+                        <lottie-player class="phone" src="https://assets4.lottiefiles.com/packages/lf20_tlzxty4j.json"
+                            background="transparent" speed="1" style="width: 100% !important; height: 100% !important;"
+                            loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
@@ -128,12 +134,14 @@
                 <div class="card h-100">
                     <!-- <img src="/img/user.png" class="card-img-top" alt="..."> -->
                     <div class="card-img-rowCard">
-                        <lottie-player class="partner" src="https://assets1.lottiefiles.com/packages/lf20_2wrjlrbz.json" background="transparent" speed="1" style="width: 100px; height: 100;" loop autoplay>
+                        <lottie-player class="partner" src="https://assets1.lottiefiles.com/packages/lf20_2wrjlrbz.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100;" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="card-body">
                         <div id="counter">
-                            <div class="pembungkus-counter d-flex justify-content-center align-items-center align-items-center">
+                            <div
+                                class="pembungkus-counter d-flex justify-content-center align-items-center align-items-center">
                                 <p class="card-text counter-value" id="count4" data-count="1">20</p>
                                 <span id="span4">partner</span>
                             </div>
@@ -145,7 +153,8 @@
         </div>
         <!--Akhir Row-Card-->
 
-        <p class="p-bottom">Kami akan membantu Anda mencapai tujuan. <a class="hvr-underline-from-left" href="#">Konsultasi sekarang.</a></p>
+        <p class="p-bottom">Kami akan membantu Anda mencapai tujuan. <a class="hvr-underline-from-left"
+                href="#">Konsultasi sekarang.</a></p>
     </div>
     <!--Akhir Container 1-->
 
@@ -153,7 +162,7 @@
         <div class="row">
             <div class="col">
                 <h5 class="tag-kecil">Kunci Sukses</h5>
-                <h1 class="tag-besar">SYARAT IMPLEMENTASI SISTEM INFORMASI</h1>
+                <h2 class="tag-besar">SYARAT IMPLEMENTASI SISTEM INFORMASI</h2>
                 <p class="capt">Sistem informasi yang handal dan terbaik, membutuhkan kerja sama dari semua pihak.
                     Anda bisa membantu kami dalam mengimplementasikannya.</p>
             </div>
@@ -203,7 +212,7 @@
         <div class="row">
             <div class="col">
                 <h5 class="tag-kecil">Portofolio</h5>
-                <h1 class="tag-besar">HASIL JASA LAYANAN KAMI</h1>
+                <h2 class="tag-besar">HASIL JASA LAYANAN KAMI</h2>
                 <p class="capt">Inilah beberapa hasil jasa layanan kami kepada beberapa mitra. Tenaga ahli kami
                     telah mampu menyelesaikan permasalahan dan meningkatkan kinerja perusahaan mitra kami.</p>
             </div>
@@ -213,19 +222,20 @@
             <?php
             foreach ($portfolio as $portfolio) :
             ?>
-                <div class="col-lg-4 col-md-6 porto-margin">
-                    <div class="card card-portofolio h-100">
-                        <div class="card-img">
-                            <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top hvr-grow" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <small class="card-info"><?= $portfolio['kategori']; ?></small>
-                            <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                            <p class="card-text"><?= $portfolio['tentang_mitra']; ?></p>
-                            <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
-                        </div>
+            <div class="col-lg-4 col-md-6 porto-margin">
+                <div class="card card-portofolio h-100">
+                    <div class="card-img">
+                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top hvr-grow"
+                            alt="...">
+                    </div>
+                    <div class="card-body">
+                        <small class="card-info"><?= $portfolio['kategori']; ?></small>
+                        <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                        <p class="card-text"><?= $portfolio['tentang_mitra']; ?></p>
+                        <a href="#" class="btn tombol hvr-bounce-to-top">Selengkapnya</a>
                     </div>
                 </div>
+            </div>
             <?php
             endforeach;
             ?>
@@ -309,7 +319,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -323,7 +334,8 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -336,7 +348,9 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-4">
-                                <lottie-player class="target" src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player class="target"
+                                    src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json"
+                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -473,11 +487,13 @@
 
                             <!-- Submit Button -->
                             <div class="col-lg-5 text-center">
-                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled">Kirim
+                                <button type="submit" class="btn-primary btn-submit" id="kirim_btn"
+                                    disabled="disabled">Kirim
                                 </button>
 
                                 <button class="btn btn-primary d-none" type="button" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
                                     Loading...
                                 </button>
                             </div>
@@ -491,7 +507,8 @@
         <!-- End of Container Mitra -->
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
         </path>
     </svg>
 </div>
