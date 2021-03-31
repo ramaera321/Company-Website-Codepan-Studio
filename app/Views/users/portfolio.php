@@ -57,7 +57,7 @@
                                 <div class="card h-100">
                                     <div class="img-card-container">
                                         <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
@@ -88,7 +88,7 @@
                                 <div class="card h-100">
                                     <div class="img-card-container">
                                         <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
@@ -117,7 +117,7 @@
                                 <div class="card h-100">
                                     <div class="img-card-container">
                                         <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
@@ -146,7 +146,7 @@
                                 <div class="card h-100">
                                     <div class="img-card-container">
                                         <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
@@ -173,7 +173,7 @@
                             <div class="card h-100">
                                 <div class="img-card-container">
                                     <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                 </div>
                                 <div class="card-body text-left">
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
@@ -199,7 +199,7 @@
                             <div class="card h-100">
                                 <div class="img-card-container">
                                     <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                 </div>
                                 <div class="card-body text-left">
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
