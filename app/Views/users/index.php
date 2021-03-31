@@ -529,10 +529,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-7 form">
-                <!-- Container Form -->
-                <?= $this->include('layout/pemesanan'); ?>
-                <!-- End of Container Form -->
+            <div class="p-form">
+                <div class="col-md-7 form">
+                    <!-- Container Form -->
+                    <?= $this->include('layout/pemesanan'); ?>
+                    <!-- End of Container Form -->
+                </div>
             </div>
         </div>
         <!-- End of Container Mitra -->
