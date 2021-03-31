@@ -56,13 +56,13 @@
                             <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                                 <div class="card h-100">
                                     <div class="img-card-container">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                         <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                         <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                     </div>
                                 </div>
@@ -87,13 +87,13 @@
                             <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                                 <div class="card h-100">
                                     <div class="img-card-container">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                         <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                         <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                     </div>
                                 </div>
@@ -116,13 +116,13 @@
                             <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                                 <div class="card h-100">
                                     <div class="img-card-container">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                         <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                         <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                     </div>
                                 </div>
@@ -145,13 +145,13 @@
                             <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                                 <div class="card h-100">
                                     <div class="img-card-container">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                     </div>
                                     <div class="card-body text-left">
                                         <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                         <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                        <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                         <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                     </div>
                                 </div>
@@ -172,13 +172,13 @@
                         <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                             <div class="card h-100">
                                 <div class="img-card-container">
-                                    <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                 </div>
                                 <div class="card-body text-left">
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                    <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                    <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                     <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
@@ -198,13 +198,13 @@
                         <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                             <div class="card h-100">
                                 <div class="img-card-container">
-                                    <img src="/assets/img/portofolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portofolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['logo']; ?>" class="logo" alt="">
                                 </div>
                                 <div class="card-body text-left">
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                    <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?>...</div>
+                                    <div class="card-text"><?= substr($portfolio['tentang_mitra'], 0, 150); ?> ...</div>
                                     <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
