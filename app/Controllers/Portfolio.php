@@ -5,8 +5,8 @@ namespace App\Controllers;
 use App\Models\AdminModel;
 use App\Models\PortfolioModel;
 use App\Models\PortfolioTagModel;
-use App\Models\KategoriModel;
-use App\Models\SubKategoriModel;
+use App\Models\PortfolioKategoriModel;
+use App\Models\PortfolioSubKategoriModel;
 use App\Models\TagModel;
 
 class Portfolio extends BaseController
@@ -14,16 +14,16 @@ class Portfolio extends BaseController
     protected $portfolioModel;
     protected $adminModel;
     protected $tagModel;
-    protected $kategoriModel;
-    protected $subKategoriModel;
+    protected $portfolioKategoriModel;
+    protected $portfolioSubKategoriModel;
     protected $portfolioTagModel;
     public function __construct()
     {
         $this->portfolioModel = new PortfolioModel();
         $this->adminModel = new AdminModel();
         $this->tagModel = new TagModel();
-        $this->kategoriModel = new KategoriModel();
-        $this->subKategoriModel = new SubKategoriModel();
+        $this->portfolioKategoriModel = new PortfolioKategoriModel();
+        $this->portfolioSubKategoriModel = new PortfolioSubKategoriModel();
         $this->portfolioTagModel = new PortfolioTagModel();
     }
     public function index()
@@ -55,8 +55,8 @@ class Portfolio extends BaseController
     {
         if (session()->get('logged_in')) {
             if (session()->get('tipe_admin') == 'Super Admin') {
-                $kategori = $this->kategoriModel->findAll();
-                $sub_kategori = $this->subKategoriModel->findAll();
+                $kategori = $this->portfolioKategoriModel->findAll();
+                $sub_kategori = $this->portfolioSubKategoriModel->findAll();
                 $penulis = $this->adminModel->findAll();
                 $tag = $this->tagModel->findAll();
                 $data = [
@@ -94,8 +94,8 @@ class Portfolio extends BaseController
 
                 $portfolio_tag = $this->portfolioTagModel->where(['portfolio_slug' => $slug])->first();
                 $portfolio = $this->portfolioModel->where(['slug' => $slug])->first();
-                $kategori = $this->kategoriModel->findAll();
-                $sub_kategori = $this->subKategoriModel->findAll();
+                $kategori = $this->portfolioKategoriModel->findAll();
+                $sub_kategori = $this->portfolioSubKategoriModel->findAll();
                 $penulis = $this->adminModel->findAll();
                 $tag = $this->tagModel->findAll();
                 $data = [
