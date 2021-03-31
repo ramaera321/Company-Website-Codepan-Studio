@@ -1400,13 +1400,19 @@ a.wa-button:hover {
 
 /*--- End of CSS Form Mitra ---*/
 
-.solusi .container-testi .pelanggan {
+.solusi .container-testi .pelanggan,
+#mitraKerja .container-testi .pelanggan {
   display: flex;
   justify-content: space-between;
   color: #fff;
 }
 
-.solusi .container-testi .img-testi {
+#mitraKerja .container-testi .pelanggan {
+  color: #2926a9;
+}
+
+.solusi .container-testi .img-testi,
+#mitraKerja .container-testi .img-testi {
   width: 80px;
   height: 80px;
   position: relative;
@@ -1415,8 +1421,9 @@ a.wa-button:hover {
   margin-bottom: 10px;
 }
 
-.solusi .container-testi .img-testi img {
-  width: inherit;
+.solusi .container-testi .img-testi img,
+#mitraKerja .container-testi .img-testi img {
+  width: 100%;
 }
 
 .solusi .container-testi {
@@ -1424,6 +1431,10 @@ a.wa-button:hover {
   top: -70px;
 }
 
+#mitraKerja .container-testi p {
+  color: #706e6e;
+  font-size: 0.95rem;
+}
 .solusi .container-testi p {
   color: #cfcece;
   font-weight: 500;
@@ -1432,18 +1443,27 @@ a.wa-button:hover {
   padding-left: 0;
 }
 
-#mitraKerja .row-putih h5,
+#mitraKerja .container-testi .pelanggan h5,
 .solusi .container-testi .pelanggan h5 {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 600 !important;
   margin-bottom: 3px;
 }
 
-#mitraKerja .row-putih .posisi,
+#mitraKerja .container-testi .pelanggan h5 {
+  font-size: 0.9rem;
+}
+
+#mitraKerja .container-testi .pelanggan .posisi,
 .solusi .container-testi .pelanggan .posisi {
   font-size: 0.75rem;
   color: #919090;
   font-weight: 500;
+}
+
+#mitraKerja .container-testi {
+  background: #fff;
+  padding: 40px;
 }
 
 /* --- End of Solusi CSS ---*/
