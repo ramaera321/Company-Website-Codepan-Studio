@@ -32,7 +32,7 @@
                                 <div class="card-body">
                                     <p class="sub-judul"><?= $blog['kategori']; ?> • <?= $blog['sub_kategori']; ?></p>
                                     <h5 class="card-title"><?= $blog['judul']; ?></h5>
-                                    <p class="card-text"><?= $blog['describ']; ?></p>
+                                    <p class="card-text"><?= word_limiter($blog['describ'], 10); ?></p>
                                     <p class="card-penulis">by <?= $blog['penulis']; ?></p>
                                     <?php
                                     $timestamp = strtotime($blog['created_at']);
