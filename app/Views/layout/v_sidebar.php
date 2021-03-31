@@ -103,6 +103,8 @@
                 <h6 class="collapse-header">Menu Portofolio :</h6>
                 <a class="collapse-item" href="/data_porto">Data Portofolio</a>
                 <a class="collapse-item" href="/add_porto">Add Portofolio</a>
+                <a class="collapse-item" href="/data_port_kategori">Add Portofolio Kategori</a>
+                <a class="collapse-item" href="/data_port_sub">Add Sub Kategori</a>
             </div>
         </div>
     </li>

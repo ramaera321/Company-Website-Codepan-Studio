@@ -55,251 +55,134 @@
 
                     <div class="container">
                         <div class="row row-isi-pasal">
-                            <div class="col d-flex justify-content-center">
+                            <div class="col d-flex">
                                 <div class="tab-content" data-aos="fade-down" data-aos-delay="600">
                                     <div role="tabpanel" class="tab-pane active" id="pasal1">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 1'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 1'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 1</h1>
-                                        <h1 id="isi-pasal">Permintaan Layanan</h1>
-                                        <h2 id="ayat-pasal">Ayat 1</h2>
-                                        <h2 id="judul-ayat">Tentang Kelengkapan Data</h2>
-                                        <p id="isi-ayat">Customer wajib mengisikan data yang valid pada setiap form
-                                            yang
-                                            disediakan saat permintaan layanan. Data nama yang diisikan harus sama
-                                            dengan nama pemilik rekening yang digunakan saat pembayaran. Profio
-                                            berhak
-                                            untuk tidak menindaklanjuti permintaan jika nama customer berbeda dengan
-                                            nama pemilik rekening pembayaran atau data yang diisikan pada form
-                                            pemesanan
-                                            terbukti tidak valid.</p>
-
-                                        <h2 id="ayat-pasal">Ayat 2</h2>
-                                        <h2 id="judul-ayat">Tentang Tata Cara Pembayaran</h2>
-                                        <p id="isi-ayat">
-                                        <ul>
-                                            <li>Setiap biaya layanan Profio dikenakan PPN 10%.</li>
-                                            <li>Profioakan mengirimkan tagihan pada email kontak yang terdaftar pada
-                                                sistem 7 (tujuh) hari sebelum tagihan jatuh tempo.</li>
-                                            <li>Faktur pajak (e-faktur) diterbitkan jika permintaan faktur direquest
-                                                telah dilengkapi dengan data pendukung pada bulan yang sama dengan
-                                                pembayaran tagihan.</li>
-                                            <li>Untuk permintaan faktur fisik maka biaya pengiriman ditanggung oleh
-                                                pelanggan. Faktur pajak (e-faktur) yang dapat diproses adalah faktur
-                                                pajak yang NPWP nya menggunakan NPWP perusahaan & bendaharawan
-                                                (Bukan
-                                                perorangan).</li>
-                                            <li>NPWP perusahaan/bendaharawan tidak dapat diganti ke NPWP
-                                                perusahaan/bendaharawan lain.</li>
-                                            <li>Faktur pajak (e-faktur) akan diterbitkan pada hari kerja setelah
-                                                pembayaran diterima dengan valid.</li>
-                                            <li>Potongan PPH23 hanya diberikan untuk invoice yang belum dilakukan
-                                                pembayaran & pelanggan telah melakukan aktivasi fitur PPH23</li>
-                                            <li>Pembayaran dengan potongan PPH23, wajib mengirimkan bukti potong
-                                                maksimal 50 hari sejak pembayaran dilakukan</li>
-                                            <li>Pembayaran dapat dilakukan dengan cara online transfer sesuai dengan
-                                                yang tertera pada invoice.</li>
-                                            <li>Pembayaran harus sesuai nominal order yang tertera pada invoice
-                                                setelah
-                                                dikenakan pajak.</li>
-                                        </ul>
-                                        </p>
-
-                                        <h2 id="ayat-pasal">Ayat 3</h2>
-                                        <h2 id="judul-ayat">Tentang Jangka Waktu Penyerahan Layanan</h2>
-                                        <p id="isi-ayat">Profio akan melakukan penyerahan aplikasi setelah menerima
-                                            pembayaran yang valid dan sesuai dengan ketentuan yang telah di Pasal 1
-                                            Ayat
-                                            1, kecuali apabila ternyata pelanggan menghendaki sebuah kebutuhan
-                                            khusus
-                                            dimana dibutuhkan sebuah persyaratan tambahan dalam pemenuhannya
-                                            (seperti
-                                            pada permintaan penerbitan faktur pajak).</p>
-
-                                        <h2 id="ayat-pasal">Ayat 4</h2>
-                                        <h2 id="judul-ayat">Tentang Perubahan Data Kepemilikan</h2>
-                                        <p id="isi-ayat">Profio hanya akan melakukan perubahan data kepemilikan
-                                            Pelanggan apabila mendapatkan permintaan dari email yang terdaftar di
-                                            daftar
-                                            kontak kami dengan disertakan dokumen pendukung kepemilikan yang valid &
-                                            identitas customer yang sama seperti dengan yang terdaftar di data saat
-                                            pendaftaran. Pelanggan berhak untuk menolak permintaan perpindahan
-                                            kepemilikan tanpa harus menyertakan alasan apapun sebelumnya.</p>
-
-                                        <h2 id="ayat-pasal">Ayat 5</h2>
-                                        <h2 id="judul-ayat">Garansi dan Maintenance</h2>
-                                        <p id="isi-ayat">Garansi hanya berlaku selama 6 bulan dengan persyaratan
-                                            source
-                                            code tidak dimodifikasi oleh Pihak Ketiga.</p>
-
-                                        <h2 id="ayat-pasal">Ayat 6</h2>
-                                        <h2 id="judul-ayat">Pihak Ketiga</h2>
-                                        <p id="isi-ayat">
-                                            Pihak Ketiga yang dimaksud sebagaimana pada Pasal 1 ayat 5 yaitu :
-                                        <ul>
-                                            <li>Seseorang ataupun kelompok tertentu secara struktural ataupun non
-                                                struktural yang memiliki afiliasi/kerjasama baik secara langsung
-                                                maupun
-                                                tidak langsung dengan instansi pengguna aplikasi eoffice masa kini
-                                                Profio.</li>
-                                            <li>Vendor atau orang lain yang ditunjuk dan bukan merupakan bagian dari
-                                                PT
-                                                Profio Teknova Indonesia.</li>
-                                        </ul>
-                                        </p>
-
-                                        <h2 id="ayat-pasal">Ayat 7</h2>
-                                        <h2 id="judul-ayat">Layanan dan Support</h2>
-                                        <p id="isi-ayat">Profio akan memberikan bantuan layanan support melalui
-                                            tiket
-                                            maupun online chat 5×8 jam, pada hari kerja Senin s/d Jumat selama masa
-                                            maintenance masih berlaku. Permintaan bantuan via chat whatsapp cp atau
-                                            jalur telepon pada jam 08.00 hingga 16.00 WIB. Adapun beberapa bantuan
-                                            termasuk ke dalam bantuan support, diantaranya :
-                                        <ul>
-                                            <li>Perbaikan error atau bug dalam aplikasi, ( bukan perubahan fungsi
-                                                atau
-                                                alur ).</li>
-                                            <li>Penjelasan alur dan fitur aplikasi.</li>
-                                            <li>Instalasi dan konfigurasi standar aplikasi pada server pengguna,
-                                                yang
-                                                sudah terpasang web server dan database server.</li>
-                                        </ul>
-                                        </p>
-
-                                        <h2 id="ayat-pasal">Ayat 8</h2>
-                                        <h2 id="judul-ayat">Instalasi Standar</h2>
-                                        <p id="isi-ayat">Instalasi standar yang dimaksud pada Ayat 7 poin ke-3
-                                            adalah
-                                            sebagai berikut :
-                                        <ul>
-                                            <li>Kode sumber Profio sudah terpasang pada web server pelanggan.</li>
-                                            <li>Library tambahan untuk aplikasi.</li>
-                                            <li>Database Profiosudah terpasang pada database server.</li>
-                                            <li>Aplikasi sudah bisa diakses pada IP yang disediakan oleh pelanggan,
-                                                misalkan http://168.1.1.0</li>
-                                        </ul>
-                                        </p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
 
                                     <div role="tabpanel" class="tab-pane" id="pasal2">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 2'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 2'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 2</h1>
-                                        <h1 id="isi-pasal">Hak Cipta</h1>
-                                        <h2 id="ayat-pasal">Ayat 1</h2>
-                                        <h2 id="judul-ayat">Lisensi</h2>
-                                        <p id="isi-ayat">Profio memungkinkan untuk memberikan lisensi kepada
-                                            customer
-                                            secara eksklusif yaitu source code dengan ketentuan Anda menyetujui
-                                            syarat
-                                            dan ketentuan Perjanjian ini.</p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="pasal3">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 3'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 3'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 3</h1>
-                                        <h1 id="isi-pasal">Bantuan dan Restore Data</h1>
-                                        <h2 id="ayat-pasal">Ayat 1</h2>
-                                        <h2 id="judul-ayat">Bantuan Input Data Awal</h2>
-                                        <p id="isi-ayat">
-                                        <ul>
-                                            <li>Tim Profiomensupport untuk melakukan inisiasi awal data pengguna
-                                                pada
-                                                server pelanggan maksimal 500 data unique.</li>
-                                            <li>Segala kesalahan input yg diakibatkan kesalahan data sumber setelah
-                                                masuk ke sistem merupakan tanggung jawab milik pelanggan.</li>
-                                        </ul>
-                                        </p>
-
-                                        <h2 id="ayat-pasal">Ayat 2</h2>
-                                        <h2 id="judul-ayat">Tentang Ketentuan Back-Up Data</h2>
-                                        <p id="isi-ayat">Profio tidak menyediakan backup data bagi pelanggan.
-                                            Pelanggan
-                                            disarankan untuk membuat backup data secara manual dan disimpan di
-                                            storage
-                                            pribadi untuk keamanan data.
-                                        </p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="pasal4">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 4'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 4'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 4</h1>
-                                        <h1 id="isi-pasal">Pelanggaran dan Sanksi</h1>
-                                        <p id="isi-ayat">Jika Pelanggan melakukan pelanggaran seperti yang tercantum
-                                            pada Pasal 2, Pihak Profio dapat memberikan sanksi kepada Pelanggan dan
-                                            dapat berlanjut ke proses hukum.
-                                        </p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="pasal5">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 5'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 5'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 5</h1>
-                                        <h1 id="isi-pasal">Force Majeur</h1>
-                                        <p id="isi-ayat">Force majeure adalah suatu keadaan yang ada di luar
-                                            kemampuan.
-                                            Misalnya bencana alam, banjir, badai, yang dinyatakan oleh Pemerintah
-                                            sebagai bencana alam, huru hara, kebakaran, sabotase, peperangan,
-                                            epidemi
-                                            dan kepatuhan terhadap pelaksanaan perundang-undangan.</p>
-                                        <p id="isi-ayat">
-                                            Tidak termasuk force majeure, hal-hal yang diakibatkan oleh kelalaian,
-                                            kealpaan, kecerobohan dan/atau ketidakpatuhan terhadap pelaksanaan
-                                            peraturan. Apabila Profio mengalami force majeur maka Profio akan
-                                            memberitahukan melalui email yang terdaftar, segera setelah mengalami
-                                            force
-                                            majeure selambat-lambatnya 7 (tujuh) hari sejak force majeure terjadi
-                                            dengan
-                                            memberikan penjelasan dan perkiraan dimulainya kembali pelaksanaan
-                                            ketentuan
-                                            Perjanjian.</p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="pasal6">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 6'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 6'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 6</h1>
-                                        <h1 id="isi-pasal">Hukum Berlaku</h1>
-                                        <p id="isi-ayat">Ketentuan layanan ini dan pelaksanaannya tunduk pada dan
-                                            diartikan sesuai dengan peraturan perundang-undangan dan hukum Negara
-                                            Republik Indonesia. Profio dapat melakukan kerjasama dengan penegak
-                                            hukum &
-                                            pihak yang berwenang tanpa persetujuan ataupun pemberitahuan lebih
-                                            lanjut
-                                            kepada Pelanggan. Dalam hal terjadi perselisihan atau perbedaan pendapat
-                                            sebagai akibat dari pelaksanaan ketentuan layanan ini, maka baik
-                                            Pelanggan
-                                            maupun Profio sepakat dan setuju untuk menyelesaikannya secara
-                                            musyawarah
-                                            untuk mencapai mufakat.</p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="pasal7">
+                                        <?php
+                                        $datapasal = $pasal->where(['pasal' => 'pasal 7'])->first();
+                                        $dataayat = $ayat->where(['pasal' => 'pasal 7'])->findAll();
+                                        $i = 1;
+                                        ?>
                                         <h1 id="pasal">Pasal 7</h1>
-                                        <h1 id="isi-pasal">Penggunaan Data</h1>
-                                        <h2 id="ayat-pasal">Ayat 1</h2>
-                                        <h2 id="judul-ayat">Tentang Penggunaan Data</h2>
-                                        <p id="isi-ayat">Website kami akan menyimpan cookies data dari browser
-                                            Pengunjung dan juga beberapa data cookies personal Pengunjung dari
-                                            platform
-                                            seperti Google, Facebook, Twitter, dll. Hal ini kami lakukan agar kami
-                                            bisa
-                                            tetap menyajikan konten-konten yang relevan bagi Pengunjung, baik
-                                            organic
-                                            maupun yang berupa iklan. Kami tidak akan pernah membagikan data-data
-                                            ini ke
-                                            orang lain yang tidak berkepentingan, maupun menggunakannya untuk hal
-                                            lain
-                                            diluar kebutuhan marketing kami.</p>
-                                        <p id="isi-ayat">Pengunjung juga mungkin menemukan beberapa konten yang
-                                            mengharuskan Pengunjung untuk login atau meng-otorisasi akses ke akun
-                                            sosial
-                                            media Pengunjung, namun itu semua tentu harus melalui proses persetejuan
-                                            dari Pengunjung. Pengunjung bisa memilih untuk tidak melakukannya, meski
-                                            pada akhirnya Pengunjung mungkin tidak bisa mengakses konten-konten
-                                            tertentu
-                                            pada website kami.</p>
-
-                                        <h2 id="ayat-pasal">Ayat 2</h2>
-                                        <h2 id="judul-ayat">Pendaftaran Email pada Form Lain Selain Form Order</h2>
-                                        <p id="isi-ayat">Ketika Pengunjung memasukkan email itu artinya Pengunjung
-                                            setuju email Pengunjung ditambahkan ke dalam sebuah daftar kontak yang
-                                            akan
-                                            kami kirimi sebuah pemberitahuan dan penawaran khusus sebagai bagian
-                                            dari
-                                            kegiatan marketing kami.</p>
-                                        <p id="isi-ayat">Pengunjung juga bisa melakukan ‘unsubscribe’ ketika tidak
-                                            ingin
-                                            lagi mendapatkan informasi atau penawaran khusus dari kegiatan marketing
-                                            kami. Pengunjung bisa klik tombol / link ‘unsubscribe’ di bagian bawah
-                                            email
-                                            yang kami kirimkan.</p>
+                                        <h1 id="isi-pasal"><?= ucwords($datapasal['judul']); ?></h1>
+                                        <?php
+                                        foreach ($dataayat as $dayat) :
+                                        ?>
+                                            <h2 id="ayat-pasal">Ayat <?= $i++; ?></h2>
+                                            <h2 id="judul-ayat"><?= ucwords($dayat['judul_ayat']); ?></h2>
+                                            <div id="isi-ayat"><?= $dayat['deskripsi']; ?></div>
+                                        <?php
+                                        endforeach;
+                                        ?>
                                     </div>
                                 </div>
                             </div>

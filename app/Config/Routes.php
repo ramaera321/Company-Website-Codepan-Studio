@@ -39,6 +39,9 @@ $routes->setAutoRoute(true);
 //User Routes
 $routes->get('/', 'Users::index');
 $routes->get('/blog', 'Users::blog');
+$routes->get('/blog_describ/(:segment)', 'Users::blog_describe/$1');
+$routes->get('/porto_describ/(:segment)', 'Users::porto_describe/$1');
+$routes->get('/aturan', 'Users::aturan');
 $routes->get('/kontak', 'Users::kontak');
 $routes->get('/karir', 'Users::karir');
 $routes->get('/portofolio', 'Users::portofolio');
@@ -99,6 +102,11 @@ $routes->get('/data_sub', 'Sub::post');
 $routes->delete('/sub/(:num)', 'Sub::delete/$1');
 $routes->get('/update_sub/(:num)', 'Sub::updatePage/$1');
 
+//Portfolio Sub Kategori
+$routes->get('/data_port_sub', 'PortfolioSub::post');
+$routes->delete('/port_sub/(:num)', 'PortfolioSub::delete/$1');
+$routes->get('/update_port_sub/(:num)', 'PortfolioSub::updatePage/$1');
+
 //Sub Admin Routes
 $routes->get('/data_tag', 'Tag::post');
 $routes->delete('/tag/(:num)', 'Tag::delete/$1');
@@ -128,8 +136,13 @@ $routes->delete('/komentar/(:num)', 'Komentar::delete/$1');
 
 //Kategori
 $routes->get('/data_kategori', 'Kategori::post');
-$routes->get('/update_kategori/(:num)', 'Kategori::updateKategori/$1');
+$routes->get('/update_kategori/(:num)', 'Kategori::updatePage/$1');
 $routes->delete('/kategori/(:num)', 'Kategori::delete/$1');
+
+// Portfolio Kategori
+$routes->get('/data_port_kategori', 'PortfolioKategori::post');
+$routes->get('/update_port_kategori/(:num)', 'PortfolioKategori::updatePage/$1');
+$routes->delete('/port_kategori/(:num)', 'PortfolioKategori::delete/$1');
 
 //Logo
 $routes->get('/data_logo', 'Logo::index');

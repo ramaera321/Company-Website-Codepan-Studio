@@ -3,10 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+use App\Models\AyatModel;
 use App\Models\BannerModel;
 use App\Models\BlogModel;
 use App\Models\KarirModel;
 use App\Models\KomentarModel;
+use App\Models\PasalModel;
 use App\Models\PemesananModel;
 use App\Models\PortfolioModel;
 use CodeIgniter\I18n\Time;
@@ -20,6 +22,8 @@ class Users extends BaseController
     protected $komentarModel;
     protected $adminModel;
     protected $pemesananModel;
+    protected $pasalModel;
+    protected $ayatModel;
     public function __construct()
     {
         $this->bannerModel = new BannerModel();
@@ -29,6 +33,8 @@ class Users extends BaseController
         $this->komentarModel = new KomentarModel();
         $this->adminModel = new AdminModel();
         $this->pemesananModel = new PemesananModel();
+        $this->pasalModel = new PasalModel();
+        $this->ayatModel = new AyatModel();
     }
 
     public function index()
@@ -57,6 +63,28 @@ class Users extends BaseController
             'blog' => $blog,
         ];
         return view('users/blog', $data);
+    }
+
+    public function blog_describe($slug)
+    {
+        $blog = $this->blogModel->orderBy('id', 'desc')->where(['slug' => $slug])->first();
+        $data = [
+            'judul' => $blog['slug'],
+            'blog' => $blog,
+        ];
+        return view('users/blog_deskrip', $data);
+    }
+
+    public function aturan()
+    {
+        $pasal = $this->pasalModel;
+        $ayat = $this->ayatModel;
+        $data = [
+            'judul' => 'Aturan Layanan Page',
+            'pasal' => $pasal,
+            'ayat' => $ayat,
+        ];
+        return view('users/aturan_layanan', $data);
     }
 
     public function kontak()
