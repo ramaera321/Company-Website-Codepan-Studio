@@ -6,10 +6,12 @@
 
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Heading with background from file -->
-<div id="mt" class="jumbotron d-flex justify-content-end"
-    style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
+<div id="mt" class="jumbotron d-flex justify-content-end" style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
     <!-- Container using boostrap 4 and scroll animation fade from down using Animated On Scroll -->
     <div class="container" data-aos="fade-down">
+        <?php
+        helper('text')
+        ?>
         <!-- Content -->
         <div class="content">
             <!-- Sub Heading  -->
@@ -144,9 +146,7 @@
                         <!-- Icon -->
                         <div class="img-area laptop" style="display:flex; justify-content:center; align-items:center;">
                             </script>
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wkossx6a.json"
-                                background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay
-                                setSubframe(false)>
+                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_wkossx6a.json" background="transparent" speed="1" style="width: 170px; height: 170px;" loop autoplay setSubframe(false)>
                             </lottie-player>
 
                         </div>
@@ -154,8 +154,7 @@
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
-                                    class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -174,17 +173,14 @@
                         <!-- Icon -->
                         <div class="img-area phone">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_viopfy4u.json"
-                                background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay
-                                setSubframe(false)>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_viopfy4u.json" background="transparent" speed="1" style="width: 110px; height: 110px;" loop autoplay setSubframe(false)>
                             </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal"> SELENGKAPNYA <i
-                                    class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal"> SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -203,17 +199,14 @@
                         <!-- Icon -->
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qc9iczkv.json"
-                                background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay
-                                setSubframe(false)>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_qc9iczkv.json" background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay setSubframe(false)>
                             </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
-                                    class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -232,9 +225,7 @@
                         <!-- Icon -->
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aanhnju9.json"
-                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
-                                setSubframe(false)>
+                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_aanhnju9.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay setSubframe(false)>
                             </lottie-player>
 
                         </div>
@@ -242,8 +233,7 @@
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
-                                    class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -260,17 +250,14 @@
                         <p class="card-text">Komponen Instruktur IT yang berkualitas untuk sistem yang handal</p>
                         <div class="img-area">
                             </script>
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ssodehfl.json"
-                                background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay
-                                setSubframe(false)>
+                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ssodehfl.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay setSubframe(false)>
                             </lottie-player>
                         </div>
 
                         <!-- Button Container -->
                         <div class="selengkapnya">
                             <!-- Button with hover-effect.css-->
-                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i
-                                    class="fa fa-arrow-right hvr-icon"></i></a>
+                            <a href="" class="hvr-icon-wobble-horizontal">SELENGKAPNYA <i class="fa fa-arrow-right hvr-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -304,36 +291,36 @@
         <div class="row" data-aos="fade-up" data-aos-offset="10">
 
             <?php foreach ($portfolio as $portfolio) : ?>
-            <!-- Portofolio 1 -->
-            <div class="col-lg-6 col-md-6 batas-card">
-                <div class="card h-100">
-                    <!-- Img Contaienr -->
-                    <div class="img-card-container">
-                        <!-- Background Img -->
-                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                <!-- Portofolio 1 -->
+                <div class="col-lg-6 col-md-6 batas-card">
+                    <div class="card h-100">
+                        <!-- Img Contaienr -->
+                        <div class="img-card-container">
+                            <!-- Background Img -->
+                            <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
 
-                        <!-- Logo -->
-                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
-                    </div>
-
-                    <!-- Text -->
-                    <div class="card-body text-left">
-                        <!-- Sub Title -->
-                        <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-
-                        <!-- Card Title -->
-                        <h5 class="card-title"><?= $portfolio['judul']; ?>
-                        </h5>
-
-                        <!-- Text -->
-                        <div class="card-text"><?= $portfolio['tentang_mitra']; ?>
+                            <!-- Logo -->
+                            <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
                         </div>
 
-                        <!-- Link Selengkapnya with hover-effect.css -->
-                        <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                        <!-- Text -->
+                        <div class="card-body text-left">
+                            <!-- Sub Title -->
+                            <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+
+                            <!-- Card Title -->
+                            <h5 class="card-title"><?= $portfolio['judul']; ?>
+                            </h5>
+
+                            <!-- Text -->
+                            <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?>
+                            </div>
+
+                            <!-- Link Selengkapnya with hover-effect.css -->
+                            <a href="#" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach; ?>
 
         </div>
@@ -361,8 +348,7 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_dunmkucz.json"
-                            background="transparent" speed="1" loop autoplay></lottie-player>
+                        <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_dunmkucz.json" background="transparent" speed="1" loop autoplay></lottie-player>
                     </div>
                     <div class="col-9 text">
                         <h3>Respon Cepat</h3>
@@ -374,8 +360,7 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q32pr5gh.json"
-                            background="transparent" speed="1" loop autoplay>
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_q32pr5gh.json" background="transparent" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -394,10 +379,7 @@
                         <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_U8MhmH.json"
                             background="transparent" style="transform: scale(1.3);" speed="1" loop autoplay>
                         </lottie-player> -->
-                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_pepphvu9.json"
-                            background="transparent"
-                            style="transform: scale(3); padding-left:5px; width:100%; height: 100px;" speed="1" loop
-                            autoplay>
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_pepphvu9.json" background="transparent" style="transform: scale(3); padding-left:5px; width:100%; height: 100px;" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -414,8 +396,7 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player class="atas" src="https://assets2.lottiefiles.com/packages/lf20_iq0zmgip.json"
-                            background="transparent" style="transform: scale(0.7);" speed="1" loop autoplay>
+                        <lottie-player class="atas" src="https://assets2.lottiefiles.com/packages/lf20_iq0zmgip.json" background="transparent" style="transform: scale(0.7);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -430,8 +411,7 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_lqbg5smd.json"
-                            background="transparent" style="transform: scale(1.7);" speed="1" loop autoplay>
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_lqbg5smd.json" background="transparent" style="transform: scale(1.7);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -447,8 +427,7 @@
             <li class="col-lg-4 col-sm-6 mx-0 item" data-aos="zoom-in-up" data-aos-delay="300">
                 <div class="row">
                     <div class="col-3 text-img">
-                        <lottie-player class="atas" src="https://assets5.lottiefiles.com/packages/lf20_qdbb21wb.json"
-                            background="transparent" style="transform: scale(0.9);" speed="1" loop autoplay>
+                        <lottie-player class="atas" src="https://assets5.lottiefiles.com/packages/lf20_qdbb21wb.json" background="transparent" style="transform: scale(0.9);" speed="1" loop autoplay>
                         </lottie-player>
                     </div>
                     <div class="col-9 text">
@@ -485,8 +464,7 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json"
-                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_q75ozg3t.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -500,8 +478,7 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-2">
-                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json"
-                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_my6ldrkt.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -514,9 +491,7 @@
                     <li class="col-md-12 item">
                         <div class="row">
                             <div class="col-3 pt-4">
-                                <lottie-player class="target"
-                                    src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json"
-                                    background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
+                                <lottie-player class="target" src="https://assets3.lottiefiles.com/packages/lf20_ich37shs.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay>
                                 </lottie-player>
                             </div>
                             <div class="text text-left col-9">
@@ -560,23 +535,23 @@
             <?php
             foreach ($blog as $blog) :
             ?>
-            <!-- Card Blog 1 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                <div class="card hvr-underline-reveal h-100">
-                    <div class="cont-card-img">
-                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <?php
+                <!-- Card Blog 1 -->
+                <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
+                    <div class="card hvr-underline-reveal h-100">
+                        <div class="cont-card-img">
+                            <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <?php
                             $timestamp = strtotime($blog['created_at']);
                             $tanggal = date('d/m/Y', $timestamp)
                             ?>
-                        <p class="sub-judul"><?= $tanggal; ?></p>
-                        <h5 class="card-title"><?= $blog['judul']; ?></h5>
-                        <div class="card-text"><?= $blog['describ']; ?></div>
+                            <p class="sub-judul"><?= $tanggal; ?></p>
+                            <h5 class="card-title"><?= $blog['judul']; ?></h5>
+                            <div class="card-text"><?= word_limiter($blog['describ'], 10); ?></div>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php
             endforeach;
             ?>
@@ -592,8 +567,7 @@
 </div>
 <!-- End of Page Blog -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#2926A9" fill-opacity="1"
-        d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+    <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
     </path>
 </svg>
 <?= $this->endSection(); ?>
