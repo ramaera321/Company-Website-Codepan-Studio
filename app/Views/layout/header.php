@@ -60,7 +60,7 @@
     <nav id="navbar" class="mt-4 mb-0 navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Navbar Logo Brand for Codepan Studio Logo when screen < 992px -->
-            <a class="navbar-brand display-logo-left" href="/"><img class="logo mr-auto" src="/assets/img/navbar/logo-codepan.png" alt="" class=""></a>
+            <a class="navbar-brand display-logo-left" href="/"><img class="logo mr-auto" src="/assets/img/logo/logo-codepan.png" alt="" class=""></a>
 
             <!-- Toggler Button using boostrap 4 and small costumize on animation when screen < 992px -->
             <button id="toggleTop" class="navbar-toggler toggle-top" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
