@@ -49,7 +49,7 @@ class PortfolioKategori extends BaseController
 
         if (!$this->validate([
             'nama_kategori' => [
-                'rules' => 'required|is_unique[kategori.nama_kategori]',
+                'rules' => 'required|is_unique[portfolio_kategori.nama_kategori]',
                 'errors' => [
                     'required' => 'Nama harus diisi',
                     'is_unique' => 'Nama sudah ada'
