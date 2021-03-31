@@ -57,10 +57,12 @@ class Users extends BaseController
 
     public function blog()
     {
-        $blog = $this->blogModel->orderBy('id', 'desc')->findAll();
+        $blog = $this->blogModel->orderBy('id', 'desc')->paginate(6, 'blog');
+        $pager = $this->blogModel->orderBy('id', 'desc')->pager;
         $data = [
             'judul' => 'Blog Page',
             'blog' => $blog,
+            'pager' => $pager,
         ];
         return view('users/blog', $data);
     }
@@ -109,7 +111,8 @@ class Users extends BaseController
 
     public function portofolio()
     {
-        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->findAll();
+        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->paginate(6, 'portfolio');
+        $pager = $this->portfolioModel->orderBy('id', 'desc')->pager;
         $portfolio_mobile = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Aplikasi Mobile'])->findAll();
         $portfolio_pengadaan = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Pengadaan IT'])->findAll();
         $portfolio_SI = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => 'Sistem Informasi'])->findAll();
@@ -123,6 +126,7 @@ class Users extends BaseController
             'portfolio_SI' => $portfolio_SI,
             'portfolio_integrasi' => $portfolio_integrasi,
             'portfolio_egov' => $portfolio_egov,
+            'pager' => $pager,
         ];
         return view('users/portfolio', $data);
     }

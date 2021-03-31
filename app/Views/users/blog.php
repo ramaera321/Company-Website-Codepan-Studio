@@ -52,25 +52,7 @@
             <!-- End of Container Blog -->
 
             <!-- Pagination -->
-            <nav class="pagination-bar" aria-label="...">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item hvr-icon-wobble-horizontal">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true"><i class="fa fa-arrow-left hvr-icon"></i></span>
-                        </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active" aria-current="page">
-                        <span class="page-link">2</span>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item hvr-icon-wobble-horizontal">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true"><i class="fa fa-arrow-right hvr-icon"></i></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <?= $pager->links('blog', 'custom_pagination'); ?>
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
