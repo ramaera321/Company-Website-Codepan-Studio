@@ -114,7 +114,7 @@ class Users extends BaseController
         $blog_article1 = $this->blogModel->orderBy('id', 'desc')->findAll(8);
         $blog_article2 = $this->blogModel->orderBy('id', 'desc')->findAll(3);
         $kategori = $this->kategoriModel->orderBy('id', 'desc')->findAll();
-        $blog_tag = $this->portfolioTagModel->where(['blog_slug' => $slug])->first();
+        $blog_tag = $this->blogTagModel->where(['blog_slug' => $slug])->first();
         $sub_kategori = $this->subKategoriModel->orderBy('id', 'desc')->findAll();
         $data = [
             'judul' => ucwords($blog['judul']),
