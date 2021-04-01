@@ -102,7 +102,7 @@
                 ?>
                 <p class="tag">Tags :
                     <?php foreach ($data_tag as $tag) : ?>
-                        <a href="">#<?= $tag[$i++]; ?></a>
+                        <a href="">#<?= $tag; ?></a>
                 </p>
             <?php endforeach; ?>
             </div>
