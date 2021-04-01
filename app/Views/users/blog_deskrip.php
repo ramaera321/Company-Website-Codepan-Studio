@@ -27,7 +27,7 @@
             <div class="row content" data-aos="fade-up">
                 <div class="col-md-9 right-content">
                     <div class="img-container">
-                        <img src="../img/page-blog/img-isiBlog.png" alt="">
+                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" alt="">
                     </div>
                     <div class="judul-blog text-center">
                         <p class="sub-judul"><?= $blog['kategori']; ?> • <?= $blog['sub_kategori']; ?></p>
