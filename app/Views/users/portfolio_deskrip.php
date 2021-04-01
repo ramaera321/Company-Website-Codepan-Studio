@@ -100,11 +100,11 @@
                 $data_tag = explode(' ', $daftar_tag);
                 $i = 0;
                 ?>
-                <p class="tag">Tags :
+                <div class="tag">Tags :
                     <?php foreach ($data_tag as $tag) : ?>
                         <a href="">#<?= $tag; ?></a>
-                </p>
-            <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
             </div>
 
             <!-- Prev Next Navigation -->
