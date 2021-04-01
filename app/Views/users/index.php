@@ -312,8 +312,10 @@
                 <div class="card h-100">
                     <!-- Img Contaienr -->
                     <div class="img-card-container">
-                        <!-- Background Img -->
-                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                        <div class="back-img">
+                            <!-- Background Img -->
+                            <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                        </div>
 
                         <!-- Logo -->
                         <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
