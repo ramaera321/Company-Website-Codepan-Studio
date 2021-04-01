@@ -15,11 +15,10 @@
                 <h1>BLOG</h1>
                 <nav style="--bs-breadcrumb-divider: &#xf061" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page"><a href="#">Blog</a></li>
-                        <li class="breadcrumb-item" aria-current="page"><a href="#">Artikel</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Memastikan Keamanan Jaringan dengan
-                            Teknologi Firewall</li>
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="/blog">Blog</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="/blog_kategori"><?= $blog['kategori']; ?></a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><?= ucwords($blog['judul']); ?></li>
                     </ol>
                 </nav>
             </div>
@@ -31,13 +30,18 @@
                         <img src="../img/page-blog/img-isiBlog.png" alt="">
                     </div>
                     <div class="judul-blog text-center">
-                        <p class="sub-judul">Artikel • Teknologi</p>
-                        <h2>Memastikan Keamanan Jaringan dengan Teknologi Firewall</h2>
-                        <p class="creator">By Reza Arindra • 02/02/2021</p>
+                        <p class="sub-judul"><?= $blog['kategori']; ?> • <?= $blog['sub_kategori']; ?></p>
+                        <h2><?= ucwords($blog['judul']); ?></h2>
+                        <?php
+                        $timestamp = strtotime($blog['created_at']);
+                        $tanggal = date('d/m/Y', $timestamp)
+                        ?>
+                        <p class="creator"><?= $blog['penulis']; ?> • <?= $tanggal; ?></p>
                     </div>
                     <div class="blog-main text-justify">
                         <p class="isi-blog">
-                            <b>Share Artikel Ini : <br></b>
+                            <?= $blog['materi']; ?>
+                            <br><b>Share Artikel Ini : <br></b>
                             <!-- AddToAny BEGIN -->
                         <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                             <a class="a2a_button_facebook"></a>
@@ -64,90 +68,92 @@
                 <div class="col-md-3 left-widget">
                     <div class="kategori">
                         <h5>KATEGORI</h5>
-                        <p><a href="#">Artikel</a></p>
-                        <p><a href="#">Berita</a></p>
-                        <p><a href="#">Info</a></p>
-                        <p><a href="#">Teknologi</a></p>
-                        <p><a href="#">Tips</a></p>
-                        <p><a href="#">Tutorial</a></p>
-                        <p><a href="#">Video</a></p>
+                        <p><a href="/blog_kategori/Artikel">Artikel</a></p>
+                        <p><a href="/blog_kategori/Berita">Berita</a></p>
+                        <p><a href="/blog_kategori/Info">Info</a></p>
+                        <p><a href="/blog_kategori/Teknologi">Teknologi</a></p>
+                        <p><a href="/blog_kategori/Tips">Tips</a></p>
+                        <p><a href="/blog_kategori/Tutorial">Tutorial</a></p>
+                        <p><a href="/blog_kategori/Video">Video</a></p>
                     </div>
                     <div class="popular">
                         <h5>POPULAR</h5>
-                        <div class="popular-item row">
-                            <div class="col-4 img-popular">
-                                <img src="../img/page-blog/img-isiBlog.png" alt="">
+                        <?php
+                        foreach ($blog_article1 as $blog_article1) :
+                        ?>
+                            <div class="popular-item row">
+                                <div class="col-4 img-popular">
+                                    <img src="/assets/img/blog/<?= $blog_article1['foto']; ?>" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <a href="/blog_describ/<?= $blog_article1['slug']; ?>" class="hvr-underline-from-left"><?= $blog_article1['judul']; ?></a>
+                                </div>
                             </div>
-                            <div class="col-8">
-                                <a href="" class="hvr-underline-from-left">Memastikan Keamanan Sistem dengan
-                                    Firewall</a>
-                            </div>
-                        </div>
-                        <div class="popular-item row">
-                            <div class="col-4 img-popular">
-                                <img src="../img/page-blog/img-isiBlog.png" alt="">
-                            </div>
-                            <div class="col-8">
-                                <a href="" class="hvr-underline-from-left">Memastikan Keamanan Sistem dengan
-                                    Firewall</a>
-                            </div>
-                        </div>
-                        <div class="popular-item row">
-                            <div class="col-4 img-popular">
-                                <img src="../img/page-blog/img-isiBlog.png" alt="">
-                            </div>
-                            <div class="col-8">
-                                <a href="" class="hvr-underline-from-left">Memastikan Keamanan Sistem dengan
-                                    Firewall</a>
-                            </div>
-                        </div>
-                        <div class="popular-item row">
-                            <div class="col-4 img-popular">
-                                <img src="../img/page-blog/img-isiBlog.png" alt="">
-                            </div>
-                            <div class="col-8">
-                                <a href="" class="hvr-underline-from-left">Memastikan Keamanan Sistem dengan
-                                    Firewall</a>
-                            </div>
-                        </div>
-                        <div class="popular-item row">
-                            <div class="col-4 img-popular">
-                                <img src="../img/page-blog/img-isiBlog.png" alt="">
-                            </div>
-                            <div class="col-8">
-                                <a href="" class="hvr-underline-from-left">Memastikan Keamanan Sistem dengan
-                                    Firewall</a>
-                            </div>
-                        </div>
+                        <?php
+                        endforeach;
+                        ?>
                     </div>
                 </div>
             </div>
+            <?php
+
+            ?>
             <div class="row prev-next-bar">
-                <a href="#" class="col-md-5 col-sm-12 row pl-0 mb-3">
-                    <div class="col-2 button">
-                        <div class="btn-prev"><i class="fas fa-caret-left"></i></div>
-                    </div>
-                    <div class="col-10 text-left text-btn">
-                        Previous Post<br>
-                        <b>Tak Kenal Maka Kenalan:Codepan Studio itu sia...</b>
-                    </div>
-                </a>
-                <a href="./blog.php" class="col-md-2 col-sm-12 oval mb-3">
+                <?php
+                if ($query_prev->getRow()->judul) {
+                ?>
+                    <a href="/blog_describ/<?= ($query_prev->getRow()->judul) ? $query_prev->getRow()->slug : ''; ?>" class="col-md-5 col-sm-12 row pl-0 mb-3">
+                        <div class="col-2 button">
+                            <div class="btn-prev"><i class="fas fa-caret-left"></i></div>
+                        </div>
+                        <div class="col-10 text-left text-btn">
+                            Previous Post<br>
+                            <b><?= character_limiter($query_prev->getRow()->judul, 30); ?></b>
+                        </div>
+                    </a>
+                <?php
+                } else {
+                ?>
+                    <a href="/blog_describ/" class="col-md-5 col-sm-12 row pl-0 mb-3">
+                        <div class="col-2 button">
+                        </div>
+                        <div class="col-10 text-left text-btn">
+                        </div>
+                    </a>
+                <?php
+                }
+                ?>
+                <a href="/blog" class="col-md-2 col-sm-12 oval mb-3">
                     <div class="cover">
                         <i class="fas fa-circle"></i>
                         <i class="fas fa-circle"></i>
                         <i class="fas fa-circle"></i>
                     </div>
                 </a>
-                <a href="#" class="col-md-5 col-sm-12 row pr-0 mb-3">
-                    <div class="col-10 text-right text-btn">
-                        Next Post <br>
-                        <b>Tak Kenal Maka Kenalan:Codepan Studio itu sia...</b>
-                    </div>
-                    <div class="col-2 button">
-                        <div class="btn-next"><i class="fas fa-caret-right"></i></div>
-                    </div>
-                </a>
+                <?php
+                if ($query_next->getRow()->judul) {
+                ?>
+                    <a href="/blog_describ/<?= $query_next->getRow()->slug; ?>" class="col-md-5 col-sm-12 row pr-0 mb-3">
+                        <div class="col-10 text-right text-btn">
+                            Next Post <br>
+                            <b><?= character_limiter($query_next->getRow()->judul, 30); ?></b>
+                        </div>
+                        <div class="col-2 button">
+                            <div class="btn-next"><i class="fas fa-caret-right"></i></div>
+                        </div>
+                    </a>
+                <?php
+                } else {
+                ?>
+                    <a href="/blog_describ/" class="col-md-5 col-sm-12 row pl-0 mb-3">
+                        <div class="col-2 button">
+                        </div>
+                        <div class="col-10 text-left text-btn">
+                        </div>
+                    </a>
+                <?php
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -164,46 +170,29 @@
         <h1 class="text-center">Lastest Update</h1>
         <!-- Container Blog -->
         <div class="container-card-blog row">
-            <!-- Card Blog 1 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
-                <div class="card hvr-underline-reveal">
-                    <img src="../img/page-blog/Foto-Blog1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="sub-judul">04/10/2020</p>
-                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
-                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                            yang dapat di terapkan pada jaringan private inte…</p>
+            <?php
+            foreach ($blog_article2 as $blog) :
+            ?>
+                <!-- Card Blog 1 -->
+                <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
+                    <div class="card hvr-underline-reveal h-100">
+                        <div class="cont-card-img">
+                            <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <?php
+                            $timestamp = strtotime($blog['created_at']);
+                            $tanggal = date('d/m/Y', $timestamp)
+                            ?>
+                            <p class="sub-judul"><?= $tanggal; ?></p>
+                            <h5 class="card-title"><?= $blog['judul']; ?></h5>
+                            <div class="card-text"><?= word_limiter($blog['describ'], 10); ?></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card Blog 2 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="300">
-                <div class="card hvr-underline-reveal">
-                    <img src="../img/page-blog/Foto-Blog2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="sub-judul">04/10/2020</p>
-                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
-                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                            yang dapat di terapkan pada jaringan private inte…</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card Blog 3 -->
-            <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down" data-aos-delay="600">
-                <div class="card hvr-underline-reveal h-100">
-                    <div class="cont-card-img">
-                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <p class="sub-judul">04/10/2020</p>
-                        <h5 class="card-title">Memastikan Keamanan Jaringan dengan Teknologi Firewall</h5>
-                        <p class="card-text">Teknologi firewall adalah salah satu dari sekian banyak sistem keamanan
-                            yang dapat di terapkan pada jaringan private inte…</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+            endforeach;
+            ?>
         </div>
         <!-- End of Container Blog -->
     </div>

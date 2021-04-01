@@ -69,10 +69,22 @@ class Users extends BaseController
 
     public function blog_describe($slug)
     {
+        helper('text');
+        $db = \Config\Database::connect();
         $blog = $this->blogModel->orderBy('id', 'desc')->where(['slug' => $slug])->first();
+        $id = $blog['id'];
+        $query_prev = $db->query("SELECT * FROM blog WHERE id < $id ORDER BY id DESC LIMIT 1");
+        $query_next = $db->query("SELECT * FROM blog WHERE id > $id ORDER BY id ASC LIMIT 1");
+        $blog_article1 = $this->blogModel->orderBy('id', 'desc')->findAll(8);
+        $blog_article2 = $this->blogModel->orderBy('id', 'desc')->findAll(3);
         $data = [
-            'judul' => $blog['slug'],
+            'judul' => ucwords($blog['judul']),
             'blog' => $blog,
+            'id' => $id,
+            'query_prev' => $query_prev,
+            'query_next' => $query_next,
+            'blog_article1' => $blog_article1,
+            'blog_article2' => $blog_article2,
         ];
         return view('users/blog_deskrip', $data);
     }
@@ -125,7 +137,6 @@ class Users extends BaseController
             'portfolio_SI' => $portfolio_SI,
             'portfolio_integrasi' => $portfolio_integrasi,
             'portfolio_egov' => $portfolio_egov,
-            'pager' => $pager,
         ];
         return view('users/portfolio', $data);
     }
