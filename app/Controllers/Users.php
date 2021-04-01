@@ -6,6 +6,7 @@ use App\Models\AdminModel;
 use App\Models\AyatModel;
 use App\Models\BannerModel;
 use App\Models\BlogModel;
+use App\Models\BlogTagModel;
 use App\Models\KarirModel;
 use App\Models\KategoriModel;
 use App\Models\KomentarModel;
@@ -21,6 +22,7 @@ class Users extends BaseController
     protected $bannerModel;
     protected $portfolioModel;
     protected $blogModel;
+    protected $blogTagModel;
     protected $karirModel;
     protected $komentarModel;
     protected $adminModel;
@@ -36,6 +38,7 @@ class Users extends BaseController
         $this->portfolioModel = new PortfolioModel();
         $this->portfolioTagModel = new PortfolioTagModel();
         $this->blogModel = new BlogModel();
+        $this->blogTagModel = new BlogTagModel();
         $this->karirModel = new KarirModel();
         $this->komentarModel = new KomentarModel();
         $this->adminModel = new AdminModel();
@@ -111,10 +114,12 @@ class Users extends BaseController
         $blog_article1 = $this->blogModel->orderBy('id', 'desc')->findAll(8);
         $blog_article2 = $this->blogModel->orderBy('id', 'desc')->findAll(3);
         $kategori = $this->kategoriModel->orderBy('id', 'desc')->findAll();
+        $blog_tag = $this->portfolioTagModel->where(['portfolio_slug' => $slug])->first();
         $sub_kategori = $this->subKategoriModel->orderBy('id', 'desc')->findAll();
         $data = [
             'judul' => ucwords($blog['judul']),
             'blog' => $blog,
+            'blog_tag' => $blog_tag,
             'id' => $id,
             'query_prev' => $query_prev,
             'kategori' => $kategori,

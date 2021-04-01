@@ -62,8 +62,17 @@
 
 
                     </div>
-
-                    <p class="tag">Tags : <a href="">#Firewall</a></p>
+                    <?php
+                    $data_tag = array();
+                    $daftar_tag = $blog_tag['nama_tag'];
+                    $data_tag = explode(' ', $daftar_tag);
+                    $i = 0;
+                    ?>
+                    <div class="tag">Tags :
+                        <?php foreach ($data_tag as $tag) : ?>
+                            <a href="">#<?= $tag; ?></a>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
                 <div class="col-md-3 left-widget">
                     <div class="kategori">
