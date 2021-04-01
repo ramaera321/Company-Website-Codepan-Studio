@@ -102,7 +102,7 @@
                                     <img src="/assets/img/blog/<?= $blog_article1['foto']; ?>" alt="">
                                 </div>
                                 <div class="col-8">
-                                    <a href="/blog_describ/<?= $blog_article1['slug']; ?>" class="hvr-underline-from-left"><?= $blog_article1['judul']; ?></a>
+                                    <a href="/blog_describ/<?= $blog_article1['slug']; ?>" class="hvr-underline-from-left"><?= character_limiter($blog_article1['judul'], 30); ?></a>
                                 </div>
                             </div>
                         <?php
