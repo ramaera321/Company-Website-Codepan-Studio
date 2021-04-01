@@ -68,13 +68,20 @@
                 <div class="col-md-3 left-widget">
                     <div class="kategori">
                         <h5>KATEGORI</h5>
-                        <p><a href="/blog_kategori/Artikel">Artikel</a></p>
-                        <p><a href="/blog_kategori/Berita">Berita</a></p>
-                        <p><a href="/blog_kategori/Info">Info</a></p>
-                        <p><a href="/blog_kategori/Teknologi">Teknologi</a></p>
-                        <p><a href="/blog_kategori/Tips">Tips</a></p>
-                        <p><a href="/blog_kategori/Tutorial">Tutorial</a></p>
-                        <p><a href="/blog_kategori/Video">Video</a></p>
+                        <?php
+                        foreach ($kategori as $kategori) :
+                        ?>
+                            <p><a href="/blog_kategori/<?= $kategori['nama_kategori']; ?>"><?= $kategori['nama_kategori']; ?></a></p>
+                        <?php
+                        endforeach;
+                        ?>
+                        <?php
+                        foreach ($sub_kategori as $sub_kategori) :
+                        ?>
+                            <p><a href="/blog_sub_kategori/<?= $sub_kategori['nama_sub']; ?>"><?= $sub_kategori['nama_sub']; ?></a></p>
+                        <?php
+                        endforeach;
+                        ?>
                     </div>
                     <div class="popular">
                         <h5>POPULAR</h5>

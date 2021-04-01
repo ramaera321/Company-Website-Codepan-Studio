@@ -36,12 +36,15 @@ $routes->setAutoRoute(true);
 //User Routes
 $routes->get('/', 'Users::index');
 $routes->get('/blog', 'Users::blog');
+$routes->get('/blog_kategori/(:segment)', 'Users::blog_kategori/$1');
+$routes->get('/blog_sub_kategori/(:segment)', 'Users::blog_sub_kategori/$1');
 $routes->get('/blog_describ/(:segment)', 'Users::blog_describe/$1');
 $routes->get('/porto_describ/(:segment)', 'Users::porto_describe/$1');
 $routes->get('/aturan', 'Users::aturan');
 $routes->get('/kontak', 'Users::kontak');
 $routes->get('/karir', 'Users::karir');
 $routes->get('/portofolio', 'Users::portofolio');
+$routes->get('/portfolio_describ/(:segment)', 'Users::portfolio_describe/$1');
 $routes->get('/layanan_it', 'Users::layanan_it');
 $routes->get('/tentang_kami', 'Users::tentang_kami');
 $routes->get('/sistem_informasi', 'Users::sistem_informasi');

@@ -7,10 +7,13 @@ use App\Models\AyatModel;
 use App\Models\BannerModel;
 use App\Models\BlogModel;
 use App\Models\KarirModel;
+use App\Models\KategoriModel;
 use App\Models\KomentarModel;
 use App\Models\PasalModel;
 use App\Models\PemesananModel;
 use App\Models\PortfolioModel;
+use App\Models\PortfolioTagModel;
+use App\Models\SubKategoriModel;
 use CodeIgniter\I18n\Time;
 
 class Users extends BaseController
@@ -24,10 +27,14 @@ class Users extends BaseController
     protected $pemesananModel;
     protected $pasalModel;
     protected $ayatModel;
+    protected $kategoriModel;
+    protected $subKategoriModel;
+    protected $portfolioTagModel;
     public function __construct()
     {
         $this->bannerModel = new BannerModel();
         $this->portfolioModel = new PortfolioModel();
+        $this->portfolioTagModel = new PortfolioTagModel();
         $this->blogModel = new BlogModel();
         $this->karirModel = new KarirModel();
         $this->komentarModel = new KomentarModel();
@@ -35,6 +42,8 @@ class Users extends BaseController
         $this->pemesananModel = new PemesananModel();
         $this->pasalModel = new PasalModel();
         $this->ayatModel = new AyatModel();
+        $this->kategoriModel = new KategoriModel();
+        $this->subKategoriModel = new SubKategoriModel();
     }
 
     public function index()
@@ -67,6 +76,30 @@ class Users extends BaseController
         return view('users/blog', $data);
     }
 
+    public function blog_kategori($kategori)
+    {
+        $blog = $this->blogModel->orderBy('id', 'desc')->where(['kategori' => $kategori])->paginate(6, 'blog');
+        $pager = $this->blogModel->orderBy('id', 'desc')->pager;
+        $data = [
+            'judul' => 'Blog Page',
+            'blog' => $blog,
+            'pager' => $pager,
+        ];
+        return view('users/blog', $data);
+    }
+
+    public function blog_sub_kategori($sub_kategori)
+    {
+        $blog = $this->blogModel->orderBy('id', 'desc')->where(['sub_kategori' => $sub_kategori])->paginate(6, 'blog');
+        $pager = $this->blogModel->orderBy('id', 'desc')->pager;
+        $data = [
+            'judul' => 'Blog Page',
+            'blog' => $blog,
+            'pager' => $pager,
+        ];
+        return view('users/blog', $data);
+    }
+
     public function blog_describe($slug)
     {
         helper('text');
@@ -77,11 +110,15 @@ class Users extends BaseController
         $query_next = $db->query("SELECT * FROM blog WHERE id > $id ORDER BY id ASC LIMIT 1");
         $blog_article1 = $this->blogModel->orderBy('id', 'desc')->findAll(8);
         $blog_article2 = $this->blogModel->orderBy('id', 'desc')->findAll(3);
+        $kategori = $this->kategoriModel->orderBy('id', 'desc')->findAll();
+        $sub_kategori = $this->subKategoriModel->orderBy('id', 'desc')->findAll();
         $data = [
             'judul' => ucwords($blog['judul']),
             'blog' => $blog,
             'id' => $id,
             'query_prev' => $query_prev,
+            'kategori' => $kategori,
+            'sub_kategori' => $sub_kategori,
             'query_next' => $query_next,
             'blog_article1' => $blog_article1,
             'blog_article2' => $blog_article2,
@@ -139,6 +176,26 @@ class Users extends BaseController
             'portfolio_egov' => $portfolio_egov,
         ];
         return view('users/portfolio', $data);
+    }
+
+    public function portfolio_describe($slug)
+    {
+        helper('text');
+        $db = \Config\Database::connect();
+        $portfolio_tag = $this->portfolioTagModel->where(['portfolio_slug' => $slug])->first();
+        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->where(['slug' => $slug])->first();
+        $id = $portfolio['id'];
+        $query_prev = $db->query("SELECT * FROM portfolio WHERE id < $id ORDER BY id DESC LIMIT 1");
+        $query_next = $db->query("SELECT * FROM portfolio WHERE id > $id ORDER BY id ASC LIMIT 1");
+        $data = [
+            'judul' => ucwords($portfolio['judul']),
+            'portfolio' => $portfolio,
+            'portfolio_tag' => $portfolio_tag,
+            'id' => $id,
+            'query_prev' => $query_prev,
+            'query_next' => $query_next,
+        ];
+        return view('users/portfolio_deskrip', $data);
     }
 
     public function layanan_it()
