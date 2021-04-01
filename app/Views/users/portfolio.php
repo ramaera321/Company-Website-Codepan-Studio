@@ -36,7 +36,8 @@
                             Informasi</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#integrasi-sistem" onclick="refreshAos()"><span>Integrasi Sistem</span></a>
+                    <a class="nav-link" data-toggle="tab" href="#integrasi-sistem"
+                        onclick="refreshAos()"><span>Integrasi Sistem</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#aplikasi-egov" onclick="refreshAos()"><span>Aplikasi
@@ -52,6 +53,7 @@
                         <?php
                         foreach ($portfolio as $portfolio) :
                         ?>
+<<<<<<< HEAD
                             <!-- Card 1 -->
                             <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                                 <div class="card h-100">
@@ -64,9 +66,28 @@
                                         <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                         <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
                                         <a href="/portfolio_describ/<?= $portfolio['slug']; ?>" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
+=======
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                            <div class="card h-100">
+                                <div class="img-card-container">
+                                    <div id="image-size" class="back-img">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                            alt="...">
+>>>>>>> 0101a319b590b3ef6b2788ccf3c111eee2c166ac
                                     </div>
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo"
+                                        alt="">
+                                </div>
+                                <div class="card-body text-left">
+                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
+                        </div>
                         <?php
                         endforeach;
                         ?>
@@ -82,21 +103,26 @@
                         <?php
                         foreach ($portfolio_pengadaan as $portfolio) :
                         ?>
-                            <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="img-card-container">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                            <div class="card h-100">
+                                <div class="img-card-container">
+                                    <div id="image-size" class="back-img">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                            alt="...">
                                     </div>
-                                    <div class="card-body text-left">
-                                        <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                        <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                        <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-                                    </div>
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo"
+                                        alt="">
+                                </div>
+                                <div class="card-body text-left">
+                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
+                        </div>
                         <?php
                         endforeach;
                         ?>
@@ -111,21 +137,26 @@
                         <?php
                         foreach ($portfolio_mobile as $portfolio) :
                         ?>
-                            <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="img-card-container">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                            <div class="card h-100">
+                                <div class="img-card-container">
+                                    <div id="image-size" class="back-img">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                            alt="...">
                                     </div>
-                                    <div class="card-body text-left">
-                                        <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                        <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                        <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-                                    </div>
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo"
+                                        alt="">
+                                </div>
+                                <div class="card-body text-left">
+                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
+                        </div>
                         <?php
                         endforeach;
                         ?>
@@ -140,21 +171,26 @@
                         <?php
                         foreach ($portfolio_SI as $portfolio) :
                         ?>
-                            <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="img-card-container">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                        <!-- Card 1 -->
+                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                            <div class="card h-100">
+                                <div class="img-card-container">
+                                    <div id="image-size" class="back-img">
+                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                            alt="...">
                                     </div>
-                                    <div class="card-body text-left">
-                                        <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                        <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                        <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-                                    </div>
+                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo"
+                                        alt="">
+                                </div>
+                                <div class="card-body text-left">
+                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                    <a href="./portofolio_content.php"
+                                        class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
+                        </div>
                         <?php
                         endforeach;
                         ?>
@@ -167,21 +203,25 @@
                     <?php
                     foreach ($portfolio_integrasi as $portfolio) :
                     ?>
-                        <!-- Card 1 -->
-                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                            <div class="card h-100">
-                                <div class="img-card-container">
-                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="img-card-container">
+                                <div id="image-size" class="back-img">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                        alt="...">
                                 </div>
-                                <div class="card-body text-left">
-                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-                                </div>
+                                <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                            </div>
+                            <div class="card-body text-left">
+                                <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                <a href="./portofolio_content.php"
+                                    class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
+                    </div>
                     <?php
                     endforeach;
                     ?>
@@ -193,21 +233,25 @@
                     <?php
                     foreach ($portfolio_egov as $portfolio) :
                     ?>
-                        <!-- Card 1 -->
-                        <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                            <div class="card h-100">
-                                <div class="img-card-container">
-                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                    <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="img-card-container">
+                                <div id="image-size" class="back-img">
+                                    <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
+                                        alt="...">
                                 </div>
-                                <div class="card-body text-left">
-                                    <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                    <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                    <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-                                </div>
+                                <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
+                            </div>
+                            <div class="card-body text-left">
+                                <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
+                                <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
+                                <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
+                                <a href="./portofolio_content.php"
+                                    class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
+                    </div>
                     <?php
                     endforeach;
                     ?>
@@ -217,7 +261,8 @@
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#2926A9" fill-opacity="1" d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
+        <path fill="#2926A9" fill-opacity="1"
+            d="M0,192L34.3,176C68.6,160,137,128,206,138.7C274.3,149,343,203,411,192C480,181,549,107,617,80C685.7,53,754,75,823,106.7C891.4,139,960,181,1029,208C1097.1,235,1166,245,1234,240C1302.9,235,1371,213,1406,202.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
         </path>
     </svg>
 </div>
