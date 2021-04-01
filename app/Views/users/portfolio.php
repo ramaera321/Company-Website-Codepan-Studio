@@ -53,20 +53,6 @@
                         <?php
                         foreach ($portfolio as $portfolio) :
                         ?>
-<<<<<<< HEAD
-                            <!-- Card 1 -->
-                            <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
-                                <div class="card h-100">
-                                    <div class="img-card-container">
-                                        <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
-                                        <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo" alt="">
-                                    </div>
-                                    <div class="card-body text-left">
-                                        <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
-                                        <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
-                                        <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                        <a href="/portfolio_describ/<?= $portfolio['slug']; ?>" class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
-=======
                         <!-- Card 1 -->
                         <div class="col-lg-4 col-md-6 jarak-card" data-aos="fade-up">
                             <div class="card h-100">
@@ -74,7 +60,6 @@
                                     <div id="image-size" class="back-img">
                                         <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top"
                                             alt="...">
->>>>>>> 0101a319b590b3ef6b2788ccf3c111eee2c166ac
                                     </div>
                                     <img src="/assets/img/portfolio/logo/<?= $portfolio['logo']; ?>" class="logo"
                                         alt="">
