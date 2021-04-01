@@ -68,7 +68,7 @@
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                     <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php"
+                                    <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                         class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                     <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php"
+                                    <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                         class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                     <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php"
+                                    <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                         class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                                     <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                     <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                     <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                    <a href="./portofolio_content.php"
+                                    <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                         class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                                 <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                 <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                 <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                <a href="./portofolio_content.php"
+                                <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                     class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
                                 <p class="mini-judul"><?= $portfolio['kategori']; ?></p>
                                 <h5 class="card-title"><?= $portfolio['judul']; ?></h5>
                                 <div class="card-text"><?= word_limiter($portfolio['tentang_mitra'], 10); ?></div>
-                                <a href="./portofolio_content.php"
+                                <a href="/portfolio_describ/<?= $portfolio['slug']; ?>"
                                     class="btn btn-primary hvr-bounce-to-top">SELENGKAPNYA</a>
                             </div>
                         </div>
