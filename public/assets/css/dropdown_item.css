@@ -242,6 +242,10 @@
   margin-bottom: 30px;
 }
 
+#portofolio .card {
+  position: relative;
+}
+
 #portofolio .card-portofolio {
   box-shadow: 2px 2px 20px #a6a5a5;
   display: flex;
@@ -250,15 +254,14 @@
   position: relative;
 }
 
+#portofolio .card .img-card-container {
+  height: 150px;
+}
+
 #portofolio .card-body {
   padding: 0;
   margin-top: 40px;
-}
-
-#portofolio .card-portofolio .card-img {
-  overflow: hidden;
-  height: initial;
-  border-radius: 10px;
+  position: relative;
 }
 
 #portofolio .card-portofolio small {
@@ -273,19 +276,20 @@
   color: #2926a9;
 }
 
-#portofolio .card-portofolio p {
+#portofolio .card-portofolio .card-text {
   font-weight: 500;
   font-size: 0.95rem;
   color: #4540ff;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 #portofolio .card-portofolio .tombol {
   font-size: 20px;
   color: white;
   bottom: 0;
+  left: 0;
   font-weight: 500;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   width: 100%;
   overflow: hidden;

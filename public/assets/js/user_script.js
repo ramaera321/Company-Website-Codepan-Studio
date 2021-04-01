@@ -99,7 +99,7 @@ function refreshAos() {
 //   });
 // });
 
-function enableBtn(){
+function enableBtn() {
   document.getElementById("kirim_btn").disabled = false;
 }
 
@@ -179,7 +179,7 @@ $("#video-close-button-id").click(function () {
 });
 
 function cardImg() {
-  const imgProfile = document.querySelector("#im-profile");
+  const imgProfile = document.querySelector("#image-size");
   const width = imgProfile.naturalWidth;
   const height = imgProfile.naturalHeight;
 

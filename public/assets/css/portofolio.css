@@ -112,7 +112,7 @@
 
 .portofolio-page .container-portofolio .card .card-img-top {
   height: 100%;
-  width: auto;
+  width: 100%;
   position: initial;
   transition: all 0.25s ease-in-out;
 }

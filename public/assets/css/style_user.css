@@ -928,13 +928,18 @@ a.wa-button:hover {
   letter-spacing: -1px;
 }
 
-.portofolio .card .img-card-container {
+.card .img-card-container {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
 }
 
-.portofolio .card .img-card-container .back-img::before {
+.card .img-card-container .back-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .img-card-container .back-img::before {
   content: "";
   position: absolute;
   background-color: rgba(85, 48, 185, 0.541);
@@ -945,6 +950,7 @@ a.wa-button:hover {
   z-index: 100;
 }
 
+#portofolio .card .logo,
 .portofolio .card .logo {
   position: absolute;
   z-index: 300;
@@ -953,6 +959,7 @@ a.wa-button:hover {
   left: 35%;
 }
 
+#portofolio .card .logo.position,
 .portofolio .card .logo.position {
   display: flex;
   flex-direction: column;
@@ -963,10 +970,12 @@ a.wa-button:hover {
   left: 27%;
 }
 
+#portofolio .card .logo.position img,
 .portofolio .card .logo.position img {
   width: inherit;
 }
 
+#portofolio .card .card-img-top,
 .portofolio .card .card-img-top {
   height: 100%;
   width: 100%;
@@ -976,6 +985,7 @@ a.wa-button:hover {
   transition: all 0.25s ease-in-out;
 }
 
+#portofolio .card:hover .card-img-top,
 .portofolio .card:hover .card-img-top {
   transform: scale(1.2);
 }

@@ -314,7 +314,8 @@
                     <div class="img-card-container">
                         <div class="back-img">
                             <!-- Background Img -->
-                            <img src="/assets/img/portfolio/<?= $portfolio['foto']; ?>" class="card-img-top" alt="...">
+                            <img id="image-size" src="/assets/img/portfolio/<?= $portfolio['foto']; ?>"
+                                class="card-img-top" alt="...">
                         </div>
 
                         <!-- Logo -->
@@ -569,7 +570,8 @@
             <div class="col-lg-4 col-md-6 margin-blog" data-aos="zoom-out-down">
                 <div class="card hvr-underline-reveal h-100">
                     <div class="cont-card-img">
-                        <img src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top" alt="...">
+                        <img id="image-size" src="/assets/img/blog/<?= $blog['foto']; ?>" class="card-img-top"
+                            alt="...">
                     </div>
                     <div class="card-body">
                         <?php
