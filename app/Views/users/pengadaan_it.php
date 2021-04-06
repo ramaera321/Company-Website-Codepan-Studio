@@ -237,90 +237,25 @@
             </div>
         </div>
         <div class="row" data-aos="zoom-out">
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
+            <?php
+            foreach ($produck as $produck) :
+            ?>
+                <div class="col-lg-4 col-md-6 col-produk">
+                    <div class="card card-produk">
+                        <div class="card-img">
+                            <img src="/assets/img/pengadaan-it/produck/<?= $produck['foto']; ?>" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><?= strtoupper($prodcuk['judul']); ?></h5>
+                            <p class="card-text"><?= word_limiter($produck['deskripsi_singkat'], 13); ?>p</p>
+                            <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-produk">
-                <div class="card card-produk">
-                    <div class="card-img">
-                        <img src="/assets/img/pengadaan-it/produck/Produk.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">ASCREEN INTERACTIVE FLAT PANEL DISPLAY </h5>
-                        <p class="card-text">AScreen Flat Panel Display memiliki fungsi beragam untuk seluruh
-                            kebutuhan Anda. Mulai dari presentasi, proses belajar mengajar dan kebutuhan meeting
-                            kantor Anda.</p>
-                        <a href="#" class="btn tombol hvr-bounce-to-top">Pesan Sekarang</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            endforeach
+            ?>
+
         </div>
     </div>
 </section>

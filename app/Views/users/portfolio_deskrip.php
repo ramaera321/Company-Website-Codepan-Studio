@@ -28,7 +28,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page"><a href="/portofolio">Portofolio</a></li>
-                    <li class="breadcrumb-item" aria-current="page"><a href="/portfolio_kategori"><?= $portfolio['kategori']; ?></a></li>
+                    <li class="breadcrumb-item" aria-current="page"><a href="/portfolio_kategori/<?= $portfolio['kategori']; ?>"><?= $portfolio['kategori']; ?></a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?= ucwords($portfolio['judul']); ?></li>
                 </ol>
             </nav>
@@ -102,7 +102,7 @@
                 ?>
                 <div class="tag">Tags :
                     <?php foreach ($data_tag as $tag) : ?>
-                        <a href="">#<?= $tag; ?></a>
+                        <a href="/hastag_portfolio/<?= $tag; ?>">#<?= $tag; ?></a>
                     <?php endforeach; ?>
                 </div>
             </div>

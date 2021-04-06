@@ -14,6 +14,7 @@ use App\Models\PasalModel;
 use App\Models\PemesananModel;
 use App\Models\PortfolioModel;
 use App\Models\PortfolioTagModel;
+use App\Models\ProduckModel;
 use App\Models\SubKategoriModel;
 use CodeIgniter\I18n\Time;
 
@@ -22,6 +23,7 @@ class Users extends BaseController
     protected $bannerModel;
     protected $portfolioModel;
     protected $blogModel;
+    protected $produckModel;
     protected $blogTagModel;
     protected $karirModel;
     protected $komentarModel;
@@ -38,6 +40,7 @@ class Users extends BaseController
         $this->portfolioModel = new PortfolioModel();
         $this->portfolioTagModel = new PortfolioTagModel();
         $this->blogModel = new BlogModel();
+        $this->produckModel = new ProduckModel();
         $this->blogTagModel = new BlogTagModel();
         $this->karirModel = new KarirModel();
         $this->komentarModel = new KomentarModel();
@@ -84,11 +87,12 @@ class Users extends BaseController
         $blog = $this->blogModel->orderBy('id', 'desc')->where(['kategori' => $kategori])->paginate(6, 'blog');
         $pager = $this->blogModel->orderBy('id', 'desc')->pager;
         $data = [
-            'judul' => 'Blog Page',
+            'judul' => 'pencarian : ' . $kategori,
             'blog' => $blog,
+            'kategori_pencarian' => $kategori,
             'pager' => $pager,
         ];
-        return view('users/blog', $data);
+        return view('users/blog_pencarian', $data);
     }
 
     public function blog_sub_kategori($sub_kategori)
@@ -96,11 +100,29 @@ class Users extends BaseController
         $blog = $this->blogModel->orderBy('id', 'desc')->where(['sub_kategori' => $sub_kategori])->paginate(6, 'blog');
         $pager = $this->blogModel->orderBy('id', 'desc')->pager;
         $data = [
-            'judul' => 'Blog Page',
+            'judul' => 'pencarian : ' . $sub_kategori,
             'blog' => $blog,
+            'kategori_pencarian' => $sub_kategori,
             'pager' => $pager,
         ];
-        return view('users/blog', $data);
+        return view('users/blog_pencarian', $data);
+    }
+
+    public function hastag($hastag)
+    {
+        // $tagBlog = $this->blogTagModel->like(['nama_tag' => $hastag])->findAll();
+        // $slug = $tagBlog['blog_slug'];
+        // $blog = $this->blogModel->orderBy('id', 'desc')->where(['slug' => $slug])->paginate(6, 'blog');
+        // $pager = $this->blogModel->orderBy('id', 'desc')->pager;
+        $db      = \Config\Database::connect();
+        $blog = $db->query("SELECT * FROM blog INNER JOIN blog_tag ON blog.slug = blog_tag.blog_slug WHERE blog_tag.nama_tag like '%{$hastag}%'");
+        $data = [
+            'judul' => 'pencarian : ' . $hastag,
+            'blog' => $blog,
+            'kategori_pencarian' => $hastag,
+            // 'pager' => $pager,
+        ];
+        return view('users/hastag_pencarian', $data);
     }
 
     public function blog_describe($slug)
@@ -181,6 +203,32 @@ class Users extends BaseController
             'portfolio_egov' => $portfolio_egov,
         ];
         return view('users/portfolio', $data);
+    }
+
+    public function portfolio_kategori($kategori)
+    {
+        $portfolio = $this->portfolioModel->orderBy('id', 'desc')->where(['kategori' => $kategori])->paginate(6, 'portfolio');
+        $pager = $this->portfolioModel->orderBy('id', 'desc')->pager;
+        $data = [
+            'judul' => 'pencarian : ' . $kategori,
+            'portfolio' => $portfolio,
+            'kategori_pencarian' => $kategori,
+            'pager' => $pager,
+        ];
+        return view('users/portfolio_pencarian', $data);
+    }
+
+    public function portfolio_hastag($hastag)
+    {
+        $db      = \Config\Database::connect();
+        $portfolio = $db->query("SELECT * FROM portfolio INNER JOIN portfolio_tag ON portfolio.slug = portfolio_tag.portfolio_slug WHERE portfolio_tag.nama_tag like '%{$hastag}%'");
+        $data = [
+            'judul' => 'pencarian : ' . $hastag,
+            'portfolio' => $portfolio,
+            'kategori_pencarian' => $hastag,
+            // 'pager' => $pager,
+        ];
+        return view('users/hastag_pencarian', $data);
     }
 
     public function portfolio_describe($slug)
@@ -289,6 +337,7 @@ class Users extends BaseController
 
     public function pengadaan_it()
     {
+        $produck = $this->produckModel->orderBy('id', 'desc')->findAll(6);
         $admin = $this->adminModel;
         $komentar = $this->komentarModel->orderBy('id', 'desc')->findAll(2);
         $banner = $this->bannerModel->where(['layanan' => 'pengadaan'])->first();
@@ -296,6 +345,7 @@ class Users extends BaseController
         $data = [
             'judul' => 'Pengadaan IT Page',
             'banner' => $banner,
+            'produck' => $produck,
             'portfolio' => $portfolio_pengadaan,
             'komentar' => $komentar,
             'adminData' => $admin,

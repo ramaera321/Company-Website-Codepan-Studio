@@ -17,7 +17,7 @@
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item" aria-current="page"><a href="/blog">Blog</a></li>
-                        <li class="breadcrumb-item" aria-current="page"><a href="/blog_kategori"><?= $blog['kategori']; ?></a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="/blog_kategori/<?= $blog['kategori']; ?>"><?= $blog['kategori']; ?></a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?= ucwords($blog['judul']); ?></li>
                     </ol>
                 </nav>
@@ -70,7 +70,7 @@
                     ?>
                     <div class="tag">Tags :
                         <?php foreach ($data_tag as $tag) : ?>
-                            <a href="">#<?= $tag; ?></a>
+                            <a href="/hastag/<?= $tag; ?>">#<?= $tag; ?></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
