@@ -141,7 +141,12 @@
 }
 
 .container-isi-blog ol li a {
-  color: #00cae6;
+  color: #2926a9;
+  text-decoration: none;
+}
+
+.container-isi-blog ol li a:hover {
+  color: #007bff;
 }
 
 .container-isi-blog .blog-main {
@@ -370,11 +375,11 @@
   bottom: -3px;
   height: 1px;
   transform-origin: right;
-  transition: 100ms;
+  transition: 0.1s;
 }
 
 .left-widget .kategori a:hover {
-  color: #00cae6;
+  color: #007bff;
 }
 
 .left-widget .kategori a:hover:before {
@@ -398,12 +403,17 @@
   height: 100%;
 }
 
-.left-widget .popular-item a {
+.left-widget a .popular-item {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.1 !important;
   position: relative;
   z-index: 0;
+  color: #2926a9;
+}
+
+.left-widget a .popular-item:hover {
+  color: #007bff;
 }
 
 .left-widget .popular-item a.hvr-underline-from-left::before {
