@@ -183,7 +183,7 @@
 
                     <!-- Instagram Button -->
                     <li>
-                        <a href="" class="ig">
+                        <a href="https://www.instagram.com/codepanstudiosby/" class="ig" target="_blank" rel="noreferrer noopener">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
