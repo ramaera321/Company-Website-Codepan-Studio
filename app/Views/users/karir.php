@@ -7,7 +7,7 @@
 
 <?= $this->section('content_user'); ?>
 <!-- Jumbotron Karir -->
-<div id="mt" class="jumbotron jumbotron-karir text-center" style="background-image: url('../img/background/Jumbobox\ karir\ update.jpg');">
+<div id="mt" class="jumbotron jumbotron-karir text-center" style="background-image: url('/assets/img/banner/<?= $banner['foto']; ?>');">
     <div class="container" data-aos="fade-up">
         <div class="content text-center">
             <h1>KARIR</h1>
