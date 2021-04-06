@@ -124,6 +124,21 @@
         </div>
     </li>
 
+    <!-- Nav Item - Portofolio Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed sidebar-layout" href="#" data-toggle="collapse" data-target="#collapseProduck" aria-expanded="true" aria-controls="collapseProduck">
+            <i class="fas fa-file-invoice"></i>
+            <span class="sidebar-text">Produck</span>
+        </a>
+        <div id="collapseProduck" class="collapse" aria-labelledby="headingProduck" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Menu Produck :</h6>
+                <a class="collapse-item" href="/data_produck">Data Produck</a>
+                <a class="collapse-item" href="/add_produck">Add Produck</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Nav Item - Layanan IT Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed sidebar-layout service" href="#" data-toggle="collapse" data-target="#collapseLayanan" aria-expanded="true" aria-controls="collapseLayanan">

@@ -11,9 +11,9 @@
                 </button>
             </div>
             <?php if ($pesan) : ?>
-            <div class="alert alert-success" role="alert">
-                <?= $pesan; ?>
-            </div>
+                <div class="alert alert-success" role="alert">
+                    <?= $pesan; ?>
+                </div>
             <?php endif; ?>
             <!-- Input Nama -->
             <div class="col-md-6 margin-text">
@@ -119,8 +119,7 @@
             <!-- End of Select Bidang Perusahaan -->
 
             <!-- Verification Input -->
-            <div class="g-recaptcha col-md-12 d-flex align-items-center"
-                data-sitekey="6LdtkpQaAAAAAAqlBXUJls3ZQsJGm8RZa3yov6bq" data-callback="enableBtn"></div>
+            <div class="g-recaptcha col-md-12 d-flex align-items-center" data-sitekey="6LdtkpQaAAAAAAqlBXUJls3ZQsJGm8RZa3yov6bq" data-callback="enableBtn"></div>
 
             <!-- Agreement -->
             <!-- <div class="col-lg-7 box-setuju d-flex justify-content-start">
@@ -133,8 +132,7 @@
             <!-- Submit Button -->
             <div class="col-md-12 text-center d-flex align-items-center">
 
-                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled"
-                    value="Kirim">Kirim
+                <button type="submit" class="btn-primary btn-submit" id="kirim_btn" disabled="disabled" value="Kirim">Kirim
                 </button>
 
                 <button class="btn btn-primary d-none" type="button" disabled>

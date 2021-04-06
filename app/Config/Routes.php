@@ -80,6 +80,12 @@ $routes->get('/add_blog', 'Blog::post');
 $routes->delete('/blog/(:num)', 'Blog::delete/$1');
 $routes->get('/update_blog/(:segment)', 'Blog::updatePage/$1');
 
+//Produck Admin Routes
+$routes->get('/data_produck', 'Produck::index');
+$routes->get('/add_produck', 'Produck::post');
+$routes->delete('/produck/(:num)', 'Produck::delete/$1');
+$routes->get('/update_produck/(:segment)', 'Produck::updatePage/$1');
+
 // //Blog Admin Routes
 // $routes->get('/data_portfolio', 'Portfolio::index');
 // $routes->get('/add_portfolio', 'Portfolio::post');
