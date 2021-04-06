@@ -80,14 +80,16 @@
                         <?php
                         foreach ($kategori as $kategori) :
                         ?>
-                            <p><a href="/blog_kategori/<?= $kategori['nama_kategori']; ?>"><?= $kategori['nama_kategori']; ?></a></p>
+                            <p><a href="/blog_kategori/<?= $kategori['nama_kategori']; ?>"><?= $kategori['nama_kategori']; ?></a>
+                            </p>
                         <?php
                         endforeach;
                         ?>
                         <?php
                         foreach ($sub_kategori as $sub_kategori) :
                         ?>
-                            <p><a href="/blog_sub_kategori/<?= $sub_kategori['nama_sub']; ?>"><?= $sub_kategori['nama_sub']; ?></a></p>
+                            <p><a href="/blog_sub_kategori/<?= $sub_kategori['nama_sub']; ?>"><?= $sub_kategori['nama_sub']; ?></a>
+                            </p>
                         <?php
                         endforeach;
                         ?>
@@ -97,14 +99,16 @@
                         <?php
                         foreach ($blog_article1 as $blog_article1) :
                         ?>
-                            <div class="popular-item row">
-                                <div class="col-4 img-popular">
-                                    <img src="/assets/img/blog/<?= $blog_article1['foto']; ?>" alt="">
+                            <a href="/blog_describ/<?= $blog_article1['slug']; ?>">
+                                <div class="popular-item row">
+                                    <div class="col-4 img-popular">
+                                        <img src="/assets/img/blog/<?= $blog_article1['foto']; ?>" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <?= character_limiter($blog_article1['judul'], 30); ?>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <a href="/blog_describ/<?= $blog_article1['slug']; ?>" class="hvr-underline-from-left"><?= character_limiter($blog_article1['judul'], 30); ?></a>
-                                </div>
-                            </div>
+                            </a>
                         <?php
                         endforeach;
                         ?>
