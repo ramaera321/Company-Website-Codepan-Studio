@@ -43,7 +43,7 @@ class Login extends BaseController
     {
         $session =  session();
         $email = $this->request->getVar('email');
-        $password = md5($this->request->getVar('password'));
+        $password = $this->request->getVar('password');
         $data = $this->adminModel->where(['email' => $email])->first();
         if ($data) {
             $pass = $data['password'];

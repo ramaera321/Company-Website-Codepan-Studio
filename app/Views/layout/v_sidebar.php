@@ -88,6 +88,7 @@
                 <a class="collapse-item" href="/data_karir">Data Karir</a>
                 <a class="collapse-item" href="/add_karir">Add Karir</a>
                 <a class="collapse-item" href="/data_lokasi">Add Lokasi</a>
+                <a class="collapse-item" href="/data_jenjang_karir">Add Jenjang Karir</a>
             </div>
         </div>
     </li>
@@ -202,7 +203,7 @@
         </div>
     </li>
     <li class="nav-item">
-        <a class="nav-link collapsed sidebar-layout" href="#" href="#" data-toggle="modal" data-target="#logoutModal">
+        <a class="nav-link collapsed sidebar-layout" href="#" data-toggle="modal" data-target="#logoutModal">
             <i class="fas fa-sign-out-alt"></i>
             <span class="sidebar-text">Logout</span>
         </a>

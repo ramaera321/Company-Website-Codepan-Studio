@@ -63,6 +63,7 @@ class Blog extends BaseController
 
     public function updatePage($slug)
     {
+
         if (session()->get('logged_in')) {
             // $this->db->select('nama_tag');
             // $this->db->from('blog_tag');
@@ -93,7 +94,7 @@ class Blog extends BaseController
 
     public function save()
     {
-
+        $request = \Config\Services::request();
         if (!$this->validate([
             'judul' => [
                 'rules' => 'required|is_unique[blog.judul]',

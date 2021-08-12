@@ -13,20 +13,15 @@
 
     <!-- Font CSS From Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link
-        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 
     <!-- Boostrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Line Awesome CSS From https://icons8.com/line-awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet"
-        media="all">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
     <!-- Costum CSS -->
     <link rel="stylesheet" href="/assets/css/style_user.css">
@@ -34,9 +29,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url('assets/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
-    <link
-        href="<?= base_url('assets/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); ?>"
-        rel="stylesheet">
+    <link href="<?= base_url('assets/https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); ?>" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url('assets/css/sb-admin-2.css'); ?>" rel="stylesheet">
@@ -73,8 +66,7 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" style="z-index: 2000;" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -110,42 +102,42 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
     <script src="<?= base_url('assets/js/script.js'); ?>"></script>
     <script>
-    function previewImage() {
-        const foto = document.querySelector('#foto');
-        const fotoLabel = document.querySelector('.custom-file-label');
-        const imgPreview = document.querySelector('.img-preview');
+        function previewImage() {
+            const foto = document.querySelector('#foto');
+            const fotoLabel = document.querySelector('.custom-file-label');
+            const imgPreview = document.querySelector('.img-preview');
 
-        fotoLabel.textContent = foto.files[0].name;
+            fotoLabel.textContent = foto.files[0].name;
 
-        const fileFoto = new FileReader();
-        fileFoto.readAsDataURL(foto.files[0]);
+            const fileFoto = new FileReader();
+            fileFoto.readAsDataURL(foto.files[0]);
 
-        fileFoto.onload = function(e) {
-            imgPreview.src = e.target.result;
+            fileFoto.onload = function(e) {
+                imgPreview.src = e.target.result;
+            }
         }
-    }
-    ClassicEditor
-        .create(document.querySelector('#exampleFormControlTextarea1'))
-        .catch(error => {
-            console.error(error);
-        });
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea1'))
+            .catch(error => {
+                console.error(error);
+            });
 
-    ClassicEditor
-        .create(document.querySelector('#exampleFormControlTextarea2'))
-        .catch(error => {
-            console.error(error);
-        });
-    ClassicEditor
-        .create(document.querySelector('#exampleFormControlTextarea3'))
-        .catch(error => {
-            console.error(error);
-        });
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea2'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea3'))
+            .catch(error => {
+                console.error(error);
+            });
 
-    ClassicEditor
-        .create(document.querySelector('#exampleFormControlTextarea4'))
-        .catch(error => {
-            console.error(error);
-        });
+        ClassicEditor
+            .create(document.querySelector('#exampleFormControlTextarea4'))
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 

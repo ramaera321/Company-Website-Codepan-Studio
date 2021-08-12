@@ -95,6 +95,11 @@ $routes->get('/update_produck/(:segment)', 'Produck::updatePage/$1');
 // $routes->delete('/portfolio/(:num)', 'Portfolio::delete/$1');
 // $routes->get('/update_portfolio/(:segment)', 'Portfolio::updatePage/$1');
 
+$routes->get('/data_jenjang_karir', 'JenjangKarir::view');
+$routes->delete('/jenjang_karir/(:num)', 'JenjangKarir::delete/$1');
+$routes->get('/add_jenjang_karir', 'JenjangKarir::add');
+$routes->get('/update_jenjang_karir/(:num)', 'JenjangKarir::edit/$1');
+
 //Kontak Admin Routes
 $routes->get('/data_kontak', 'Kontak::index');
 $routes->get('/add_kontak', 'Kontak::AddKontak');
